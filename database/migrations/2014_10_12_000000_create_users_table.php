@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->boolean('is_admin')->default(false);
             $table->boolean('has_active_email')->default(false);
+            $table->string('dream_job_title')->default('');
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

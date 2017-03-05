@@ -17,15 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'middlename', 'lastname', 'email', 'password', 'avatar',
-    ];
-
-    /**
-     * casting bool values
-     */
-    protected $casts = [
-        'is_admin' => boolean,
-        'has_active_email' => boolean
+        'firstname', 'middlename', 'lastname', 'email', 'password', 'avatar', 'dream_job_title',
     ];
 
     /**

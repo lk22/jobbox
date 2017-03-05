@@ -24,6 +24,14 @@ $factory->define(JobBox\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
         'avatar' => 'http://www.zocom.se/en/assets/frontpanel/images/img.png',
         'is_admin' => rand(0,1),
-        'has_active_email' => rand(0,1);
+        'has_active_email' => rand(0,1),
+        'dream_job_title' => $faker->randomElement([
+            'Web Developer',
+            'Auto Mechanic',
+            'Graphic Designer',
+            'SEO manager',
+            'Front-end Developer',
+            'Backend developer'
+        ])
     ];
 });

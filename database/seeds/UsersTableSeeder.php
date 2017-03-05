@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
         /**
          * create admin 
          */
-        $user = new JobFactory\User;
+        $user = new JobBox\User;
 
         $user->createUserWith([
         	'firstname' => 'Leo',
@@ -25,8 +25,9 @@ class UsersTableSeeder extends Seeder
          	'is_admin' => 1,
         	'has_active_email' => 1,
         	'avatar' => 'http://www.zocom.se/en/assets/frontpanel/images/img.png',
+            'dream_job_title' => 'Web Developer'
        	]);
 
-       	factory(JobFactory\User::class, 3)->create();
+       	factory(JobBox\User::class, 3)->create();
     }
 }
