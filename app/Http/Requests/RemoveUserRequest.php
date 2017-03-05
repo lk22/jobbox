@@ -1,6 +1,6 @@
 <?php
 
-namespace JobFactory\Http\Requests;
+namespace JobBox\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

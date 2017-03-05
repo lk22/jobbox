@@ -1,6 +1,6 @@
 <?php
 
-namespace JobFactory\Http\Middleware;
+namespace JobBox\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

@@ -1,9 +1,11 @@
 <?php
 
-namespace JobFactory\Http\Controllers\Auth;
+namespace JobBox\Http\Controllers\Auth;
 
-use JobFactory\Http\Controllers\Controller;
+use JobBox\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
+use Socialite;
 
 class LoginController extends Controller
 {
@@ -32,8 +34,49 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Socialite $provider)
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
+
+    /**
+     * redirect the user to Google authentication page
+     * @return [type]
+     */
+    public function redirectToGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+    /**
+     * redirect the user to facebook authentication page
+     * @return voide
+     */
+    public function redirectToFacebook() 
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    /**
+     * Handle callback from google
+     * @return [type]
+     */
+    public function handleGoogleCallback() 
+    {
+        $user = Socialite::driver('google')->user();
+
+        return $user->token;
+    }
+
+    /**
+     * handle callback from facebook authentication
+     * @return void
+     */
+    public function handleFacebookCallback()
+    {
+        $user = Socialite::driver('facebook')->user();
+
+        return $user;
+    }
+
 }

@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::name('provider.google')->get('/login/google')->uses('Auth\LoginController@redirectToGoogle');
+Route::name('provider.google.callback')->get('login/google/callback', 'Auth\LoginController@handleGoogleCallback');
+
+Route::name('provider.facebook')->get('/login/facebook')->uses('Auth\LoginController@redirectToFacebook');
+Route::name('provider.facebook.callback')->get('login/facebook/callback', 'Auth\LoginController@handleFacebookCallback');

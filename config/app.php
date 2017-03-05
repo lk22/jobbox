@@ -167,15 +167,16 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
-        JobFactory\Providers\AppServiceProvider::class,
-        JobFactory\Providers\AuthServiceProvider::class,
-        // JobFactory\Providers\BroadcastServiceProvider::class,
-        JobFactory\Providers\EventServiceProvider::class,
-        JobFactory\Providers\RouteServiceProvider::class,
+        JobBox\Providers\AppServiceProvider::class,
+        JobBox\Providers\AuthServiceProvider::class,
+        // JobBox\Providers\BroadcastServiceProvider::class,
+        JobBox\Providers\EventServiceProvider::class,
+        JobBox\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -225,6 +226,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

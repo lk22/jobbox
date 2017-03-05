@@ -1,23 +1,23 @@
 <?php
 
-namespace JobFactory\Http\Controllers;
+namespace JobBox\Http\Controllers;
 
 use Storage;
 use Repsonse;
 
 use Illuminate\Http\Request;
 
-use JobFactory\Http\Requests\CreateUserRequest;
-use JobFactory\Http\Requests\UpdateUserRequest;
-use JobFactory\Http\Requests\RemoveUserRequest;
+use JobBox\Http\Requests\CreateUserRequest;
+use JobBox\Http\Requests\UpdateUserRequest;
+use JobBox\Http\Requests\RemoveUserRequest;
 
-use JobFactory\User;
+use JobBox\User;
 
 class UserController extends Controller
 {
 	/**
 	 * Constructor
-	 * @param JobFactory\User
+	 * @param JobBox\User
 	 */
     public function __construct(User $user)
     {

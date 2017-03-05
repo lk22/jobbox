@@ -1,6 +1,6 @@
 <?php
 
-namespace JobFactory\Exceptions;
+namespace JobBox\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

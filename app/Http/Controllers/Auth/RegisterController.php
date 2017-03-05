@@ -1,9 +1,9 @@
 <?php
 
-namespace JobFactory\Http\Controllers\Auth;
+namespace JobBox\Http\Controllers\Auth;
 
-use JobFactory\User;
-use JobFactory\Http\Controllers\Controller;
+use JobBox\User;
+use JobBox\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

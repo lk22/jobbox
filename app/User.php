@@ -1,8 +1,8 @@
 <?php
 
-namespace JobFactory;
+namespace JobBox;
 
-use JobFactory\Traits\ErrorHandable;
+use JobBox\Traits\ErrorHandable;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

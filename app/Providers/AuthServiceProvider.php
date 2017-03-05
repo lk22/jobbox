@@ -1,6 +1,6 @@
 <?php
 
-namespace JobFactory\Providers;
+namespace JobBox\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'JobFactory\Model' => 'JobFactory\Policies\ModelPolicy',
+        'JobBox\Model' => 'JobBox\Policies\ModelPolicy',
     ];
 
     /**

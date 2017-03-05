@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => JobFactory\User::class,
+            'model' => JobBox\User::class,
         ],
 
         // 'users' => [
