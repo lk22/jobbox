@@ -21,6 +21,14 @@ class User extends Authenticatable
     ];
 
     /**
+     * casting bool values
+     */
+    protected $casts = [
+        'is_admin' => boolean,
+        'has_active_email' => boolean
+    ];
+
+    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array

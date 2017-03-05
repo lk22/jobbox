@@ -26,5 +26,7 @@ class UsersTableSeeder extends Seeder
         	'has_active_email' => 1,
         	'avatar' => 'http://www.zocom.se/en/assets/frontpanel/images/img.png',
        	]);
+
+       	factory(JobFactory\User::class, 3)->create();
     }
 }

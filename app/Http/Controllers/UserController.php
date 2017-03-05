@@ -25,6 +25,7 @@ class UserController extends Controller
     }
 
     /**
+     * get all resources
      * @return void
      */
     public function all() 
@@ -34,6 +35,11 @@ class UserController extends Controller
     	return $users;
     }
 
+    /**
+     * order by a specific order
+     * @param  [type]
+     * @return [type]
+     */
     public function orderBy($order) {
     	$orderedUsers = $this->user->orderingBy($order);
 
