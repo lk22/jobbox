@@ -1,8 +1,8 @@
 <?php
 
-namespace JobBox\Http\Controllers\Auth;
+namespace JobDesk\Http\Controllers\Auth;
 
-use JobBox\Http\Controllers\Controller;
+use JobDesk\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

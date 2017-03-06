@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => JobBox\User::class,
+        'model' => JobDesk\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

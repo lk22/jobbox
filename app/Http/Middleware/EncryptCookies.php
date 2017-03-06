@@ -1,6 +1,6 @@
 <?php
 
-namespace JobBox\Http\Middleware;
+namespace JobDesk\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

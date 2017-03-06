@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        JobBox\Providers\AppServiceProvider::class,
-        JobBox\Providers\AuthServiceProvider::class,
-        // JobBox\Providers\BroadcastServiceProvider::class,
-        JobBox\Providers\EventServiceProvider::class,
-        JobBox\Providers\RouteServiceProvider::class,
+        JobDesk\Providers\AppServiceProvider::class,
+        JobDesk\Providers\AuthServiceProvider::class,
+        // JobDesk\Providers\BroadcastServiceProvider::class,
+        JobDesk\Providers\EventServiceProvider::class,
+        JobDesk\Providers\RouteServiceProvider::class,
 
     ],
 

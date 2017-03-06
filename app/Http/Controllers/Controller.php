@@ -1,6 +1,6 @@
 <?php
 
-namespace JobBox\Http\Controllers;
+namespace JobDesk\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

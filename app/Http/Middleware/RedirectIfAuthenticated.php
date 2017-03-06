@@ -1,6 +1,6 @@
 <?php
 
-namespace JobBox\Http\Middleware;
+namespace JobDesk\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

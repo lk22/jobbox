@@ -1,6 +1,6 @@
 <?php 
 
-namespace JobBox\Traits;
+namespace JobDesk\Traits;
 
 use Response;
 

@@ -12,7 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(JobBox\User::class, function (Faker\Generator $faker) {
+$factory->define(JobDesk\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [

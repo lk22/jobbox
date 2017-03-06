@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
         /**
          * create admin 
          */
-        $user = new JobBox\User;
+        $user = new JobDesk\User;
 
         $user->createUserWith([
         	'firstname' => 'Leo',
@@ -28,6 +28,6 @@ class UsersTableSeeder extends Seeder
             'dream_job_title' => 'Web Developer'
        	]);
 
-       	factory(JobBox\User::class, 3)->create();
+       	factory(JobDesk\User::class, 3)->create();
     }
 }

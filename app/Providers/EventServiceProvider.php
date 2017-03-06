@@ -1,6 +1,6 @@
 <?php
 
-namespace JobBox\Providers;
+namespace JobDesk\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'JobBox\Events\SomeEvent' => [
-            'JobBox\Listeners\EventListener',
+        'JobDesk\Events\SomeEvent' => [
+            'JobDesk\Listeners\EventListener',
         ],
     ];
 

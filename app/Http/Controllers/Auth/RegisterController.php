@@ -1,9 +1,9 @@
 <?php
 
-namespace JobBox\Http\Controllers\Auth;
+namespace JobDesk\Http\Controllers\Auth;
 
-use JobBox\User;
-use JobBox\Http\Controllers\Controller;
+use JobDesk\User;
+use JobDesk\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

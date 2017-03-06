@@ -20,7 +20,7 @@
             "database"
         ],
         "psr-4": {
-            "JobBox\\": "app/",
+            "JobDesk\\": "app/",
             "Traits\\": "app/Traits"
         }
     },

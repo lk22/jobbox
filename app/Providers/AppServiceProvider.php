@@ -1,6 +1,6 @@
 <?php
 
-namespace JobBox\Providers;
+namespace JobDesk\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

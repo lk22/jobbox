@@ -1,23 +1,23 @@
 <?php
 
-namespace JobBox\Http\Controllers;
+namespace JobDesk\Http\Controllers;
 
 use Storage;
 use Repsonse;
 
 use Illuminate\Http\Request;
 
-use JobBox\Http\Requests\CreateUserRequest;
-use JobBox\Http\Requests\UpdateUserRequest;
-use JobBox\Http\Requests\RemoveUserRequest;
+use JobDesk\Http\Requests\CreateUserRequest;
+use JobDesk\Http\Requests\UpdateUserRequest;
+use JobDesk\Http\Requests\RemoveUserRequest;
 
-use JobBox\User;
+use JobDesk\User;
 
 class UserController extends Controller
 {
 	/**
 	 * Constructor
-	 * @param JobBox\User
+	 * @param JobDesk\User
 	 */
     public function __construct(User $user)
     {
