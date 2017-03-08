@@ -1,0 +1,41 @@
+/**
+ * Variables
+ */
+@import '../_variables';
+// body
+$body-bg: #DFEFF9;
+
+/**
+ * globally variables for welcome page
+ */
+
+$font: 'Raleway';
+
+// welcome header component
+$w-header-bg: #000;
+$w-header-height: 85px;
+$w-header-width: 100%;
+$w-header-padding-left: 0px; // if .container-fluid
+$w-header-padding-right: 0px; // if .container-fluid
+$w-header-position: fixed;
+$w-header-opacity: 0.9;
+
+// welcome header brand
+$w-header-brand-size: 18px; // or just h1 size
+$w-header-brand-color: #fff;
+
+// welcome header list component
+$w-header-list-padding: 3rem;
+$w-header-list-item-display: inline;
+$w-header-list-item-margin: 1rem;
+$w-header-list-item-anchor-color: #fff;
+
+// head-section component
+$head-section-image: url('../images/blogging-336376_1920.jpg');
+$head-section-image-centering: center center;
+$head-section-background: #06506B;
+$head-section-image-size: cover;
+$head-section-height: 650px;
+
+$head-section-width: 100%;
+$head-section-padding-top: 10rem;

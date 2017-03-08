@@ -22,33 +22,33 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  */
 Route::prefix('users')->group(function() {
 
-	Route::name('users.all')->get('/')->uses('UserController@all');
+	Route::name('api.users.all')->get('/')->uses('UserController@all');
 
-	Route::name('users.latest')->get('/latest')->uses('UserController@latest');
+	Route::name('api.users.latest')->get('/latest')->uses('UserController@latest');
 
-	Route::name('users.orderby')->get('/orderby')->uses('UserController@orderBy');
+	Route::name('api.users.orderby')->get('/orderby')->uses('UserController@orderBy');
 
 	Route::prefix('user')->group(function() {
 
-		Route::name('user')->get('/')->uses('UserController@user');
+		Route::name('api.user')->get('/')->uses('UserController@user');
 
-		Route::name('user.auth')->get('/auth')->uses('UserController@auth');
+		Route::name('api.user.auth')->get('/auth')->uses('UserController@auth');
 
 	});
 
 	/**
 	 * create new user
 	 */
-	Route::name('create.new.user')->post('/')->uses('UserController@create');
+	Route::name('api.create.new.user')->post('/')->uses('UserController@create');
 
 	/**
 	 * update current user
 	 */
-	Route::name('update.existing.user')->put('/{id}')->uses('UserController@update');
+	Route::name('api.update.existing.user')->put('/{id}')->uses('UserController@update');
 
 	/**
 	 * delete existing user
 	 */
-	Route::name('remove.user')->delete('/{id}')->uses('UserController@remove');
+	Route::name('api.remove.user')->delete('/{id}')->uses('UserController@remove');
 
 });	

@@ -3,13 +3,14 @@
 namespace JobDesk;
 
 use JobDesk\Traits\ErrorHandable;
+use JobDesk\Traits\Crudable;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable, ErrorHandable;
+    use Notifiable, Crudable, ErrorHandable;
 
     /**
      * The attributes that are mass assignable.
@@ -47,7 +48,7 @@ class User extends Authenticatable
      * define orderby ascending scope
      */
     public function scopeOrderByAscending($query) {
-        return $query->orderBy('ASC')->by('id');
+        return $query->orderBy('id', 'ASC');
     }
 
     /**
@@ -71,32 +72,20 @@ class User extends Authenticatable
      * create user with information
      */
     public function createUserWith(array $data) {
-        return (isset($data) && is_array($data)) ? $this->create($data) : $this->handleError('Data not provided to create');
+        return $this->createWith($this, $data);
     }
 
     /**
      * update user with data
      */
     public function updateUserWith(array $data) {
-        return (isset($data) && is_array($data)) ? $this->update($data) : $this->handleError('Data not provided to update');
+        return $this->updateWith($this, $data);
     }
 
     /**
      * delete user
      */
     public function deleteUserWithId($id) {
-        $user = $this->findById($id)->firstOrFail();
-
-        return (isset($id) && count($user) === 1) ? $user->delete() : $this->handleError('User was not found, could not delete resource');
-    }
-
-    /**
-     * define field to order by
-     */
-    public function by($field = null) {
-        if (!isset($field)) {
-            $field = 'id';
-            return $field;
-        } 
+       return $this->deleteWhere($this, $id);
     }
 }

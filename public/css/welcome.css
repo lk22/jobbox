@@ -1,0 +1,149 @@
+/**
+ * Variables
+ */
+/**
+ * globally variables for welcome page
+ */
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    margin-top: 250px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    margin-top: 250px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+#welcome {
+  height: 100%;
+  width: 100%;
+  background: #DFEFF9;
+}
+
+#welcome .loader {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+#welcome .loader h3 {
+  color: #FFF;
+  margin-left: 1rem;
+}
+
+#welcome #header {
+  height: 85px;
+  width: 100%;
+  background: #000;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: fixed;
+  opacity: 0.9;
+}
+
+#welcome #header .brand-name a {
+  color: #fff;
+}
+
+#welcome #header .menu-list {
+  padding: 3rem;
+  left: 0;
+}
+
+#welcome #header .menu-list .list-item {
+  display: inline;
+  margin-left: 1rem;
+}
+
+#welcome #header .menu-list .list-item a {
+  color: #fff;
+}
+
+#welcome #head-section {
+  min-height: 650px;
+  padding-top: 10rem;
+  width: 100%;
+  background: url("../images/blogging-336376_1920.jpg");
+  background-size: cover;
+  font-family: "Raleway";
+  color: #FFF;
+}
+
+#welcome #head-section .row.headline-row {
+  height: auto;
+  width: auto;
+  margin-bottom: 250px;
+  -webkit-animation: fadeDown 3s;
+  animation: fadeDown 3s;
+}
+
+#welcome #head-section .row.information {
+  height: auto;
+  width: auto;
+  -webkit-animation: fadeUp 3s;
+  animation: fadeUp 3s;
+}
+
+/*# sourceMappingURL=welcome.css.map */

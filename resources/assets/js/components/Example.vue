@@ -6,7 +6,8 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        I'm an example component!
+                        <input type="text" id="input" v-model="message">
+                        <p>{{ message }}.</p>
                     </div>
                 </div>
             </div>
@@ -18,6 +19,9 @@
     export default {
         mounted() {
             console.log('Component mounted.')
+        },
+        data: {
+            message: "hello world"
         }
     }
 </script>

@@ -1,3 +1,8 @@
+// screen sizes (viewport sizes)
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 992px;
+$large-desktop: 1200px;
 
 // Body
 $body-bg: #f5f8fa;
@@ -10,11 +15,11 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: #3097D1;
+$brand-primary: #06506B;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$brand-danger: #F34C4C;
 
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
