@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.welcome');
 });
 
 Route::name('provider.google')->get('/login/google')->uses('Auth\LoginController@redirectToGoogle');
