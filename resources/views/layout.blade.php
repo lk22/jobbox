@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="/css/welcome.css">
     </head>
     <body id="welcome">
+
     <!-- 
         loader component
      -->
@@ -27,6 +28,8 @@
 
         @yield('page')
 
+        @include('pages._partials.footer')
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <script>
@@ -36,7 +39,7 @@
                 $(".loader").show();
             }
             else {
-                $(".loader").delay(1500).fadeOut(500);
+                $(".loader").delay(1000).fadeOut(500);
             }
         </script>
     </body>

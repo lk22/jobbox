@@ -65,6 +65,43 @@
   }
 }
 
+#header {
+  height: 85px;
+  width: 100%;
+  background: #000;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: fixed;
+  opacity: 0.9;
+}
+
+#header .brand-name a {
+  color: #fff;
+}
+
+#header .menu-list {
+  padding: 3rem;
+  left: 0;
+}
+
+#header .menu-list .list-item {
+  display: inline;
+  margin-left: 1rem;
+}
+
+#header .menu-list .list-item a {
+  color: #fff;
+}
+
+#footer {
+  height: 200px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 5rem;
+  font-size: 11px;
+}
+
 @-webkit-keyframes color {
   0% {
     background: #06506B;
@@ -203,7 +240,7 @@
   width: 100%;
   background: url("../images/blogging-336376_1920.jpg");
   background-size: cover;
-  font-family: "Raleway";
+  font-family: helvetica;
   color: #FFF;
 }
 
@@ -220,6 +257,15 @@
   width: auto;
   -webkit-animation: fadeUp 5s;
   animation: fadeUp 5s;
+}
+
+#welcome #footer {
+  height: 200px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 5rem;
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=welcome.css.map */

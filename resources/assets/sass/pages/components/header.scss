@@ -1,0 +1,27 @@
+	#header{
+		height: $w-header-height;
+		width: $w-header-width;
+		background: $w-header-bg;
+		padding-left: $w-header-padding-left;
+		padding-right: $w-header-padding-right;
+		position: $w-header-position;
+		opacity: $w-header-opacity;
+		
+		.brand-name {
+			a{
+				color: $w-header-brand-color;
+			}
+		}
+
+		.menu-list{
+			padding:$w-header-list-padding;
+			left: 0;
+			.list-item {
+				display:$w-header-list-item-display;
+				margin-left: $w-header-list-item-margin;
+				a{
+					color: $w-header-list-item-anchor-color;
+				}
+			}
+		}
+	}
