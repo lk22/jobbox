@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
         $user->createUserWith([
         	'firstname' => 'Leo',
         	'lastname' => 'Knudsen',
-        	'email' => 'lkdevelop@jobwriter.com',
+        	'email' => 'lkdevelop@jobdesk.com',
         	'password' => bcrypt('1'),
         	'remember_token' => str_random(10),
          	'is_admin' => 1,
@@ -28,6 +28,6 @@ class UsersTableSeeder extends Seeder
             'dream_job_title' => 'Web Developer'
        	]);
 
-       	factory(JobDesk\User::class, 3)->create();
+       	factory(JobDesk\User::class, rand(1,5))->create();
     }
 }

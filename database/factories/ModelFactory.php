@@ -32,6 +32,18 @@ $factory->define(JobDesk\User::class, function (Faker\Generator $faker) {
             'SEO manager',
             'Front-end Developer',
             'Backend developer'
-        ])
+        ]),
+        'created_at' => Carbon\Carbon::now(),
+        'updated_at' => Carbon\Carbon::now()
+    ];
+});
+
+$factory->define(JobDesk\Message::class, function( Faker\Generator $faker ) {
+    return [
+        'name' => $faker->name,
+        'email' => $faker->email,
+        'message' => $faker->text,
+        'created_at' => Carbon\Carbon::now(),
+        'updated_at' => Carbon\Carbon::now()
     ];
 });

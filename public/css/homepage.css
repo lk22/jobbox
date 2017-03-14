@@ -71,8 +71,6 @@
   background: #000;
   padding-left: 0px;
   padding-right: 0px;
-  position: fixed;
-  opacity: 0.9;
 }
 
 #header .brand-name a {
@@ -100,6 +98,36 @@
   color: #fff;
   padding: 5rem;
   font-size: 11px;
+}
+
+#footer .social-menu .list-item {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+#footer .social-menu .list-item a {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+#footer .sitemap .list-item {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+#footer .sitemap .list-item a {
+  color: #FFF;
+  font-size: 15px;
+  text-align: center;
+}
+
+.bottom-footer {
+  height: 40px;
+  width: 100%;
+  background: #03A9F4;
+  padding: 1rem;
+  color: #FFF;
 }
 
 @-webkit-keyframes color {
@@ -178,13 +206,15 @@
   }
 }
 
-#welcome {
+#layout {
   height: 100%;
   width: 100%;
   background: #DFEFF9;
+  font-family: 'Raleway';
+  @impport 'pages/about';
 }
 
-#welcome .loader {
+#layout .loader {
   height: 100%;
   width: 100%;
   background: #000;
@@ -201,42 +231,87 @@
   padding-top: 300px;
 }
 
-#welcome .loader .cp-meter {
+#layout .loader .cp-meter {
   -webkit-animation: color 5s linear infinite;
   animation: color 5s linear infinite;
 }
 
-#welcome #header {
+#layout #header {
   height: 85px;
   width: 100%;
   background: #000;
   padding-left: 0px;
   padding-right: 0px;
-  position: fixed;
-  opacity: 0.9;
 }
 
-#welcome #header .brand-name a {
+#layout #header .brand-name a {
   color: #fff;
 }
 
-#welcome #header .menu-list {
+#layout #header .menu-list {
   padding: 3rem;
   left: 0;
 }
 
-#welcome #header .menu-list .list-item {
+#layout #header .menu-list .list-item {
   display: inline;
   margin-left: 1rem;
 }
 
-#welcome #header .menu-list .list-item a {
+#layout #header .menu-list .list-item a {
   color: #fff;
 }
 
-#welcome #head-section {
+#layout #login {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+#layout #login .panel {
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#layout #login .panel .panel-body .form-horizontal .form-group button {
+  background-color: #3F51B5;
+  border-radius: 0px 0px 0px 0px;
+  color: #FFF;
+}
+
+#layout #login .panel > .panel-heading {
+  color: #fff;
+  background-color: #3F51B5;
+  border-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#layout #register {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+#layout #register .panel {
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#layout #register .panel .panel-body .form-horizontal .form-group button {
+  background-color: #3F51B5;
+  border-radius: 0px 0px 0px 0px;
+  color: #FFF;
+}
+
+#layout #register .panel > .panel-heading {
+  color: #fff;
+  background-color: #3F51B5;
+  border-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#layout #head-section {
   min-height: 650px;
-  padding-top: 10rem;
   width: 100%;
   background: url("../images/blogging-336376_1920.jpg");
   background-size: cover;
@@ -244,22 +319,22 @@
   color: #FFF;
 }
 
-#welcome #head-section .row.headline-row {
+#layout #head-section .row.headline-row {
   height: auto;
   width: auto;
   margin-bottom: 250px;
-  -webkit-animation: fadeDown 5s;
-  animation: fadeDown 5s;
+  -webkit-animation: fadeDown 2s;
+  animation: fadeDown 2s;
 }
 
-#welcome #head-section .row.information {
+#layout #head-section .row.information {
   height: auto;
   width: auto;
-  -webkit-animation: fadeUp 5s;
-  animation: fadeUp 5s;
+  -webkit-animation: fadeUp 2s;
+  animation: fadeUp 2s;
 }
 
-#welcome #footer {
+#layout #footer {
   height: 200px;
   width: 100%;
   background: #000;
@@ -268,4 +343,34 @@
   font-size: 11px;
 }
 
-/*# sourceMappingURL=welcome.css.map */
+#layout #footer .social-menu .list-item {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+#layout #footer .social-menu .list-item a {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+#layout #footer .sitemap .list-item {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+#layout #footer .sitemap .list-item a {
+  color: #FFF;
+  font-size: 15px;
+  text-align: center;
+}
+
+#layout .bottom-footer {
+  height: 40px;
+  width: 100%;
+  background: #03A9F4;
+  padding: 1rem;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=homepage.css.map */

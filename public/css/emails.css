@@ -1,0 +1,17 @@
+.message_sended_container {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  padding: 2em;
+}
+
+.message_sended_container h1 {
+  text-align: center;
+  color: #06506B;
+}
+
+.message_sended_container p, .message_sended_container h2, .message_sended_container h3, .message_sended_container h4, .message_sended_container h5, .message_sended_container h6 {
+  color: #06506B;
+}
+
+/*# sourceMappingURL=emails.css.map */

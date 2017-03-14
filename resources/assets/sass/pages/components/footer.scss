@@ -5,4 +5,39 @@
     color: #fff;
     padding: 5rem;
     font-size: 11px;
+    
+    .social-menu{
+    	
+    	.list-item{
+    		list-style-type:none;
+    		margin-bottom: 1rem;
+    		a{
+    			color: #fff;
+    			font-size: 15px;
+    			text-align:center;
+    		}
+    	}
+    }
+
+	.sitemap{
+		
+		.list-item{
+			list-style-type: none;
+			margin-bottom: 1rem;
+
+			a{
+				color: #FFF;
+				font-size: 15px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.bottom-footer{
+	height:40px;
+	width: 100%;
+	background: #03A9F4;
+	padding:1rem;
+	color: #FFF;
 }

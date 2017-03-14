@@ -19,14 +19,16 @@ class DatabaseSeeder extends Seeder
     	 * tables to truncate
     	 */
     	$tables = array(
-    		'users'
+    		'users',
+            'contact_messages'
     	);
 
     	/**
     	 * seeders to call
     	 */
     	$seeders = array(
-    		UsersTableSeeder::class
+    		UsersTableSeeder::class,
+            ContactMessagesTableSeeder::class
     	);
 
     	 // disable foreign key checks

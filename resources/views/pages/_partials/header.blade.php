@@ -10,7 +10,6 @@
     <div class="col-xs-10 col-sm-10 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-7">
 
      <ul class="menu-list">
-         <li class="list-item"><a href="/product">Produkt</a></li>
          <li class="list-item"><a href="/join">Tilmeld</a></li>
          <li class="list-item"><a href="/signin">login</a></li>
          <li class="list-item"><a href="/contact">Kontakt</a></li>

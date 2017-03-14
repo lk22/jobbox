@@ -6,7 +6,7 @@
       -->
     <div class="container-fluid" id="head-section">
         <div class="row headline-row">
-            <h1 class="text-center ">Bring orden og kvalitet til din job profil</h1>
+            <h1 class="text-center headliner"></h1>
         </div>
 
         <!-- 

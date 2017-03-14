@@ -44,10 +44,11 @@
 	}
 }
 
-#welcome{
+#layout{
 	height: 100%;
 	width: 100%;
 	background: $body-bg;
+	font-family: 'Raleway';
 	
 	.loader{
 		height:100%;
@@ -72,10 +73,12 @@
 	}
 
 	@import 'pages/components/header';
-
+	@import 'pages/auth/_all';
+	@impport 'pages/about';
+	
 	#head-section{
 		min-height: $head-section-height;
-		padding-top: $head-section-padding-top;
+		
 		width: $head-section-width;
 		background: $head-section-image;
 		-webkit-background-size: $head-section-image-size;
@@ -89,19 +92,19 @@
 			height: auto;
 			width: auto;
 			margin-bottom: 250px;
-			-webkit-animation: fadeDown 5s;
-			   -moz-animation: fadeDown 5s;
-			     -o-animation: fadeDown 5s;
-			        animation: fadeDown 5s;
+			-webkit-animation: fadeDown 2s;
+			   -moz-animation: fadeDown 2s;
+			     -o-animation: fadeDown 2s;
+			        animation: fadeDown 2s;
 		}
 
 		.row.information {
 			height: auto;
 			width: auto;
-			-webkit-animation: fadeUp 5s;
-			   -moz-animation: fadeUp 5s;
-			     -o-animation: fadeUp 5s;
-			        animation: fadeUp 5s;
+			-webkit-animation: fadeUp 2s;
+			   -moz-animation: fadeUp 2s;
+			     -o-animation: fadeUp 2s;
+			        animation: fadeUp 2s;
 		}
 	}
 
