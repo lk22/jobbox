@@ -19,7 +19,7 @@
 		<div class="col-md-4">
 			<ul class="sitemap">
 				<li class="list-item"><a href="{{ route('about') }}">About</a></li>
-				{{-- <li class="list-item"><a href="">Blog</a></li> --}}
+				<li class="list-item"><a href="{{ route('posts') }}">Blog</a></li>
 				<li class="list-item"><a href="/sitemap">Sitemap</a></li>
 			</ul>
 		</div>

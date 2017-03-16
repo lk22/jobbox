@@ -75,6 +75,7 @@
 	@import 'pages/components/header';
 	@import 'pages/auth/_all';
 	@impport 'pages/about';
+	@import 'pages/blog';
 	
 	#head-section{
 		min-height: $head-section-height;

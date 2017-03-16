@@ -1,7 +1,7 @@
 @extends('layout')
 @section('page')
 
-	<div class="container jumbotron" id="contact">
+	<div class="container" id="contact">
 	<h2 class="text-center">
 		Kom i kontakt med os
 	</h2>

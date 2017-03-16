@@ -19,6 +19,7 @@ $factory->define(JobDesk\User::class, function (Faker\Generator $faker) {
         'firstname' => $faker->firstname,
         'middlename' => 'Middlename',
         'lastname' => $faker->lastname,
+        'name' => $faker->firstname . ' Middlename ' . $faker->lastname, 
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
@@ -45,5 +46,14 @@ $factory->define(JobDesk\Message::class, function( Faker\Generator $faker ) {
         'message' => $faker->text,
         'created_at' => Carbon\Carbon::now(),
         'updated_at' => Carbon\Carbon::now()
+    ];
+});
+
+$factory->define(JobDesk\Post::class, function( Faker\Generator $faker ) {
+    return [
+        'title' => $faker->title,
+        'body' => $faker->text,
+        'post_cover' => 'http://uvmbored.com/wp-content/uploads/2015/05/blog.jpg',
+        'user_id' => 1
     ];
 });

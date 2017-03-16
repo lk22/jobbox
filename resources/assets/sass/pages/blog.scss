@@ -1,0 +1,38 @@
+#blog{
+	height: 100%;
+	width: 80%;
+	padding:2rem;
+	
+	
+	
+	.post{
+		padding:2rem;
+		
+
+		
+		.post__cover{
+
+			&:hover{
+				.overlay{
+					display:block;
+					
+					transition: ease-in-out 0.2s all;
+				}
+
+			}
+			.overlay{
+				height: 250px;
+				width: 97%;
+				position:absolute;
+				background: $brand-primary;
+				opacity: .9;
+				display:none;
+				padding:10rem;
+			}
+			img{
+				min-height:250px;
+				width: 100%;
+			}
+		}
+	}
+}

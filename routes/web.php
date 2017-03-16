@@ -22,6 +22,15 @@ Route::get('/', function () {
 	Route::name('about')->get('/about')->uses('PageController@about');
 	Route::name('sitemap')->get('/sitemap')->uses('PageController@sitemap');
 
+	/**
+	 * blog
+	 */
+	
+		Route::prefix('/')->group(function() {
+			Route::name('posts')->get('/blog')->uses('PostController@posts');
+			Route::name('post')->get('/blog/post/{id}')->uses('PostController@post');
+		});
+
 /**
  * contact routes
  */
@@ -36,6 +45,10 @@ Route::get('/', function () {
 
 	Route::name('provider.facebook')->get('/login/facebook')->uses('Auth\LoginController@redirectToFacebook');
 	Route::name('provider.facebook.callback')->get('login/facebook/callback', 'Auth\LoginController@handleFacebookCallback');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 

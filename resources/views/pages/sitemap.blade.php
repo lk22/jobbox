@@ -1,7 +1,7 @@
 @extends('layout')
 @section('page')
 
-<div class="jumbotron" id="sitemap">
+<div id="sitemap">
 	<div class="container">
 		<div class="row">
 		<h2>Sitemap</h2>

@@ -28,6 +28,6 @@ class NewRegisteredMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.registered');
+        return $this->view('emails.registered');
     }
 }

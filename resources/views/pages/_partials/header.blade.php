@@ -1,4 +1,13 @@
 <!-- 
+    logged out component   
+ -->
+@if(Session::has('logout_success'))
+    <div class="container-fluid alert alert success">
+        <h5 class="text-center">{{ Session::get('logout_success') }}</h5>
+    </div>
+@endif
+
+<!-- 
     header component
 -->
 <div class="container-fluid" id="header">

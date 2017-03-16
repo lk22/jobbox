@@ -13,6 +13,37 @@
         <link rel="stylesheet" href="/css/homepage.css">
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRdivLuBDkPNKNhIvjGcT0GHkLG1zSfv8&libraries=places"></script>
+    
+        <!-- Scripts -->
+        <script>
+            window.Laravel = <?php echo json_encode([
+                'csrfToken' => csrf_token(),
+            ]); ?>
+            <?php
+                $default_js_variables = array(
+                    'csrf' => csrf_token(),
+                    'url' => Config::get("app.url"),
+                    'current_url' => request()->url(),
+                    'auth' => array(
+                        // 'id' => auth()->user()->id,
+                        // 'firstname' => auth()->user()->firstname,
+                        // 'middlename' => auth()->user()->middlename,
+                        // 'lastname' => auth()->user()->lastname,
+                        // 'name' => auth()->user()->name,
+                        // 'email' => auth()->user()->email,
+                        // 'avatar' => auth()->user()->avatar,
+                        // 'is_admin' => auth()->users()->is_admin,
+                        // 'has_active_email' => auth()->user()->has_active_email,
+                        // 'dream_job_title' => auth()->user()->dream_job_title
+                    ),
+                    'host' => request()->getHost(),
+                    'environment' => app()->environment()
+                );
+                $js_variables = array_merge($default_js_variables, (isset($js_variables)) ? $js_variables : []);
+                echo 'var JobDesk = ' . json_encode($js_variables) . ';';
+            ?>
+            console.log(JobDesk);
+        </script>
     </head>
     <body id="layout">
 
@@ -48,12 +79,13 @@
 
             $('.headliner').typeIt({
                 speed:100,
-                autoStart:true
+                autoStart:true,
+                loop:true
             }).tiType('Bring orden og kvalitet til din job profil')
-              .tiBreak()
-              .tiBreak()
-              .tiSettings({speed: 100})
-              .tiType('Gem dine Ansøgninger hurtigt og nemt');
+              .tiPause(3)
+              .tiDelete()
+              .tiType('Gem dine ansøgninger hurtigt og nemt')
+              .tiPause(2);
         </script>
         <script src="/js/map.js"></script>
     </body>

@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
     	 */
     	$tables = array(
     		'users',
-            'contact_messages'
+            'contact_messages',
+            'posts'
     	);
 
     	/**
@@ -28,7 +29,8 @@ class DatabaseSeeder extends Seeder
     	 */
     	$seeders = array(
     		UsersTableSeeder::class,
-            ContactMessagesTableSeeder::class
+            ContactMessagesTableSeeder::class,
+            PostsTableSeeder::class
     	);
 
     	 // disable foreign key checks
