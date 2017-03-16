@@ -6,11 +6,11 @@
 		<div class="row">
 		<h2>Sitemap</h2>
 			<ul class="sites">
-				{{-- <li class="site-item">
+				<li class="site-item">
 					<h3>
 						<a href="/blog">Blog</a>
 					</h3>
-				</li> --}}
+				</li>
 				<li class="site-item">
 					<h3>
 						<a href="/signin">Login</a>

@@ -211,6 +211,7 @@
   width: 100%;
   background: #DFEFF9;
   font-family: 'Raleway';
+  overflow-x: hidden;
   @impport 'pages/about';
 }
 
@@ -316,17 +317,17 @@
   padding: 2rem;
 }
 
-#layout #blog .post {
+#layout #blog .blog_post {
   padding: 2rem;
 }
 
-#layout #blog .post .post__cover:hover .overlay {
+#layout #blog .blog_post .blog_post__cover:hover .overlay {
   display: block;
   -webkit-transition: ease-in-out 0.2s all;
   transition: ease-in-out 0.2s all;
 }
 
-#layout #blog .post .post__cover .overlay {
+#layout #blog .blog_post .blog_post__cover .overlay {
   height: 250px;
   width: 97%;
   position: absolute;
@@ -336,9 +337,42 @@
   padding: 10rem;
 }
 
-#layout #blog .post .post__cover img {
+#layout #blog .blog_post .blog_post__cover img {
   min-height: 250px;
   width: 100%;
+}
+
+#layout #post {
+  height: 100%;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#layout #post .post_cover, #layout #post img {
+  height: 450px;
+  width: 99%;
+  margin-top: -5px;
+  z-index: -9999;
+}
+
+#layout #post .post__info {
+  min-height: 100px;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  margin-top: -120px;
+  color: #fff;
+}
+
+#layout #post .post_description {
+  min-height: 350px;
+  width: 80%;
+  background: #fff;
+  overflow-y: visible;
+  padding: 5rem;
+  font-size: 18px;
+  margin: 0 auto;
 }
 
 #layout #head-section {

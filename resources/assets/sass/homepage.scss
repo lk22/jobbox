@@ -49,6 +49,7 @@
 	width: 100%;
 	background: $body-bg;
 	font-family: 'Raleway';
+	overflow-x:hidden;
 	
 	.loader{
 		height:100%;
@@ -76,6 +77,7 @@
 	@import 'pages/auth/_all';
 	@impport 'pages/about';
 	@import 'pages/blog';
+	@import 'pages/post';
 	
 	#head-section{
 		min-height: $head-section-height;
