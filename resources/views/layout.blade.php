@@ -79,7 +79,7 @@
                 $(".loader").show();
             }
             else {
-                $(".loader").delay(500).fadeOut(500);
+                $(".loader").delay(500).fadeOut(200);
             }
 
             $('.headliner').typeIt({
