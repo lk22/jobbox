@@ -23,6 +23,8 @@ class PageController extends Controller
      * product page
      */
     public function product()
+
+    
     {
     	return view('welcome.product');
     }
