@@ -42,6 +42,9 @@ class PostController extends Controller
 		return view('pages.blog.post', compact('post'));
 	}
 
+	/**
+	* create new post ressource
+	*/
 	public function create(CreatePostRequest $request)
 	{
 		$data = $request->all();
