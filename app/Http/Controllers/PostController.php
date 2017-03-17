@@ -42,5 +42,7 @@ class PostController extends Controller
 	public function create(CreatePostRequest $request)
 	{
 		$data = $request->all();
+
+		dd($data);
 	}
 }
