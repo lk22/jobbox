@@ -3,6 +3,7 @@
 namespace JobDesk\Http\Controllers;
 
 use Illuminate\Http\Request;
+use JobDesk\Http\Requests\CreatePostRequest;
 
 use JobDesk\Post;
 
@@ -44,7 +45,7 @@ class PostController extends Controller
 	public function create(CreatePostRequest $request)
 	{
 		$data = $request->all();
-		
+
 		$user = $this->user->whereId(
 			auth()->user()->id
 		)->firstOrFail();
