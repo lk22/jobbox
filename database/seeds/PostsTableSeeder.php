@@ -16,6 +16,6 @@ class PostsTableSeeder extends Seeder
     	/**
     	 * create random posts
     	 */
-        factory(Post::class, rand(1, 5))->create();
+        factory(Post::class, 9)->create();
     }
 }

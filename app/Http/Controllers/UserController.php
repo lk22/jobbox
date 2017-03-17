@@ -3,7 +3,7 @@
 namespace JobDesk\Http\Controllers;
 
 use Storage;
-use Repsonse;
+use Response;
 
 use Illuminate\Http\Request;
 
@@ -28,7 +28,7 @@ class UserController extends Controller
      * get all resources
      * @return void
      */
-    public function all() 
+    public function all()
     {
     	$users = $this->user->all();
 
@@ -47,10 +47,10 @@ class UserController extends Controller
     }
 
     /**
-     * @param  $id users id 
+     * @param  $id users id
      * @return void
      */
-    public function user($id) 
+    public function user($id)
     {
     	$user = $this->findById($id);
 
@@ -84,11 +84,11 @@ class UserController extends Controller
      * @param  CreateUserRequest
      * @return [type]
      */
-    public function create(CreateUserRequest $request) 
+    public function create(CreateUserRequest $request)
     {
     	$data = $request->all();
 
-    	if ( $data ) 
+    	if ( $data )
     	{
 
     		$firstname = $request->get('firstname');
@@ -124,7 +124,7 @@ class UserController extends Controller
     {
     	$data = $request->all();
 
-    	if( $data ) 
+    	if( $data )
     	{
     		$firstname = $request->get('firstname');
     		$middlename = $request->get('middlename');
@@ -140,7 +140,7 @@ class UserController extends Controller
     			'avatar' => $avatar
     		]);
 
-    		$pathFile = Storage::putFile('avatars', $avatar); 
+    		$pathFile = Storage::putFile('avatars', $avatar);
 
     		return (isset($avatar)) ? $pathFile : false;
     	}

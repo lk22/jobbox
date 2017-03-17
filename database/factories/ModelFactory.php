@@ -26,14 +26,7 @@ $factory->define(JobDesk\User::class, function (Faker\Generator $faker) {
         'avatar' => 'http://www.zocom.se/en/assets/frontpanel/images/img.png',
         'is_admin' => rand(0,1),
         'has_active_email' => rand(0,1),
-        'dream_job_title' => $faker->randomElement([
-            'Web Developer',
-            'Auto Mechanic',
-            'Graphic Designer',
-            'SEO manager',
-            'Front-end Developer',
-            'Backend developer'
-        ]),
+        'dream_job_title' => $faker->jobTitle,
         'created_at' => Carbon\Carbon::now(),
         'updated_at' => Carbon\Carbon::now()
     ];
@@ -51,8 +44,8 @@ $factory->define(JobDesk\Message::class, function( Faker\Generator $faker ) {
 
 $factory->define(JobDesk\Post::class, function( Faker\Generator $faker ) {
     return [
-        'title' => $faker->title,
-        'body' => $faker->text,
+        'title' => $faker->words(rand(2, 5), true),
+        'body' => $faker->paragraphs(rand(5, 20), true),
         'post_cover' => 'http://uvmbored.com/wp-content/uploads/2015/05/blog.jpg',
         'user_id' => 1
     ];

@@ -74,12 +74,12 @@ class PageController extends Controller
                 'message' => $message
             ]);
 
-            // send mail 
+            // send mail
             Mail::to(
                 $request->get('email') // to senders email
             )->send(
-                new sendContactMessageMail( 
-                    $request->all() 
+                new sendContactMessageMail(
+                    $request->all()
                 )
             );
         }

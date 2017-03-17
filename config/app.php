@@ -168,6 +168,7 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Lubusin\Decomposer\DecomposerServiceProvider::class,
 
         /*
          * Application Service Providers...

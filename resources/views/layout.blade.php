@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/css/homepage.css">
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRdivLuBDkPNKNhIvjGcT0GHkLG1zSfv8&libraries=places"></script>
-    
+
         <!-- Scripts -->
         <script>
             window.Laravel = <?php echo json_encode([
@@ -47,29 +47,34 @@
     </head>
     <body id="layout">
 
-        <!-- 
+        <!--
             loader component
          -->
         <div class="loader">
             <div class="cp-spinner cp-meter"></div>
         </div>
-        
+
         @include('pages._partials.header')
 
-        <!-- 
-            page content 
+        <!--
+            page content
         -->
         @yield('page')
 
-        <!-- 
+
+        <!--
             footer component
          -->
         @include('pages._partials.footer')
 
+        @include('pages._partials.signinmodal')
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.3.0/typeit.min.js"></script>
         <script>
-            if(!$(document).ready()) 
+            if(!$(document).ready())
             {
                 $(".loader").show();
             }

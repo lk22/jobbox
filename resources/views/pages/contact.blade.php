@@ -7,7 +7,7 @@
 	</h2>
 	<br>
 	@if(Session::has('success'))
-		<div class="alert alert-success"><p class="text-center">{{ Session::get('success') }}</p></div>
+		<div class="alert alert-success"><p class="text-center">{{ Session::get('success') }} <a href="/">klik her</a> for at går tilbage</p></div>
 	@endif
 		<form action="" method="post" class="col-md-6 col-md-offset-3">
 			{!! csrf_field() !!}

@@ -21,5 +21,8 @@
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.16.0"
+  },
+  "devDependencies": {
+    "elm": "^0.18.0"
   }
 }

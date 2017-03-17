@@ -19,9 +19,14 @@
     <div class="col-xs-10 col-sm-10 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-7">
 
      <ul class="menu-list">
-         <li class="list-item"><a href="/join">Tilmeld</a></li>
-         <li class="list-item"><a href="/signin">login</a></li>
-         <li class="list-item"><a href="/contact">Kontakt</a></li>
+        @if(auth()->user())
+            <li class="list-item"><a href="#">{{auth()->user()->firstname}}</a></li>
+            <li class="list-item"><a href="{{ route('logout') }}">Logout</a></li>    
+        @else
+             <li class="list-item"><a href="/join">Tilmeld</a></li>
+             <li class="list-item"><a href="/signin">login</a></li>
+        @endif
+        <li class="list-item"><a href="/contact">Kontakt</a></li>
      </ul>
 
     </div>

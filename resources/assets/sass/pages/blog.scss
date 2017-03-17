@@ -4,9 +4,13 @@
 	padding:2rem;
 	
 	.blog_post{
-		padding:2rem;
+		background:#fff;
+		border-bottom: 10px solid #DFEFF9;
+		border-right: 10px solid #DFEFF9;
 		
 		.blog_post__cover{
+			padding:1rem;
+
 			&:hover{
 				.overlay{
 					display:block;
@@ -17,7 +21,7 @@
 			}
 			.overlay{
 				height: 250px;
-				width: 97%;
+				width: 94%;
 				position:absolute;
 				background: $brand-primary;
 				opacity: .9;
@@ -28,6 +32,10 @@
 				min-height:250px;
 				width: 100%;
 			}
+		}
+
+		.blogpost_description{
+			padding:1.5rem;
 		}
 	}
 }

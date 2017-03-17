@@ -318,7 +318,13 @@
 }
 
 #layout #blog .blog_post {
-  padding: 2rem;
+  background: #fff;
+  border-bottom: 10px solid #DFEFF9;
+  border-right: 10px solid #DFEFF9;
+}
+
+#layout #blog .blog_post .blog_post__cover {
+  padding: 1rem;
 }
 
 #layout #blog .blog_post .blog_post__cover:hover .overlay {
@@ -329,7 +335,7 @@
 
 #layout #blog .blog_post .blog_post__cover .overlay {
   height: 250px;
-  width: 97%;
+  width: 94%;
   position: absolute;
   background: #06506B;
   opacity: .9;
@@ -342,6 +348,10 @@
   width: 100%;
 }
 
+#layout #blog .blog_post .blogpost_description {
+  padding: 1.5rem;
+}
+
 #layout #post {
   height: 100%;
   width: 100%;
@@ -350,7 +360,7 @@
 }
 
 #layout #post .post_cover, #layout #post img {
-  height: 450px;
+  height: 550px;
   width: 99%;
   margin-top: -5px;
   z-index: -9999;

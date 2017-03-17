@@ -50,6 +50,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Auth::routes();
+/**
+ * decomposer route
+ */
 
-Route::get('/home', 'HomeController@index');
+	Route::group(['middleware' => 'auth'], function() {
+		Route::get('decompose', '\Lubusin\Decomposer\Controllers\DecomposerController@index');
+	});
