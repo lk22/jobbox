@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use JobDesk\Post;
 
+use Storage;
+
 class PostController extends Controller
 {
 	/**
