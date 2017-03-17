@@ -23,8 +23,6 @@ class PageController extends Controller
      * product page
      */
     public function product()
-
-    
     {
     	return view('welcome.product');
     }
@@ -86,7 +84,7 @@ class PageController extends Controller
             );
         }
 
-        Session::flash('success', 'Din Besked er blevet send vi respondere hurtigst muligt');
+        Session::flash('success', 'Din Besked er blevet sendt vi respondere hurtigst muligt');
 
         return redirect()->route('contact'); // redirect back to last visited page
     }
