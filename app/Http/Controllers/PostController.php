@@ -43,6 +43,6 @@ class PostController extends Controller
 	{
 		$data = $request->all();
 
-		dd($data);
+		dd($data); // debug we get the right data from request
 	}
 }
