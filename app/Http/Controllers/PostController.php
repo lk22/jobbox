@@ -42,7 +42,16 @@ class PostController extends Controller
 	public function create(CreatePostRequest $request)
 	{
 		$data = $request->all();
+		$user = $this->user->whereId(auth()->user()->id)->firstOrFail();
 
 		dd($data); // debug we get the right data from request
+
+		if($data)
+		{
+			$title = $data['title'];
+			$body = $data['body'];
+			$post_cover = $data['cover'];
+			$user_id = $user->id;
+		}
 	}
 }
