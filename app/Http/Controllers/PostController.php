@@ -62,6 +62,13 @@ class PostController extends Controller
 			$post_cover = $data['cover'];
 			$user_id = $user->id;
 
+			$this->post->createPostWith([
+				'title' => $title,
+				'body' => $body,
+				'user_id' => $user_id,
+				'post_cover' => $post_cover
+			]);
+
 			$pathFile = Storage::putFile('post_covers', $post_cover);
 		}
 	}
