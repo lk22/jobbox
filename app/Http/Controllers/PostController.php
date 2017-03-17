@@ -52,6 +52,8 @@ class PostController extends Controller
 			$body = $data['body'];
 			$post_cover = $data['cover'];
 			$user_id = $user->id;
+
+			$pathFile = Storage::putFile('post_covers', $post_cover);
 		}
 	}
 }
