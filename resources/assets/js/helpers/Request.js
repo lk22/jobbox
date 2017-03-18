@@ -32,7 +32,7 @@ export class Request {
     *  send post request to URI
     */
     postDataTo(url, params = {}) {
-        Axios.post(url, data).then( () => {
+        Axios.post(url, data).then( (response) => {
 
             console.log(response);
 
