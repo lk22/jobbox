@@ -1,6 +1,6 @@
 var Axios = require('axios');
 
-class Request {
+export class Request {
 
     /**
     * url => API to hit request to
