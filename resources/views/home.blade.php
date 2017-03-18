@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        hello {{ Auth::user()->firstname }} {{ Auth::user()->lastname }}
+        <p class="flow-text">hello {{ Auth::user()->firstname }} {{ Auth::user()->lastname }}<p>
     </div>
 
 @endsection
