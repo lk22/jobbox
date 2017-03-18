@@ -14,7 +14,7 @@ class JobDesk
     }
 
     html(element, appending){
-        return $(element).html(appending);
+        return $(element).append(appending);
     }
 }
 
