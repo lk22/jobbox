@@ -26,6 +26,7 @@
 #app-header #app-navbar-collapse .nav li.dropdown > .menu {
   color: #fff;
   background: #3F51B5;
+  padding: 0px;
 }
 
 /*!
