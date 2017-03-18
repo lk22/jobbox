@@ -6,7 +6,7 @@ export class Request {
     * url => API to hit request to
     */
     sendGetRequestTo( url, api = null, data ) {
-        if(api typeof null){
+        if(api === null){
             Axios.get(url).then( (response) => {
 
                 console.log(data);
