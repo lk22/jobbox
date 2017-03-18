@@ -28,4 +28,4 @@ export class Request {
     }
 }
 
-export default eequest;
+export default Request;
