@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use JobDesk\User;
 use JobDesk\Post;
 
+
 class HomeController extends Controller
 {
     /**
@@ -13,7 +14,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $user, Post $post)
     {
         $this->middleware('auth');
     }
