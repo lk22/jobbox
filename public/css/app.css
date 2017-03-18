@@ -23,6 +23,10 @@
   background: #3F51B5;
 }
 
+#app-header #app-navbar-collapse .nav .menu {
+  color: #fff;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
