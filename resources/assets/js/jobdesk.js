@@ -10,6 +10,6 @@ class App
 {
     constructor()
     {
-        
+        this.helper = new Helper;
     }
 }
