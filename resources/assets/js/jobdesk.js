@@ -1,4 +1,4 @@
-import Request from './helpers/Request.js';
+import Request from './helpers/request.js';
 
 /**
 * main app class
