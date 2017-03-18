@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-import Helper from 'helpers/Helper.js';
+import Request from 'helpers/Request.js';
 
 /**
 * main app class
@@ -10,6 +10,6 @@ class App
 {
     constructor()
     {
-        this.helper = new Helper;
+        this.request = new Request;
     }
 }
