@@ -25,7 +25,7 @@ Route::get('/', function () {
 	/**
 	 * blog
 	 */
-	
+
 		Route::prefix('/')->group(function() {
 			Route::name('posts')->get('/blog')->uses('PostController@posts');
 			Route::name('post')->get('/blog/post/{id}')->uses('PostController@post');
@@ -48,7 +48,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::name('home')->get('/home', 'HomeController@index');
 
 /**
  * decomposer route
