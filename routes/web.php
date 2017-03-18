@@ -48,7 +48,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::name('home')->get('/home', 'HomeController@index');
+Route::name('home')->get('/home', 'AppController@index');
 
 /**
  * decomposer route
