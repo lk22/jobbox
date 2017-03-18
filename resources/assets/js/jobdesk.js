@@ -12,4 +12,4 @@ class JobDesk
     }
 }
 
-new App();
+new JobDesk();
