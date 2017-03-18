@@ -3,6 +3,8 @@
 namespace JobDesk\Http\Controllers;
 
 use Illuminate\Http\Request;
+use JobDesk\User;
+use JobDesk\Post;
 
 class HomeController extends Controller
 {
