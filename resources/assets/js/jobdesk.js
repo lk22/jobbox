@@ -7,7 +7,7 @@ class JobDesk
 {
     constructor()
     {
-        this.request = new Request;
+        this.request = new Request)=;
         console.log(this.request);
     }
 }
