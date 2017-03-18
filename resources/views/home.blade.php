@@ -2,6 +2,6 @@
 
 @section('content')
 
-<span class="new badge">Badge</span>
+<md-checkbox>content</md-checkbox>
 
 @endsection
