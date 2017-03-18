@@ -13,8 +13,8 @@ class JobDesk
         this.html(<p>Hello</p>);
     }
 
-    html(html){
-        return (html);
+    html(element, append){
+        return element.html();
     }
 }
 
