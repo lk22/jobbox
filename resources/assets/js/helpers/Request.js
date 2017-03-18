@@ -2,6 +2,14 @@ var Axios = require('axios');
 
 export class Request {
 
+    defineDefaults(baseURL, headers = [], defaultMethod){
+        Axios.create({
+            baseUrl: baseURL,
+            headers: headers,
+            method: defaultMethod
+        });
+    }
+
     /**
     * url => API to hit request to
     */
