@@ -1,4 +1,4 @@
-const Request = require('./helpers/requests.js');
+const Request = require('./helpers/Request.js');
 
 /**
 * main app class
