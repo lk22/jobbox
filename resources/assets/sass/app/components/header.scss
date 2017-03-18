@@ -19,12 +19,11 @@
                 &.dropdown > a{
                     background: #3F51B5;
                 }
-            }
+                &.dropdown > .menu {
+                    color: #fff;
+                    background: #3F51B5;
+                }
 
-            .menu{
-                color: #fff;
-                background: #3F51B5;
-            }
         }
     }
 }
