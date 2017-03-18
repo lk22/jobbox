@@ -23,7 +23,7 @@ class Request {
     /**
     * return following data
     */
-    getData(data){
+    getData( data ){
         return data;
     }
 }
