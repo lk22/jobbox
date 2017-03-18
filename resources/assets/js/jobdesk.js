@@ -11,5 +11,6 @@ class App
     constructor()
     {
         this.request = new Request;
+        console.log(this.request);
     }
 }
