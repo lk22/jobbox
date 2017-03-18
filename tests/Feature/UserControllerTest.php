@@ -15,7 +15,7 @@ class UserControllerTest extends TestCase
     public function all() {
         $this->get(route('api.users.all'))->assertStatus(200);
 
-        $this->json('', route('api.users.all'))->assertJsonStructure([
+        $this->json('GET', route('api.users.all'))->assertJsonStructure([
             '*' => [
                 'firstname',
                 'middlename',
