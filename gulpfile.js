@@ -17,5 +17,5 @@ elixir((mix) => {
 	mix.sass('homepage.scss');
 	mix.sass('emails.scss');
 	mix.sass('app.scss');
-    //    .webpack('app.js');
+       .webpack('app.js');
 });
