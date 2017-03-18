@@ -1,9 +1,21 @@
-var axios = require('axios');
+var Axios = require('axios');
 
 class Request {
 
-    constructor() {
-        this.axios = new Axios;
+    /**
+    * url => API to hit request to
+    */
+    sendGetRequestTo(url, API = null, data) {
+        Axios.get(url).then( (response) => {
+
+            console.log(data);
+            return data;
+
+        }).catch((response) => {
+
+
+
+        });
     }
 
 }
