@@ -33,8 +33,8 @@
                     'email' => auth()->user()->email,
                     'avatar' => auth()->user()->avatar,
                     'is_admin' => auth()->user()->is_admin,
-                    // 'has_active_email' => auth()->user()->has_active_email,
-                    // 'dream_job_title' => auth()->user()->dream_job_title,
+                    'has_active_email' => auth()->user()->has_active_email,
+                    'dream_job_title' => auth()->user()->dream_job_title,
                 ),
                 'host' => request()->getHost(),
                 'environment' => app()->environment()

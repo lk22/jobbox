@@ -1,3 +1,4 @@
+var Axios = require('axios');
 
 export class Request {
 
@@ -6,7 +7,16 @@ export class Request {
     */
     sendGetRequestTo( url, api = null, data ) {
         if(api typeof null){
-            
+            Axios.get(url).then( (response) => {
+
+                console.log(data);
+                this.getData(data)
+
+            }).catch((response) => {
+
+                console.log(response);
+
+            });
         }
     }
 
