@@ -29,6 +29,11 @@
   padding: 0px;
 }
 
+#app-header #app-navbar-collapse .nav li.dropdown > .dropdown-menu:hover {
+  color: #fff;
+  background: #3F51B5;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
