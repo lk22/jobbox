@@ -6,9 +6,17 @@ class Request {
     * url => API to hit request to
     */
     sendGetRequestTo( url, api = null, data ) {
-        var api = api;
         if(api typeof null){
+            Axios.get(url).then( (response) => {
 
+                console.log(data);
+                this.getData(data)
+
+            }).catch((response) => {
+
+                console.log(response);
+
+            });
         }
     }
 
@@ -19,5 +27,3 @@ class Request {
         return data;
     }
 }
-
-export default Request;
