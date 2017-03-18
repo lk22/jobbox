@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import Request from './helpers/Request.js';
+import Request from 'helpers/Request.js';
 
 /**
 * main app class
