@@ -30,7 +30,7 @@
 }
 
 #app-header #app-navbar-collapse .nav li.dropdown > .dropdown-menu:hover {
-  color: #fff;
+  color: #000;
   background: #3F51B5;
 }
 
