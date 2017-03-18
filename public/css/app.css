@@ -10,26 +10,26 @@
   color: #fff;
 }
 
-#app-header #app-navbar-collapse .navbar .nav {
+#app-header #app-navbar-collapse .nav {
   background: #3F51B5;
   margin: -2px;
 }
 
-#app-header #app-navbar-collapse .navbar .nav li a {
+#app-header #app-navbar-collapse .nav li a {
   color: #fff;
 }
 
-#app-header #app-navbar-collapse .navbar .nav li.dropdown > a {
+#app-header #app-navbar-collapse .nav li.dropdown > a {
   background: #3F51B5;
 }
 
-#app-header #app-navbar-collapse .navbar .nav li.dropdown > .dropdown-menu {
+#app-header #app-navbar-collapse .nav li.dropdown > .dropdown-menu {
   color: #fff;
   background: #3F51B5;
   padding: 0px;
 }
 
-#app-header #app-navbar-collapse .navbar .nav li.dropdown > .dropdown-menu:hover {
+#app-header #app-navbar-collapse .nav li.dropdown > .dropdown-menu:hover {
   color: #fff;
   background: #3F51B5;
 }
