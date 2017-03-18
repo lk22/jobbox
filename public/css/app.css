@@ -12,6 +12,7 @@
 
 #app-header #app-navbar-collapse .nav {
   background: #3F51B5;
+  margin-top: -2px;
 }
 
 #app-header #app-navbar-collapse .nav li a {
