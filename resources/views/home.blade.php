@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <a class="waves-effect waves-light btn" onclick="toast('<span>Item Deleted</span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)">Toast!</a>
+    <button type="button" class="btn${3-large} disabled"><i class="material-icons right">"></i></button>
 
 @endsection
