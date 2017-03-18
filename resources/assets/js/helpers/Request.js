@@ -12,9 +12,9 @@ export class Request {
                 console.log(data);
                 this.getData(data)
 
-            }).catch((response) => {
+            }).catch((data) => {
 
-                console.log(response);
+                console.log(data);
 
             });
         }
