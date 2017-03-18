@@ -19,3 +19,5 @@ class Request {
         return data;
     }
 }
+
+export default Request;
