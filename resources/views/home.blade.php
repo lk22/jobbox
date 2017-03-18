@@ -2,11 +2,6 @@
 
 @section('content')
 
-    <label>Browser Select</label>
-    <select class="browser-default" disabled>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-    </select>
+    <meter value="" min="0" max="100"></meter>
 
 @endsection
