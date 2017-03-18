@@ -30,7 +30,7 @@
                     'middlename' => auth()->user()->middlename,
                     'lastname' => auth()->user()->lastname,
                     'name' => auth()->user()->name,
-                    // 'email' => auth()->user()->email,
+                    'email' => auth()->user()->email,
                     // 'avatar' => auth()->user()->avatar,
                     // 'is_admin' => auth()->users()->is_admin,
                     // 'has_active_email' => auth()->user()->has_active_email,
