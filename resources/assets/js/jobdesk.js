@@ -1,4 +1,4 @@
-import Request from './helpers/request.js';
+const Request = require('./helpers/request.js');
 
 /**
 * main app class
