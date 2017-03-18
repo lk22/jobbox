@@ -25,16 +25,16 @@
                     'url' => Config::get("app.url"),
                     'current_url' => request()->url(),
                     'auth' => array(
-                        'id' => auth()->user()->id,
-                        'firstname' => auth()->user()->firstname,
-                        'middlename' => auth()->user()->middlename,
-                        'lastname' => auth()->user()->lastname,
-                        'name' => auth()->user()->name,
-                        'email' => auth()->user()->email,
-                        'avatar' => auth()->user()->avatar,
-                        'is_admin' => auth()->users()->is_admin,
-                        'has_active_email' => auth()->user()->has_active_email,
-                        'dream_job_title' => auth()->user()->dream_job_title
+                        'id' => Auth::user()->id,
+                        'firstname' => Auth::user()->firstname,
+                        'middlename' => Auth::user()->middlename,
+                        'lastname' => Auth::user()->lastname,
+                        'name' => Auth::user()->name,
+                        'email' => Auth::user()->email,
+                        'avatar' => Auth::user()->avatar,
+                        'is_admin' => Auth::users()->is_admin,
+                        'has_active_email' => Auth::user()->has_active_email,
+                        'dream_job_title' => Auth::user()->dream_job_title
                     ),
                     'host' => request()->getHost(),
                     'environment' => app()->environment()
