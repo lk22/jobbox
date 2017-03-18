@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <span class="new badge" data-badge-caption="custom caption">4</span>
+    <button type="button" class="waves-effect waves-teal btn-flat"><i class="mdi-content-add"></i></button>
 
 @endsection
