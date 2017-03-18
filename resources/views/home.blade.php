@@ -2,8 +2,8 @@
 
 @section('content')
 
-<button md-icon-button>
-  <md-icon class="icon"></md-icon>
-</button>
+<div class="chip">
+  Tag <i class="material-icons">close</i>
+</div>
 
 @endsection
