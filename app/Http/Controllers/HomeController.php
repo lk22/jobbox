@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use JobDesk\User;
 use JobDesk\Post;
 
-
 class HomeController extends Controller
 {
     /**
@@ -21,8 +20,6 @@ class HomeController extends Controller
 
         $this->middleware('auth');
     }
-
-
 
     /**
      * Show the application dashboard.
