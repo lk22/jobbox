@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 import Request from './helpers/Request.js';
 
 /**
