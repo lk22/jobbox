@@ -12,4 +12,4 @@ class JobDesk
     }
 }
 
-new JobDesk;
+new JobDesk();
