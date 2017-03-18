@@ -10,11 +10,11 @@ class JobDesk
         this.request = new Request;
         console.log(this.request);
 
-        this.html(<p>Hello</p>);
+        this.html("<p>Hello</p>"");
     }
 
-    html(element, append){
-        return element.html();
+    html(element, appending){
+        return element.html(appending);
     }
 }
 
