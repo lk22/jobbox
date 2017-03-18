@@ -5,17 +5,20 @@ class Request {
     /**
     * url => API to hit request to
     */
-    sendGetRequestTo(url, API = null, data) {
-        Axios.get(url).then( (response) => {
+    sendGetRequestTo(url, api = null, data) {
+        if(api typeof null){
+            Axios.get(url).then( (response) => {
 
-            console.log(data);
-            return data;
+                console.log(data);
+                return data;
 
-        }).catch((response) => {
+            }).catch((response) => {
 
 
 
-        });
+            });
+        }
+        
     }
 
 }
