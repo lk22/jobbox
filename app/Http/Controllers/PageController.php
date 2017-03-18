@@ -52,7 +52,7 @@ class PageController extends Controller
     }
 
     /**
-     * send contact message
+     * send message from contact form
      */
     public function sendContact(CreateContactMessageRequest $request)
     {
