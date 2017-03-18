@@ -25,9 +25,13 @@ export class Request {
     */
     postDataTo(url, data = {}) {
         Axios.post(url, data).then( () => {
-            consolo.log(response);
-        }).catch( (response) => {
+
             console.log(response);
+
+        }).catch( (response) => {
+
+            console.log(response);
+
         });
     }
 
