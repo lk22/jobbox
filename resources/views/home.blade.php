@@ -2,6 +2,6 @@
 
 @section('content')
 
-<!-- content goes here -->
+
 
 @endsection
