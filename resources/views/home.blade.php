@@ -2,6 +2,8 @@
 
 @section('content')
 
-    <button type="button" class="btn${3-large} disabled"><i class="material-icons right">"></i></button>
+    <div class="container">
+        
+    </div>
 
 @endsection
