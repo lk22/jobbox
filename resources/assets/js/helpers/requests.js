@@ -10,7 +10,7 @@ class Request {
             Axios.get(url).then( (response) => {
 
                 console.log(data);
-                return data;
+                this.getData(response.data)
 
             }).catch((response) => {
 
@@ -18,7 +18,12 @@ class Request {
 
             });
         }
-        
     }
 
+    /**
+    * return following data
+    */
+    getData(data){
+        return data;
+    }
 }
