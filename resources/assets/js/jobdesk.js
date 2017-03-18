@@ -14,3 +14,5 @@ class App
         console.log(this.request);
     }
 }
+
+new App();
