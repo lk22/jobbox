@@ -21,6 +21,17 @@ export class Request {
     }
 
     /**
+    *  send post request to URI
+    */
+    postDataTo(url, data = {}) {
+        Axios.post(url, data).then( () => {
+            consolo.log(response);
+        }).catch( (response) => {
+            console.log(response);
+        });
+    }
+
+    /**
     * return following data
     */
     getData( data ){
