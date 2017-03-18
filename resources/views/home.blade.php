@@ -2,6 +2,11 @@
 
 @section('content')
 
-    <a class="btn" onclick="toast('I am a toast', 4000)">Toast!</a>
+    <label>Browser Select</label>
+    <select class="browser-default" disabled>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </select>
 
 @endsection
