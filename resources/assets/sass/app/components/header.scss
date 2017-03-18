@@ -3,34 +3,16 @@
     width: 100%;
     background-color: #3F51B5;
 
-    .navbar-header > .navbar-brand{
-        color: #fff;
-    }
+    .nav-wrapper{
 
-    #app-navbar-collapse{
-        .nav {
-            background: #3F51B5;
-            margin:-2px;
+        .brand-logo{
+            top:-10px;
+            margin-left:10px;
+        }
 
+        .right{
             li{
-                a{
-                    color: #fff;
-                }
-
-                &.dropdown > a{
-                    background: #3F51B5;
-                }
-
-                &.dropdown > .dropdown-menu {
-                    color: #fff;
-                    background: #3F51B5;
-                    padding: 0px;
-
-                    &:hover{
-                        color: #000;
-                        background: #3F51B5;
-                    }
-                }
+                line-height: 39px;
             }
         }
     }

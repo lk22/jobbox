@@ -1,6 +1,8 @@
 @import 'variables/welcome_variables';
 @import 'keyframes/_all';
 @import 'pages/components/_all';
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @keyframes color {
 	0% {
