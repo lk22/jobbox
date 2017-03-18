@@ -14,7 +14,7 @@ class Request {
 
             }).catch((response) => {
 
-
+                console.log(response);
 
             });
         }
