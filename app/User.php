@@ -8,6 +8,8 @@ use JobDesk\Traits\Crudable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use JobDesk\Post;
+
 class User extends Authenticatable
 {
     use Notifiable, Crudable, ErrorHandable;
