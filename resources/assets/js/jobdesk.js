@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-
-let Request = require('./helpers/Request.js');
+import Request from './helpers/Request.js';
 
 /**
 * main app class
