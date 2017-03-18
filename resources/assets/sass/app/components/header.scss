@@ -2,10 +2,18 @@
     height: 40px;
     width: 100%;
     background-color: #3F51B5;
-    color: #fff;
-
 
     .navbar-header > .navbar-brand{
         color: #fff;
+    }
+
+    #app-navbar-collapse{
+        .nav {
+            li{
+                a{
+                    color: #fff;
+                }
+            }
+        }
     }
 }
