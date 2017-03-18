@@ -7,7 +7,7 @@ export class Request {
     */
     sendGetRequestTo( url, api = null, data ) {
         if(api === null){
-            Axios.get(url).then( (response) => {
+            Axios.get(url).then( (data) => {
 
                 console.log(data);
                 this.getData(data)
