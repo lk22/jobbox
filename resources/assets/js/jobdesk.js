@@ -3,7 +3,7 @@ import Request from './helpers/request.js';
 /**
 * main app class
 */
-class App
+class JobDesk
 {
     constructor()
     {
