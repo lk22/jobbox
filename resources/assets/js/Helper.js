@@ -6,5 +6,5 @@ export class Helper {
         this.request = new Request;
     }
 
-
 }
+export default Helper;
