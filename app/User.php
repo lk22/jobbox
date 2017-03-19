@@ -66,7 +66,7 @@ class User extends Authenticatable
     /**
      * find user by id
      */
-    public function findById($id) {
+    public function findBySlug($slug) {
         return $this->whereId($id)->get();
     }
 
