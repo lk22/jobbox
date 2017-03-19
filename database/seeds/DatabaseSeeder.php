@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
     	$tables = array(
     		'users',
             'contact_messages',
-            'posts'
+            'posts',
+            'job_applications'
     	);
 
     	/**
