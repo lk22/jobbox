@@ -43,4 +43,12 @@ class Helper {
             this.getResponse(response);
         });
     }
+
+    sendUpdateRequest(url, data = {}, response) {
+        Axios.post(url, data).then(( response ) => {
+            this.getResponse(response);
+        }).catch(( response ) => {
+            this.getResponse(response);
+        });
+    }
 }
