@@ -14,7 +14,7 @@
                     </div>
                     <div class="col s2 m4 push-m1 l4 push-l1">
                         <p>
-                            Welcome {{ auth()->user()->name }}
+                            <strong>W</strong>elcome {{ auth()->user()->name }}
                         </p>
                     </div>
                 </div>
