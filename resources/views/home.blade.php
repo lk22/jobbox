@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col l3 push-l2">
-                hello
+                <p class="text-center"></p>
             </div>
 
             <div class="col l3 push-l2">
