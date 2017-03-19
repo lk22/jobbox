@@ -35,9 +35,9 @@ class PostController extends Controller
 		return view('pages.blog.posts', compact('posts'));
 	}
 
-	public function post($id)
+	public function post($slug)
 	{
-		$post = $this->post->with('user')->whereId($id)->firstOrFail();
+		$post = $this->post->with('user')->whereSlug($slug)->firstOrFail();
 
 		return view('pages.blog.post', compact('post'));
 	}
