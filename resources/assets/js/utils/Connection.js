@@ -17,8 +17,8 @@ export class Connection {
     * Check the clients internet connection
     */
     checkConnection() {
-        const client = navigator;
-        const container = this.component;
+        var client = navigator;
+        var container = this.component;
 
         if (client.online === false) {
 

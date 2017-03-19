@@ -124,11 +124,11 @@ Connection.prototype.checkConnection = function checkConnection () {
     var client = navigator;
     var container = this.component;
 
-    if(client.online === false) {
+    if (client.online === false) {
 
-        for( var time = 5; time <= 5; time--) {
+        for (var time = 5; time <= 5; time--) {
 
-            if( time < 0 ) {
+            if (time < 0) {
 
                 this$1.request.send('', window.location.url, function(response) {
 
@@ -136,7 +136,7 @@ Connection.prototype.checkConnection = function checkConnection () {
 
                     this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
-                }, function(response) {
+                }, function (response) {
 
                     console.log(response);
 
@@ -146,11 +146,11 @@ Connection.prototype.checkConnection = function checkConnection () {
 
         }
 
-        setTimeout( function() {
+        setTimeout(function() {
 
-				window.location.reload(1);
+            window.location.reload(1);
 
-			}, 5000);
+        }, 5000);
 
     }
 };
