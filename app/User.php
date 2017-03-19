@@ -23,7 +23,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'middlename', 'lastname', 'email', 'password', 'avatar', 'dream_job_title',
+        'firstname', 'middlename', 'lastname', 'slug', 'email', 'password', 'avatar', 'dream_job_title',
     ];
 
     /**
@@ -67,7 +67,7 @@ class User extends Authenticatable
      * find user by id
      */
     public function findBySlug($slug) {
-        return $this->whereId($id)->get();
+        return $this->whereSlug($slug)->get();
     }
 
     /**
