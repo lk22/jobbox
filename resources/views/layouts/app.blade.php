@@ -53,7 +53,7 @@
         @include('layouts._partials.ethernetComponent')
 
         <div id="app">
-
+            @yield('content')
         </div>
     </div>
 
