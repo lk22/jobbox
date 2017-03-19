@@ -20,7 +20,7 @@
                         <h6 class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></h6>
 
                             @if(auth()->user()->has_active_email)
-                                <h5 style="text-decoration:underline">Bruger er aktiv</h5>
+                                <h5 style="text-decoration:underline; color:#2ab27b;">Bruger er aktiv</h5>
                             @else
                                 <span class="badge red">Bruger er ikke aktiv</span> <span> tjek din mail </span>
                             @endif
