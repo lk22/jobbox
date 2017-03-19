@@ -50,6 +50,9 @@ class Request {
 
     }
 
+    /**
+    * returning the current response from each request
+    */
     getResponse(response) {
 
         return response;
