@@ -1,5 +1,5 @@
 
-class Request {
+export class Request {
 
     /**
     * sending default request on making new instance
