@@ -269,7 +269,7 @@ eval("'use strict';\n\n/**\n * Syntactic sugar for invoking a function and expan
 /* 29 */
 /***/ function(module, exports) {
 
-eval("var Component = function Component () {};\n\nComponent.prototype.build = function build (component) {\n        \n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjkuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vcmVzb3VyY2VzL2Fzc2V0cy9qcy9oZWxwZXJzL0NvbXBvbmVudC5qcz8xOGU0Il0sInNvdXJjZXNDb250ZW50IjpbImNsYXNzIENvbXBvbmVudCB7XG4gICAgYnVpbGQoY29tcG9uZW50KSB7XG4gICAgICAgIFxuICAgIH1cbn1cblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyByZXNvdXJjZXMvYXNzZXRzL2pzL2hlbHBlcnMvQ29tcG9uZW50LmpzIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBREE7QUFDQTtBQUVBOyIsInNvdXJjZVJvb3QiOiIifQ==");
+eval("var Component = function Component () {};\n\nComponent.prototype.build = function build (component) {\n    $('#app').append(component);\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjkuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vcmVzb3VyY2VzL2Fzc2V0cy9qcy9oZWxwZXJzL0NvbXBvbmVudC5qcz8xOGU0Il0sInNvdXJjZXNDb250ZW50IjpbImNsYXNzIENvbXBvbmVudCB7XG4gICAgYnVpbGQoY29tcG9uZW50KSB7XG4gICAgICAgICQoJyNhcHAnKS5hcHBlbmQoY29tcG9uZW50KTtcbiAgICB9XG59XG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gcmVzb3VyY2VzL2Fzc2V0cy9qcy9oZWxwZXJzL0NvbXBvbmVudC5qcyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQURBO0FBRUE7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }
 /******/ ]);
