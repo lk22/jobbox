@@ -1,6 +1,7 @@
 
 import Request from './helpers/Request.js';
 import Component from './helpers/Component.js';
+import Connection from './utils/Connection.js';
 
 export class Helper {
 
