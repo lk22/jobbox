@@ -80,7 +80,7 @@ class Request {
     * Axios POST request
     * @param url = the url to send request to
     */
-    sendPostRequest(url, data = {}, response) {
+    sendPostRequest(url, data = {}) {
 
         Axios.post(url, data).then(( response ) => {
 
@@ -94,7 +94,7 @@ class Request {
 
     }
 
-    sendUpdateRequest(url, data = {}, response) {
+    sendUpdateRequest(url, data = {}) {
 
         Axios.put(url, data).then(( response ) => {
 
