@@ -94,7 +94,7 @@ class Request {
     * Axios DELETE request
     * @param url = the url to make a request to
     */
-    sendDeleteRequest(url, method, ) {
+    sendDeleteRequest(url, success, failure ) {
 
         $.get({
             url: url
