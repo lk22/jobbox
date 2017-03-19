@@ -23,6 +23,11 @@ class Helper {
         }
     }
 
+    getResponse(response) {
+        return response;
+        console.log(response);
+    }
+
     sendGetRequestTo(url, response) {
         Axios.get(url).then((response) => {
             this.getResponse(response);
