@@ -2,8 +2,16 @@ import Axios from 'axios';
 
 class Request {
 
+    constructor(method, url, data, response) {
+        super(method, url, data, response);
+        this.method = method;
+        this.url = url;
+        this.data = data;
+        this.response = response;
+        this.sendAxiosRequest(
 
-
+        )
+    }
     sendAxiosRequest(method, url, data = null, response) {
         switch (method) {
             case 'POST':
@@ -17,6 +25,7 @@ class Request {
             case 'DELETE':
                 this.sendDeleteRequest(url, response);
                 break;
+
             default:
                 this.sendGetRequestTo(url, response);
             break;
