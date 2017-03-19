@@ -8,11 +8,6 @@ import { usersReducer, userReducer, tagsReducer, feedReducer, cookieReducer} fro
 export var configure = (state = {}) => {
 	var reducers = redux.combineReducers({
 		routing: routerReducer, // routing reducer to keep track of the state while navigating
-		users: usersReducer,
-		user: userReducer,
-		tags: tagsReducer,
-		feed: feedReducer,
-		cookies: cookieReducer
 	});
 
 	var store = redux.createStore(reducers, state, redux.compose(
