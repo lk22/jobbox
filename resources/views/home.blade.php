@@ -35,7 +35,7 @@
                         @if (count($jobs))
                             <table class="responsive-table">
                                 <thead>
-                                    <td>Job Title</td>
+                                    <td>Job Ansøgninger</td>
                                 </thead>
                                 <tbody>
                                     @foreach ($jobs as $job)
