@@ -11,6 +11,7 @@ class JobDesk {
         this.helper = new Helper();
         this.connection = new Connection();
         this.fire();
+        console.log("jobdesk");
     }
 
     fire() {

@@ -134,7 +134,7 @@ Connection.prototype.checkConnection = function checkConnection () {
 
                     console.log(response);
 
-                    this.component.show().html('<p>You are currently on any internet connection find a connection and try again</p>');
+                    this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
                 }, function (response) {
 
