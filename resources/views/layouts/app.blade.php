@@ -11,6 +11,8 @@
     <title>{{ config('app.name') }}</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
