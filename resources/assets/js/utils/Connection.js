@@ -20,10 +20,15 @@ export class Connection {
                 if( time < 0 ) {
 
                     this.request.sendRequest('', window.location.url, function(response) {
-                        console.log();
+                        
+                        console.log(response);
+                        
                         container.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                        
                     }, function(response) {
+                        
                         console.log(response)
+                        
                     });
 
                 }
