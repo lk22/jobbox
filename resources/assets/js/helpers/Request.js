@@ -23,7 +23,10 @@ class Request {
     }
     /**
     * sending default request on making new instance
-    *
+    * @param method = the method to use ['GET', 'POST', 'DELETE', 'PUT']
+    * @param url = the url to send request to
+    * @param data = the data from form to send to backend
+    * @param response = the response
     */
     sendAxiosRequest(method, url, data = null, response) {
 
