@@ -143,6 +143,8 @@ Connection.prototype.checkConnection = function checkConnection () {
 
         }, 5000);
 
+    } else {
+        container.hide();
     }
 };
 
