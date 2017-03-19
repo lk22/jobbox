@@ -18,5 +18,5 @@ elixir((mix) => {
 	mix.sass('homepage.scss');
 	mix.sass('emails.scss');
 	mix.sass('app.scss');
-    mix.webpack('JobDesk.js');
+    mix.babel('JobDesk.js');
 });
