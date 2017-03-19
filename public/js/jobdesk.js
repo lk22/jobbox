@@ -121,6 +121,7 @@ var Connection = function Connection() {
 Connection.prototype.checkConnection = function checkConnection () {
     var client = navigator;
     var container = this.component;
+    console.log(container);
 
     if (client.online === false) {
 
