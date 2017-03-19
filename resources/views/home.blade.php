@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="col l4 push-l3">
+            <div class="col l3 push-l3">
                 <div class="row">
                     <div class="job-application-list">
                         @if (count($jobs))
