@@ -8,7 +8,7 @@ import Connection from './utils/Connection.js';
 class JobDesk {
 
     constructor() {
-        this.helper = new Helper;
+        this.helper = new Helper();
         this.connection = new Connection();
         this.fire();
     }
