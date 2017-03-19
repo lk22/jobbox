@@ -50,9 +50,9 @@ class UserController extends Controller
      * @param  $id users id
      * @return void
      */
-    public function user($id)
+    public function user($slug)
     {
-    	$user = $this->findById($id);
+    	$user = $this->findById($slug);
 
     	return $user;
     }
