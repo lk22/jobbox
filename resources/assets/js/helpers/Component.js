@@ -1,4 +1,4 @@
-class Component {
+export class Component {
 
     build(element, component) {
         return this.on(element).append(component);
@@ -8,5 +8,5 @@ class Component {
         return $(element);
     }
 
-
 }
+export default Component;
