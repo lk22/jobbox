@@ -49,7 +49,9 @@
     <div id="jobdesk">
         @include('layouts._partials.header')
 
-        <div id="app">{{-- content goes her for the app --}}</div>
+        <div id="app">
+            
+        </div>
     </div>
 
     <!-- Scripts -->
