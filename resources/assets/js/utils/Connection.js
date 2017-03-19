@@ -1,9 +1,27 @@
+import Request from './../helpers/Request.js';
+
 export class Connection {
 
-    constructor(connection) {
-        this.checkConnectionOn(connection);
+    constructor() {
+        this.checkConnectionOn();
     }
 
-    checkConnectionOn(connection)
+    checkConnectionOn() {
+        const client = navigator;
+
+        if(client.online === false) {
+
+            for ( var time = 5; time >= 5; time---) {
+
+                if( time < 0 ) {
+
+
+
+                }
+
+            }
+
+        }
+    }
 
 }
