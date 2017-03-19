@@ -31,6 +31,7 @@ class HomeController extends Controller
     public function index()
     {
         $jobApplications = $this->jobApplication->user()->whereId(auth()->user()->id)->get();
+        return $jobApplications;
         return view('home', compact('jobApplications'));
     }
 }
