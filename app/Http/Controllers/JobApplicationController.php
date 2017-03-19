@@ -12,4 +12,9 @@ class JobApplicationController extends Controller
     {
         $this->job = $job;
     }
+
+    public function job($slug)
+    {
+        $job = $this->job->whereSlug($slug)->with('user')->get();
+    }
 }
