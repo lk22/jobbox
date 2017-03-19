@@ -95,6 +95,10 @@ class Request {
 
     }
 
+    /**
+    * Axios PUT request
+    * @param url = the url to send request to
+    */
     sendUpdateRequest(url, data = {}) {
 
         Axios.put(url, data).then(( response ) => {
