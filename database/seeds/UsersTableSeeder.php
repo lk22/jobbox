@@ -18,6 +18,7 @@ class UsersTableSeeder extends Seeder
 
         $user->createUserWith([
         	'firstname' => 'Leo',
+            'middle' => '',
         	'lastname' => 'Knudsen',
             'name' => 'Leo Knudsen',
             'slug' => 'leo-knudsen',
