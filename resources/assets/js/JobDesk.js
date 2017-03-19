@@ -14,7 +14,7 @@ class JobDesk {
     }
 
     fire() {
-        
+
     }
 
 }
