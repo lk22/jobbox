@@ -19,6 +19,16 @@ class Request {
         );
 
     }
+
+    /**
+    * set default setting to axios requests
+    * 
+    */
+
+
+
+
+
     /**
     * sending default request on making new instance
     * @param method = the method to use ['GET', 'POST', 'DELETE', 'PUT']
