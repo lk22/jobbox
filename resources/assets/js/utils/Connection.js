@@ -16,7 +16,7 @@ export class Connection {
 
                 if( time < 0 ) {
 
-                    this.request.sendGetRequestTo(window.location.url)
+                    this.request.sendGetRequestTo(window.location.url);
 
                 }
 

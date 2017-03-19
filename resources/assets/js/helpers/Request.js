@@ -8,23 +8,23 @@ class Request {
     * @param url = the url to send request to
     * @param data = the data from form to send to backend
     */
-    sendAxiosRequest(method = null, url, data = null) {
+    sendAxiosRequest(method = null, url, data = {}, ) {
 
         switch (method) {
             case 'POST':
-                this.sendPostRequest(url, data, response)
+                this.sendPostRequest(url, method, data, success, failure)
                 break;
 
             case 'PUT':
-                this.sendUpdateRequest(url, data, response);
+                this.sendUpdateRequest(url, method, data, success, failure);
                 break;
 
             case 'DELETE':
-                this.sendDeleteRequest(url);
+                this.sendDeleteRequest(url, method, data, success, failure);
                 break;
 
             case '':
-                this.sendGetRequestTo(url);
+                this.sendGetRequestTo(url, method, data, success, failure);
             break;
         }
 
@@ -101,7 +101,7 @@ class Request {
     * Axios DELETE request
     * @param url = the url to make a request to
     */
-    sendDeleteRequest(url) {
+    sendDeleteRequest(url, method, ) {
 
         Axios.delete(url).then(( response ) => {
 
