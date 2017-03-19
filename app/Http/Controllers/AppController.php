@@ -33,8 +33,6 @@ class AppController extends Controller
             auth()->user()->id
         )->with('jobApplications')->get();
 
-        return $user;
-
         return view('home', compact('user'));
     }
 }
