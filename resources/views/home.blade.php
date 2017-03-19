@@ -22,7 +22,7 @@
                             @if(auth()->user()->has_active_email)
                                 <span class="new badge blue">Bruger er aktiv</span>
                             @else
-                                <span class="new badge red">Bruger er ikke aktiv</span>
+                                <span class="new badge red">Bruger er ikke aktiv</span> <span> tjek din mail </span>
                             @endif
                         </h6>
                     </div>
