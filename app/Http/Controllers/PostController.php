@@ -60,6 +60,7 @@ class PostController extends Controller
 
 			$this->post->createPostWith([
 				'title' => $title,
+				'slug' => explode('-', $title),
 				'body' => $body,
 				'user_id' => $user_id,
 				'post_cover' => $post_cover
