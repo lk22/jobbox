@@ -45,15 +45,15 @@ class Helper {
     }
 
     sendUpdateRequest(url, data = {}, response) {
-        Axios.post(url, data).then(( response ) => {
+        Axios.put(url, data).then(( response ) => {
             this.getResponse(response);
         }).catch(( response ) => {
             this.getResponse(response);
         });
     }
 
-    sendDeleteRequest(url, data = {}, response) {
-        Axios.post(url, data).then(( response ) => {
+    sendDeleteRequest(url, response) {
+        Axios.post(url).then(( response ) => {
             this.getResponse(response);
         }).catch(( response ) => {
             this.getResponse(response);
