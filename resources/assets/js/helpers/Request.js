@@ -42,8 +42,11 @@ class Request {
     }
 
     getResponse(response) {
+        
         return response;
+        
         console.log(response);
+        
     }
 
     sendGetRequestTo(url, response) {
@@ -57,6 +60,7 @@ class Request {
             this.getResponse();
 
         });
+
     }
 
     sendPostRequest(url, data = {}, response) {
@@ -70,6 +74,7 @@ class Request {
             this.getResponse(response);
 
         });
+
     }
 
     sendUpdateRequest(url, data = {}, response) {
@@ -83,6 +88,7 @@ class Request {
             this.getResponse(response);
 
         });
+
     }
 
     sendDeleteRequest(url, response) {
@@ -96,5 +102,6 @@ class Request {
             this.getResponse(response);
 
         });
+
     }
 }
