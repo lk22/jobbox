@@ -3,14 +3,16 @@
 @section('content')
 
     <div class="container">
-        <div class="row">
-            <div class="col s3">
+        <div class="col s3 ">
+            hello
+        </div>
 
-            </div>
+        <div class="col s3">
+            world
+        </div>
 
-            <div class="col s9">
-
-            </div>
+        <div class="col s3">
+            {{ auth()->user()->firstname }}
         </div>
     </div>
 
