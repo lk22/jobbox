@@ -6,7 +6,7 @@ import {Route, Router, IndexRoute, HashHistory, browserHistory} from 'react-rout
 import { syncHistoryWithStore } from 'react-router-redux';
 
 // redux store
-var store = require('./store/storeConfig.jsx').configure({});
+var store = require('./store/reduxStore.jsx').configure({});
 
 const history = syncHistoryWithStore(browserHistory, store);
 
