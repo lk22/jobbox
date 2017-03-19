@@ -22,7 +22,7 @@ class Request {
                 this.sendDeleteRequest(url);
                 break;
 
-            default:
+            case null:
                 this.sendGetRequestTo(url);
             break;
         }
