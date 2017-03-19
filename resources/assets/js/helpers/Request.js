@@ -19,6 +19,7 @@ class Request {
             this.data,
             this.response
         );
+
     }
     sendAxiosRequest(method, url, data = null, response) {
         switch (method) {
@@ -46,34 +47,54 @@ class Request {
     }
 
     sendGetRequestTo(url, response) {
+
         Axios.get(url).then((response) => {
+
             this.getResponse(response);
+
         }).catch((response) => {
+
             this.getResponse();
+
         });
     }
 
     sendPostRequest(url, data = {}, response) {
+
         Axios.post(url, data).then(( response ) => {
+
             this.getResponse(response);
+
         }).catch(( response ) => {
+
             this.getResponse(response);
+
         });
     }
 
     sendUpdateRequest(url, data = {}, response) {
+
         Axios.put(url, data).then(( response ) => {
+
             this.getResponse(response);
+
         }).catch(( response ) => {
+
             this.getResponse(response);
+
         });
     }
 
     sendDeleteRequest(url, response) {
+
         Axios.delete(url).then(( response ) => {
+
             this.getResponse(response);
+
         }).catch(( response ) => {
+
             this.getResponse(response);
+
         });
     }
 }
