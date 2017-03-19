@@ -78,7 +78,7 @@ Request.prototype.sendPostRequest = function sendPostRequest (url, data, success
 * @param url = the url to send request to
 * @param data = following data to backend
 */
-Request.prototype.sendUpdateRequest = function sendUpdateRequest (url, data, success, failure) {
+Request.prototype.sendUpdateRequest = function sendUpdateRequest (url, success, failure, data) {
         if ( data === void 0 ) data = {};
 
 
@@ -168,9 +168,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     this.connection = new Connection();
