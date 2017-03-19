@@ -28,7 +28,7 @@ Route::get('/', function () {
 
 		Route::prefix('/')->group(function() {
 			Route::name('posts')->get('/blog')->uses('PostController@posts');
-			Route::name('post')->get('/blog/post/{id}')->uses('PostController@post');
+			Route::name('post')->get('/blog/post/{slug}')->uses('PostController@post');
 		});
 
 /**
