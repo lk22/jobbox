@@ -3,13 +3,20 @@ import Axios from 'axios';
 class Request {
 
     constructor(method, url, data, response) {
+
         super(method, url, data, response);
+
+        // properties
         this.method = method;
         this.url = url;
         this.data = data;
         this.response = response;
-        this.sendAxiosRequest(
 
+        // send default axios request
+        this.sendAxiosRequest(
+            this.method,
+            this.url,
+            this.response
         )
     }
     sendAxiosRequest(method, url, data = null, response) {
