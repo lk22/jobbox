@@ -11,7 +11,7 @@ export class Connection {
 
     checkConnectionOn() {
         const client = navigator;
-        const container = this.component.on('')
+        const container = this.component;
 
         if(client.online === false) {
 
