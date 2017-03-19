@@ -96,14 +96,11 @@ class Request {
     */
     sendDeleteRequest(url, method, ) {
 
-        Axios.delete(url).then(( response ) => {
-
-            this.getResponse(response);
-
-        }).catch(( response ) => {
-
-            this.getResponse(response);
-
+        $.get({
+            url: url
+            type: 'DELETE',
+            success: success,
+            error: failure
         });
 
     }
