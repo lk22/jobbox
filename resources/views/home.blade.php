@@ -7,7 +7,7 @@
             <div class="col l3 push-l2">
                 <div class="row">
                     <div class="job-application-list">
-
+                        
                     </div>
                 </div>
             </div>
