@@ -25,9 +25,9 @@ class Helper {
 
     sendGetRequestTo(url, response) {
         Axios.get(url).then((response) => {
-            
+            this.getResponse(response);
         }).catch((response) => {
-
+            this.getResponse();
         });
     }
 }
