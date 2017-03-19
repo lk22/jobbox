@@ -122,7 +122,7 @@ Connection.prototype.checkConnection = function checkConnection () {
         var this$1 = this;
 
     var client = navigator;
-    var container = this.component.hide();
+    var container = this.component;
 
     if (client.online === false) {
 
