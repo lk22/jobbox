@@ -8,6 +8,9 @@ use JobDesk\Traits\Crudable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+
 use JobDesk\Post;
 
 class User extends Authenticatable
