@@ -46,6 +46,7 @@ $factory->define(JobDesk\Message::class, function( Faker\Generator $faker ) {
 $factory->define(JobDesk\Post::class, function( Faker\Generator $faker ) {
     return [
         'title' => $faker->words(rand(2, 5), true),
+        'slug' => $faker->slug,
         'body' => $faker->paragraphs(rand(5, 20), true),
         'post_cover' => 'http://uvmbored.com/wp-content/uploads/2015/05/blog.jpg',
         'user_id' => 1,
