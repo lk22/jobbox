@@ -8,7 +8,7 @@ class Request {
     * @param url = the url to send request to
     * @param data = the data from form to send to backend
     */
-    sendAxiosRequest(method = null, url, data = {}, success, failure) {
+    sendRequest(method = null, url, data = {}, success, failure) {
 
         switch (method) {
             case 'POST':
@@ -45,17 +45,14 @@ class Request {
     * Axios GET request
     * @param url = the url to send request to
     */
-    sendGetRequestTo(url) {
+    sendGetRequestTo(url, success, failure) {
 
-        Axios.get(url).then(( response ) => {
-
-            this.getResponse(response);
-
-        }).catch(( response ) => {
-
-            this.getResponse();
-
-        });
+        $.get({
+            url: url
+            type: 'GET',
+            success: success,
+            error: failure
+        })
 
     }
 
