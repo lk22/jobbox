@@ -3,9 +3,6 @@ import Axios from 'axios';
 class Request {
 
     constructor(method, url, data, response) {
-
-        super(method, url, data, response);
-
         // properties
         this.method = method;
         this.url = url;
