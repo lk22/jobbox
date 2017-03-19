@@ -30,7 +30,8 @@
     "react-router-redux": "^4.0.8",
     "react-spinkit": "^2.1.1",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "script-loader": "^0.6.1"
   },
   "devDependencies": {
     "elm": "^0.18.0",
