@@ -13,8 +13,8 @@
                             make controller
                             make table for job applications
                         -->
-                        @foreach($user-> as $jobApplication)
-                            {{ $jobApplication->id }}
+                        @foreach($jobs-> as $job)
+                            {{ $job->id }}
                         @endforeach
                     </div>
                 </div>
