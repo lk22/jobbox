@@ -50,6 +50,9 @@ Auth::routes();
 
 Route::name('home')->get('/home', 'AppController@index');
 
+/**
+* job applications routes
+*/
 Route::prefix('/jobapplication')->group(function() {
     Route::name('job')->get('/{slug}')->uses('JobApplicationController@job');
 });
