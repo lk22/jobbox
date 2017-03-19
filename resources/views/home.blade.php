@@ -21,7 +21,7 @@
                                 <tbody>
                                     @foreach ($jobs as $job)
                                         <tr>
-                                            <td> {{ substr($job->title, 0, 50) }}</td>
+                                            <td> <a href="#">{{ substr($job->title, 0, 50) }}</a></td>
                                         </tr>
                                     @endforeach
                                 </tbody>
