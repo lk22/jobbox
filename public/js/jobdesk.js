@@ -129,12 +129,6 @@ Connection.prototype.checkConnection = function checkConnection () {
 
         container.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
-        setTimeout(function() {
-
-            window.location.reload(1);
-
-        }, 5000);
-
     }
 };
 

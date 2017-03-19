@@ -27,6 +27,8 @@ class Connection {
 
             container.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
+        } else{
+            container.hide();
         }
     }
 
