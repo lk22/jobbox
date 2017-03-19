@@ -1,6 +1,7 @@
 import Axios from 'axios';
 
 class Request {
+    
     /**
     * sending default request on making new instance
     * @param method = the method to use ['GET', 'POST', 'DELETE', 'PUT']
