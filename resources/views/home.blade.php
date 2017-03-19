@@ -7,7 +7,7 @@
             hello
         </div>
 
-        <div class="col s3">
+        <div class="col s9">
             world
         </div>
 
