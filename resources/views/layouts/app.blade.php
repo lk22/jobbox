@@ -65,7 +65,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{ asset('js/jobdesk.js') }}"></script>
     <script type="text/javascript">
-        
+    if(!$(document).ready())
+    {
+        $(".progress").show();
+    }
+    else {
+        $(".progress").delay(500).fadeOut(200);
+    }
     </script>
 </body>
 </html>
