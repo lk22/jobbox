@@ -50,7 +50,10 @@ Auth::routes();
 
 Route::name('home')->get('/home', 'AppController@index');
 
-Route::name('job')->get('/jobapplication')->uses('JobApplicationController@job');
+Route::prefix('/jobapplication')->group(function() {
+    Route::name('job')->get('/{slug}')->uses('JobApplicationController@job');
+});
+
 
 /**
  * decomposer route
