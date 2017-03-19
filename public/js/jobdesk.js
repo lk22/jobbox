@@ -127,15 +127,6 @@ Connection.prototype.checkConnection = function checkConnection () {
 
         container.show();
 
-        // for (var time = 5; time <= 5; time--) {
-        //
-        // if (time < 0) {
-        //
-        //
-        // }
-        //
-        // }
-
         container.fadeIn().html('<p>You are currently on any internet connection find a connection and try again</p>');
 
         setTimeout(function() {
