@@ -50,9 +50,8 @@
         @include('layouts._partials.header')
 
         <div id="app">
-
+            
         </div>
-        @yield('content')
     </div>
 
     <!-- Scripts -->
