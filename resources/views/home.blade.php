@@ -21,7 +21,7 @@
                                     @foreach ($jobs as $job)
                                         <tr>
                                             <td>
-                                                <a href="{{ route('job') }}">
+                                                <a href="{{ route('job', $job->slug) }}">
                                                     {{ substr($job->title, 0, 50) }}
                                                 </a>
                                             </td>
