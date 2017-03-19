@@ -1,4 +1,5 @@
 class Component {
+
     build(element, component) {
         return this.on(element).append(component);
     }
@@ -6,4 +7,6 @@ class Component {
     on(element) {
         return $(element);
     }
+
+
 }
