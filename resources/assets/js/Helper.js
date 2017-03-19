@@ -6,7 +6,7 @@ import Connection from './utils/Connection.js';
 export class Helper {
 
     constructor(){
-        this.component = new Component;
+        this.component = new Component();
         this.request = new Request;
         this.connection = new Connection();
     }
