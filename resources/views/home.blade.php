@@ -12,12 +12,6 @@
             <div class="col l6">
                 <div class="row">
                     <div class="job-application-list">
-                        <!-- applications list goes here -->
-                        <!--
-                            make applications model
-                            make controller
-                            make table for job applications
-                        -->
                         @if (count($jobs))
                             <table class="responsive-table">
                                 <thead>
