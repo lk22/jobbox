@@ -12,6 +12,9 @@
                             <img src="{{ auth()->user()->avatar }}" height="150" width="150" alt="">
                         </div>
                     </div>
+                    <div class="col s2 m2 push-m1 l2 push-l1">
+
+                    </div>
                 </div>
             </div>
 
