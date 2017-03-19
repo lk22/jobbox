@@ -11,13 +11,6 @@ class Request {
         this.url = url;
         this.data = data;
 
-        // send default axios request
-        this.sendAxiosRequest(
-            this.method,
-            this.url,
-            this.data,
-        );
-
     }
 
     /**
