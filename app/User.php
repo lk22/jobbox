@@ -40,6 +40,14 @@ class User extends Authenticatable
     }
 
     /**
+    * user has many job applications
+    */
+    public function jobApplication()
+    {
+      return $this->hasMany(JobApplication::class);
+    }
+
+    /**
      * find user by id
      */
     public function findById($id) {

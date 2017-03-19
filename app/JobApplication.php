@@ -30,7 +30,7 @@ class JobApplication extends Model
     /**
     * job applications belongs to user
     */
-    public function user(){
+    public function user() {
       return $this->belongsTo(User::class);
     }
 }
