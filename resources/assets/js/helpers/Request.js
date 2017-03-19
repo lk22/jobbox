@@ -21,7 +21,12 @@ class Request {
         );
 
     }
+    /**
+    * sending default request on making new instance
+    *
+    */
     sendAxiosRequest(method, url, data = null, response) {
+
         switch (method) {
             case 'POST':
                 this.sendPostRequest(url, data, response)
@@ -39,14 +44,15 @@ class Request {
                 this.sendGetRequestTo(url, response);
             break;
         }
+
     }
 
     getResponse(response) {
-        
+
         return response;
-        
+
         console.log(response);
-        
+
     }
 
     sendGetRequestTo(url, response) {
