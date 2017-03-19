@@ -5,11 +5,12 @@ import Helper from 'Helper.js';
 */
 class JobDesk {
 
-    constructor() (
+    constructor() {
         this.helper = new Helper;
 
         this.fire();
-    )
+    }
+
 
     fire() {
         console.log(JobDesk);
