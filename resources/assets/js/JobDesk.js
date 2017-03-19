@@ -16,3 +16,4 @@ class JobDesk {
     }
 
 }
+new JobDesk();
