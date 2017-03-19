@@ -1,4 +1,5 @@
 import Request from './../helpers/Request.js';
+import Component from './helpers/Component.js';
 
 export class Connection {
 
@@ -29,9 +30,9 @@ export class Connection {
             }
 
             setTimeout(function() {
-                
+
 				window.location.reload(1);
-                
+
 			}, 5000);
 
         }
