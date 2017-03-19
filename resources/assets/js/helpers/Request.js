@@ -52,7 +52,7 @@ class Request {
             type: 'GET',
             success: success,
             error: failure
-        })
+        });
 
     }
 
@@ -61,7 +61,7 @@ class Request {
     * @param url = the url to send request to
     * @param data = data to send with your request
     */
-    sendPostRequest(url, data = {}) {
+    sendPostRequest(url, data = {}, success, failure) {
 
         Axios.post(url, data).then(( response ) => {
 
