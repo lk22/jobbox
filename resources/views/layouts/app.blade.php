@@ -67,10 +67,10 @@
     <script type="text/javascript">
     if(!$(document).ready())
     {
-        $(".progress").show();
+        $(".indeterminate").show();
     }
     else {
-        $(".progress").delay(500).fadeOut(200);
+        $(".indeterminate").delay(500).fadeOut(200);
     }
     </script>
 </body>
