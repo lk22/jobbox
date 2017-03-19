@@ -1,4 +1,4 @@
-import Helper from 'Helper.js';
+import Helper from './Helper.js';
 
 /**
 * main App class
@@ -10,7 +10,6 @@ class JobDesk {
 
         this.fire();
     }
-
 
     fire() {
         console.log(JobDesk);
