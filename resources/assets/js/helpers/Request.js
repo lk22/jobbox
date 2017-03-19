@@ -7,7 +7,7 @@ export class Request {
     * @param url = the url to send request to
     * @param data = the data from form to send to backend
     */
-    send(method = '', url, data = {}, success, failure) {
+    send(method, url, data, success, failure) {
 
         switch (method) {
             case 'POST':
@@ -60,7 +60,7 @@ export class Request {
     * @param url = the url to send request to
     * @param data = data to send with your request
     */
-    sendPostRequest(url, data = {}, success, failure) {
+    sendPostRequest(url, data, success, failure) {
 
         $.ajax({
             url: url,

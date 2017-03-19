@@ -60,8 +60,6 @@ Request.prototype.sendGetRequestTo = function sendGetRequestTo (url, success, fa
 * @param data = data to send with your request
 */
 Request.prototype.sendPostRequest = function sendPostRequest (url, data, success, failure) {
-        if ( data === void 0 ) data = {};
-
 
     $.ajax({
         url: url,
@@ -79,8 +77,6 @@ Request.prototype.sendPostRequest = function sendPostRequest (url, data, success
 * @param data = following data to backend
 */
 Request.prototype.sendUpdateRequest = function sendUpdateRequest (url, success, failure, data) {
-        if ( data === void 0 ) data = {};
-
 
     $.ajax({
         url: url,
