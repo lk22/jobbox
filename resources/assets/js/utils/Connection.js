@@ -10,14 +10,14 @@ export class Connection {
         this.request = new Request;
         this.component = new Component('#conection-container');
 
-        this.checkConnectionOn();
+        this.checkConnectionOn(navigator);
     }
 
     /**
     * Check the clients internet connection
     */
     checkConnectionOn(client) {
-        const client = navigator;
+        const client = client;
         var container = this.component;
 
         if(client.online === false) {
