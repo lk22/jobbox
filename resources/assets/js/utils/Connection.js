@@ -33,8 +33,6 @@ class Connection {
 
             }, 5000);
 
-        } else if(client.online) {
-            container.hide();
         }
     }
 
