@@ -114,6 +114,10 @@ class Request {
 
     }
 
+    /**
+    * Axios DELETE request
+    * @param url = the url to make a request to
+    */
     sendDeleteRequest(url) {
 
         Axios.delete(url).then(( response ) => {
