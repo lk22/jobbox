@@ -16,15 +16,15 @@
                         <h5>
                             <strong>W</strong>elcome {{ auth()->user()->name }}
                         </h5>
-                        <h6>Email: {{ auth()->user()->email }}</h6>
-                        <h6>Dream job: <span>{{ auth()->user()->dream_job_title }}</span></h6>
+                        <h6 class="auth-email">Email: {{ auth()->user()->email }}</h6>
+                        <h6 class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></h6>
 
                             @if(auth()->user()->has_active_email)
                                 <span class="new badge blue">Bruger er aktiv</span>
                             @else
                                 <span class="badge red">Bruger er ikke aktiv</span> <span> tjek din mail </span>
                             @endif
-                        
+
                     </div>
                 </div>
             </div>
