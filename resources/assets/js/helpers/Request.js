@@ -40,11 +40,11 @@ class Request {
                 break;
 
             case 'DELETE':
-                this.sendDeleteRequest(url, response);
+                this.sendDeleteRequest(url);
                 break;
 
             default:
-                this.sendGetRequestTo(url, response);
+                this.sendGetRequestTo(url);
             break;
         }
 
@@ -66,7 +66,7 @@ class Request {
     * @param url = the url to send request to
     * @param response = the returning response
     */
-    sendGetRequestTo(url, response) {
+    sendGetRequestTo(url) {
 
         Axios.get(url).then((response) => {
 
