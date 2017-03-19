@@ -2,7 +2,7 @@ import Axios from 'axios';
 
 class Request {
 
-    constructor(method, url, data, response) {
+    constructor(method, url) {
         // properties
         this.method = method;
         this.url = url;
