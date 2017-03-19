@@ -62,7 +62,6 @@ class Request {
     /**
     * Axios GET request
     * @param url = the url to send request to
-    * @param response = the returning response
     */
     sendGetRequestTo(url) {
 
