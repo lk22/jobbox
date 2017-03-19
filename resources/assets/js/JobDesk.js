@@ -1,4 +1,5 @@
 import Helper from './Helper.js';
+import Component from './helpers/Component.js';
 
 /**
 * main App class
