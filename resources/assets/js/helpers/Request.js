@@ -22,12 +22,8 @@ class Request {
 
     /**
     * set default setting to axios requests
-    * 
+    *
     */
-
-
-
-
 
     /**
     * sending default request on making new instance
