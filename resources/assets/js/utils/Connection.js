@@ -16,7 +16,11 @@ export class Connection {
 
                 if( time < 0 ) {
 
-                    this.request.sendGetRequestTo(window.location.url);
+                    this.request.sendRequest('', window.location.url, function(response) {
+                        // code goes here
+                    }, function() {
+                        // code goes here
+                    });
 
                 }
 

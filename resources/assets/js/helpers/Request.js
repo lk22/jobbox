@@ -8,7 +8,7 @@ class Request {
     * @param url = the url to send request to
     * @param data = the data from form to send to backend
     */
-    sendRequest(method = ''null'', url, data = {}, success, failure) {
+    sendRequest(method = '', url, data = {}, success, failure) {
 
         switch (method) {
             case 'POST':
