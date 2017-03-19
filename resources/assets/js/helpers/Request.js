@@ -22,7 +22,6 @@ class Request {
 
     /**
     * set default setting to axios requests
-    *
     */
 
     /**
