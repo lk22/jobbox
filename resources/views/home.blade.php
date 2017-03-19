@@ -14,7 +14,16 @@
                             make table for job applications
                         -->
                         @if (count($jobs))
-                            
+                            <table class="responsive-table">
+                                <thead>
+                                    <td>Job Title</td>
+                                </thead>
+                                <tbody>
+                                    @foreach ($jobs as $job)
+                                        {{ $job->title }}
+                                    @endforeach
+                                </tbody>
+                            </table>
                         @endif
                     </div>
                 </div>
