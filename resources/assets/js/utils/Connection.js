@@ -18,7 +18,7 @@ class Connection {
     */
     checkConnection() {
         var client = navigator;
-        var container = this.component;
+        var container = this.component.hide();
 
         if (client.online === false) {
 
