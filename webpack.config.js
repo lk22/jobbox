@@ -1,4 +1,8 @@
 module.export = {
+    output: {
+		path: __dirname,
+		filename: './public/bundle.js'
+	},
     resolve: {
 		root: __dirname,
 		extensions: ['', '.js', '.jsx']
