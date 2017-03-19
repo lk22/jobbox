@@ -1,6 +1,9 @@
 import Axios from 'axios';
 
 class Request {
+
+
+
     sendAxiosRequest(method, url, data = null, response) {
         switch (method) {
             case 'POST':
@@ -13,6 +16,7 @@ class Request {
 
             case 'DELETE':
                 this.sendDeleteRequest(url, response);
+                break;
             default:
                 this.sendGetRequestTo(url, response);
             break;
