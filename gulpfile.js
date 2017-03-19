@@ -15,9 +15,6 @@ require('laravel-elixir-vue-2');
 
 elixir((mix) => {
 
-	mix.webpack({
-	   	presets: ['es2015']
-	});
 	mix.sass('./homepage.scss');
 	mix.sass('./emails.scss');
 	mix.sass('./app.scss');
