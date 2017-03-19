@@ -15,6 +15,14 @@ require('laravel-elixir-vue-2');
 
 elixir((mix) => {
 
+	mix.webpackConfig({
+		resolve: {
+	        modules: [
+	            path.resolve(__dirname, 'vendor/laravel/spark/resources/assets/js')
+	        ]
+	    }
+	})
+
 	mix.sass('homepage.scss');
 	mix.sass('emails.scss');
 	mix.sass('app.scss');
