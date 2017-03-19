@@ -16,7 +16,9 @@ export class Connection {
 
                 if( time < 0 ) {
 
-
+                    this.request.sendAxiosRequest(
+                        window.location.url
+                    )
 
                 }
 
