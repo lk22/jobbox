@@ -51,7 +51,7 @@ class Request {
     }
 
     /**
-    * returning the current response from each request
+    * returning the current response from each sending request
     */
     getResponse(response) {
 
@@ -61,6 +61,9 @@ class Request {
 
     }
 
+    /**
+    * Axios GET request
+    */
     sendGetRequestTo(url, response) {
 
         Axios.get(url).then((response) => {
