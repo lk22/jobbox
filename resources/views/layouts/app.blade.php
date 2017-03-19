@@ -49,7 +49,7 @@
     <div id="jobdesk">
         @include('layouts._partials.header')
 
-
+        
         @yield('content')
     </div>
 
