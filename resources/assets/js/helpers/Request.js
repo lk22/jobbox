@@ -7,7 +7,7 @@ class Request {
     * @param url = the url to send request to
     * @param data = the data from form to send to backend
     */
-    sendAxiosRequest(method, url, data = null) {
+    sendAxiosRequest(method = null, url, data = null) {
 
         switch (method) {
             case 'POST':
