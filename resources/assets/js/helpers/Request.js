@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 class Request {
-    
+
     /**
     * sending default request on making new instance
     * @param method = the method to use ['GET', 'POST', 'DELETE', 'PUT']
@@ -23,7 +23,7 @@ class Request {
                 this.sendDeleteRequest(url);
                 break;
 
-            case null:
+            case '':
                 this.sendGetRequestTo(url);
             break;
         }
