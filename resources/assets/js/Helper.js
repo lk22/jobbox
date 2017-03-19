@@ -51,4 +51,12 @@ class Helper {
             this.getResponse(response);
         });
     }
+
+    sendDeleteRequest(url, data = {}, response) {
+        Axios.post(url, data).then(( response ) => {
+            this.getResponse(response);
+        }).catch(( response ) => {
+            this.getResponse(response);
+        });
+    }
 }
