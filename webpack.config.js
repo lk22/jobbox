@@ -1,4 +1,4 @@
-export {
+module.export {
     module: {
 		loaders: [
 			{
@@ -10,5 +10,5 @@ export {
 				exclude: /(node_modules|bower_components)/
 			}
 		]
-	},
+	}
 }
