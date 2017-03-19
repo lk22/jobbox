@@ -5,7 +5,11 @@
     <div class="container-fluid" id="home">
         <div class="row">
             <div class="col l3 push-l2">
-                <p class="text-center">Hello</p>
+                <div class="row">
+                    <div class="job-application-list">
+
+                    </div>
+                </div>
             </div>
 
             <div class="col l3 push-l2">
