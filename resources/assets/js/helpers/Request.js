@@ -78,7 +78,7 @@ class Request {
     * @param url = the url to send request to
     * @param data = following data to backend
     */
-    sendUpdateRequest(url, data = {}) {
+    sendUpdateRequest(url, data = {}, success, failure) {
 
         Axios.put(url, data).then(( response ) => {
 
