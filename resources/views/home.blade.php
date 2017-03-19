@@ -23,7 +23,6 @@
                                         <tr>
                                             {{ substr($job->title, 0, 50) }}
                                         </tr>
-
                                     @endforeach
                                 </tbody>
                             </table>
