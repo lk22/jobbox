@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import Request from './helpers/Request.js';
 
 class Helper {
     constructor(){
@@ -53,7 +54,7 @@ class Helper {
     }
 
     sendDeleteRequest(url, response) {
-        Axios.post(url).then(( response ) => {
+        Axios.delete(url).then(( response ) => {
             this.getResponse(response);
         }).catch(( response ) => {
             this.getResponse(response);
