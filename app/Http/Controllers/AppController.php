@@ -32,6 +32,9 @@ class AppController extends Controller
         $user = $this->user->whereId(
             auth()->user()->id
         )->with('jobApplications')->get();
+
+        return $user;
+
         return view('home', compact('user'));
     }
 }
