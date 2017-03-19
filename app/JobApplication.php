@@ -5,6 +5,9 @@ namespace JobDesk;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+
 use JobDesk\User;
 
 class JobApplication extends Model
@@ -13,7 +16,7 @@ class JobApplication extends Model
     /**
     * traits
     */
-    use SoftDeletes;
+    use SoftDeletes, Sluggable, SluggableScopeHelpers;
 
     /**
     * table
