@@ -97,7 +97,7 @@ class Request {
     sendDeleteRequest(url, success, failure ) {
 
         $.get({
-            url: url
+            url: url,
             type: 'DELETE',
             success: success,
             error: failure

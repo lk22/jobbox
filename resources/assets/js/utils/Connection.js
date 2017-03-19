@@ -4,9 +4,11 @@ import Component from './helpers/Component.js';
 export class Connection {
 
     constructor() {
-        this.checkConnectionOn();
         this.request = new Request;
         this.component = new Component('#conection-container');
+        
+        this.checkConnectionOn();
+
     }
 
     checkConnectionOn() {
