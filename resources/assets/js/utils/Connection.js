@@ -3,12 +3,14 @@ import Component from './helpers/Component.js';
 
 export class Connection {
 
+    /**
+    * Constructor
+    */
     constructor() {
         this.request = new Request;
         this.component = new Component('#conection-container');
-        
-        this.checkConnectionOn();
 
+        this.checkConnectionOn();
     }
 
     checkConnectionOn() {
