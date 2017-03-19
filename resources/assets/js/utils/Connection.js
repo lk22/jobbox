@@ -21,7 +21,7 @@ class Connection {
         var container = this.component;
         console.log(container);
 
-        if (client.online === false) {
+        if (!client.online) {
 
             container.show();
 

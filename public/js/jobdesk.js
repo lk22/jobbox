@@ -110,6 +110,7 @@ Component.prototype.on = function on (element) {
 
 var Connection = function Connection() {
     this.request = new Request();
+    this.component = new Component('#ethernetComponent');
 
     this.checkConnection();
 };
@@ -119,7 +120,7 @@ var Connection = function Connection() {
 */
 Connection.prototype.checkConnection = function checkConnection () {
     var client = navigator;
-    var container = $('#ethernetComponent');
+    var container = this.component;
     console.log(container);
 
     if (client.online === false) {
