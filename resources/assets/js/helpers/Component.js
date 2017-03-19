@@ -1,6 +1,6 @@
 class Component {
     build(component) {
-        return $('#app').append(component);
+        return this.on.append(component);
     }
 
     on(element) {
