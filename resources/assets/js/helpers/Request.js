@@ -16,8 +16,9 @@ class Request {
         this.sendAxiosRequest(
             this.method,
             this.url,
+            this.data,
             this.response
-        )
+        );
     }
     sendAxiosRequest(method, url, data = null, response) {
         switch (method) {
