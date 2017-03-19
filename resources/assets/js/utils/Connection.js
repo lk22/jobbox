@@ -21,7 +21,7 @@ export class Connection {
 
                     this.request.sendRequest('', window.location.url, function(response) {
                         console.log();
-                        // code goes here
+                        container.html('<p>You are currently on any internet connection find a connection and try again</p>');
                     }, function(response) {
                         // code goes here
                         console.log(response)
