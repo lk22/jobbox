@@ -26,13 +26,13 @@ export class Connection {
 
                 if( time < 0 ) {
 
-                    this.request.send('', window.location.url, function(response) {
+                    this.request.send('', window.location.url, (response) => {
 
                         console.log(response);
 
                         container.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
-                    }, function(response) {
+                    }, (response) => {} {
 
                         console.log(response)
 
