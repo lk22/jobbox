@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="col l4 push-l2">
+            <div class="col l4 push-l3">
                 <p class="text-center">World</p>
             </div>
         </div>
