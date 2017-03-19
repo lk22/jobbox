@@ -28,7 +28,7 @@ class Connection {
 
                 if (time < 0) {
 
-                    this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                    container.html('<p>You are currently on any internet connection find a connection and try again</p>');
                 }
 
             }
