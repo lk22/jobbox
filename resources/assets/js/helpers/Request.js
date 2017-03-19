@@ -4,7 +4,7 @@ class Request {
 
     constructor(method, url, data, response) {
 
-        // super(method, url, data, response);
+        super(method, url, data, response);
 
         // properties
         this.method = method;
