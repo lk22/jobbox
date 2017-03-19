@@ -13,6 +13,6 @@ class JobApplicationsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(JobApplication::class, rand(1, 10))->create();
     }
 }
