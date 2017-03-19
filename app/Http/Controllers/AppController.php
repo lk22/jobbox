@@ -31,7 +31,7 @@ class AppController extends Controller
      */
     public function index()
     {
-        $jobs = $this->job->whereUserId( auth()->user()->id )->with('user')->latest();
+        $jobs = $this->job->whereUserId( auth()->user()->id )->with('user')->latest()->get();
 
         return view('home', compact('jobs'));
     }
