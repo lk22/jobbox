@@ -18,13 +18,13 @@ export class Connection {
     */
     checkConnection() {
         const client = navigator;
-        var container = this.component;
+        const container = this.component;
 
-        if(client.online === false) {
+        if (client.online === false) {
 
-            for( var time = 5; time <= 5; time--) {
+            for (let time = 5; time <= 5; time--) {
 
-                if( time < 0 ) {
+                if (time < 0) {
 
                     this.request.send('', window.location.url, function(response) {
 
@@ -32,7 +32,7 @@ export class Connection {
 
                         this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
-                    }, function(response) {
+                    }, response => {
 
                         console.log(response);
 
@@ -42,11 +42,11 @@ export class Connection {
 
             }
 
-            setTimeout( function() {
+            setTimeout(function() {
 
-				window.location.reload(1);
+                window.location.reload(1);
 
-			}, 5000);
+            }, 5000);
 
         }
     }
