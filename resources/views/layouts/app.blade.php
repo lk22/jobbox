@@ -59,14 +59,6 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- <script src="{{ asset('js/jobdesk.js') }}"></script> -->
-
-    <script type="text/javascript">
-        if(navigator.online === false) {
-            $("#ethernetComponent").html('<p>You are currently on any internet connection find a connection and try again</p>');
-        } else {
-            $("#ethernetComponent").hide();
-        }
-    </script>
+    <script src="{{ asset('js/jobdesk.js') }}"></script>
 </body>
 </html>
