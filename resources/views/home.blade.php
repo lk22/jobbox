@@ -13,7 +13,7 @@
             </div>
 
             <div class="col l3 push-l2">
-                {{ auth()->user()->firstname }}
+                <p class="text-center"> {{ auth()->user()->firstname }} </p>
             </div>
         </div>
     </div>
