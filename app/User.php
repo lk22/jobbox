@@ -36,14 +36,14 @@ class User extends Authenticatable
     * user has many posts
     */
     public function post() {
-      return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class);
     }
 
     /**
     * user has many job applications
     */
-    public function jobApplication() {
-      return $this->hasMany(JobApplication::class);
+    public function jobApplications() {
+        return $this->hasMany(JobApplication::class);
     }
 
     /**
