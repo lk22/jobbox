@@ -63,7 +63,7 @@
 
     <div class="fixed-action-btn">
     <a class="btn-floating btn-large red">
-      <i class="large material-icons">mode_edit</i>
+      <i class="large material-icons">x</i>
     </a>
     <ul>
       <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
