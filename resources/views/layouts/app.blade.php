@@ -49,6 +49,7 @@
 </head>
 <body>
     <div id="jobdesk">
+        <!-- partials -->
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
 
