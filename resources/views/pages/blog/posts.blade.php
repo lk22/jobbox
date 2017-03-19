@@ -8,7 +8,7 @@
 					<div class="col-md-4 blog_post">
 						<div class="row blog_post__cover">
 							<div class="overlay">
-								<a href="{{ route('post', $post->id) }}" class="btn btn-success">Læs Artikel</a>
+								<a href="{{ route('post', $post->slug) }}" class="btn btn-success">Læs Artikel</a>
 							</div>
 							<img class="img img-thumbnail" height="250" width="100%" src="{{ $post->post_cover }}" alt="">
 						</div>
@@ -24,9 +24,9 @@
 			@endif
 		</div>
 		<div class="row">
-			@if(!auth()->user()) <h4><a href="#signinModal" data-toggle="modal" data-target="#signinModal">Login</a> for at offentliggøre opslag <small> <u>du skal være ansat hos JobDesk ApS</u> </small></h4> 
-			@elseif(!auth()->user()->is_admin) <h4>Kun Nyheds beskrivere og administratorer har adgang til at skrive artikler <a href="#">søg om </a></h4> 
-			@else <h4><a href="#addPostModal" class="btn btn-primary">Publish Post</a></h4> @endif 
+			@if(!auth()->user()) <h4><a href="#signinModal" data-toggle="modal" data-target="#signinModal">Login</a> for at offentliggøre opslag <small> <u>du skal være ansat hos JobDesk ApS</u> </small></h4>
+			@elseif(!auth()->user()->is_admin) <h4>Kun Nyheds beskrivere og administratorer har adgang til at skrive artikler <a href="#">søg om </a></h4>
+			@else <h4><a href="#addPostModal" class="btn btn-primary">Publish Post</a></h4> @endif
 		</div>
 	</div>
 
