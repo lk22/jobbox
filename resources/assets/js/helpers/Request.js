@@ -1,4 +1,3 @@
-import Axios from 'axios';
 
 class Request {
 
