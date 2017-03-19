@@ -28,10 +28,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user = $this->user->whereId(
-            auth()->user()->id
-        )->with('jobApplications')->get();
-        return $user;
-        //return view('home', compact('jobApplications'));
+        return view('home');
     }
 }
