@@ -35,4 +35,12 @@ class Helper {
             this.getResponse();
         });
     }
+
+    sendPostRequest(url, data = {}, response) {
+        Axios.post(url, data).then(( response ) => {
+            this.getResponse(response);
+        }).catch(( response ) => {
+            this.getResponse(response);
+        });
+    }
 }
