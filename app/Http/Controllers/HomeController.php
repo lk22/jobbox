@@ -33,7 +33,7 @@ class HomeController extends Controller
         $user = $this->user->whereId(
             auth()->user()->id
         )->with('jobApplications')->get();
-        return $jobApplications;
+        return $user;
         //return view('home', compact('jobApplications'));
     }
 }
