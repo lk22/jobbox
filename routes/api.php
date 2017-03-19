@@ -30,7 +30,7 @@ Route::prefix('users')->group(function() {
 
 	Route::prefix('user')->group(function() {
 
-		Route::name('api.user')->get('/')->uses('UserController@user');
+		Route::name('api.user')->get('/{slug}')->uses('UserController@user');
 
 		Route::name('api.user.auth')->get('/auth')->uses('UserController@auth');
 
@@ -51,4 +51,4 @@ Route::prefix('users')->group(function() {
 	 */
 	Route::name('api.remove.user')->delete('/{id}')->uses('UserController@remove');
 
-});	
+});
