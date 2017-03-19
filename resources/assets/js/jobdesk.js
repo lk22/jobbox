@@ -11,16 +11,12 @@ var store = require('./store/storeConfig.jsx').configure({});
 const history = syncHistoryWithStore(browserHistory, store);
 
 import App from './components/App.jsx';
-import Feed from './components/Feed.jsx';
-import About from './components/About.jsx';
 
 // render application with react router
 ReactDOM.render(
   	<Provider store={store}>
   		<Router history={history}>
 	      <Route path="/" component={JobDesk}>
-	      	<Route path="/feed" component={Feed}></Route>
-	 		<Route path="/about" component={About}></Route>
 	      </Route>
     	</Router>
   	</Provider>,
