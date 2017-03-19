@@ -34,5 +34,7 @@ class CreateJobApplicationsTable extends Migration
         Schema::table('job_applications', function(Blueprint $table) {
             $table->dropColumn('user_id');
         });
+
+        Schema::dropIfExists('job_applications');
     }
 }
