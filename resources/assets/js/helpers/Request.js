@@ -106,7 +106,7 @@ class Request {
 
     }
 
-    sendDeleteRequest(url, response) {
+    sendDeleteRequest(url) {
 
         Axios.delete(url).then(( response ) => {
 
