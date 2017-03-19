@@ -4,9 +4,6 @@
 var Request = function Request () {};
 
 Request.prototype.send = function send (method, url, data, success, failure) {
-        if ( method === void 0 ) method = '';
-        if ( data === void 0 ) data = {};
-
 
     switch (method) {
         case 'POST':
