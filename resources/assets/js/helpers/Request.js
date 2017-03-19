@@ -80,14 +80,12 @@ class Request {
     */
     sendUpdateRequest(url, data = {}, success, failure) {
 
-        Axios.put(url, data).then(( response ) => {
-
-            this.getResponse(response);
-
-        }).catch(( response ) => {
-
-            this.getResponse(response);
-
+        $.ajax({
+            url: url,
+            type: 'PUT',
+            data: data,
+            success: success,
+            failure: failure
         });
 
     }
