@@ -13,6 +13,13 @@
                             make controller
                             make table for job applications
                         -->
+                        @if(count($jobApplications))
+
+                            @foreach($jobApplications as $jobApplication)
+                                {{ $jobApplication->id }}
+                            @endforeach
+
+                        @endif
                     </div>
                 </div>
             </div>
