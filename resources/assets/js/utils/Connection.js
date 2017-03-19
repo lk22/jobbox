@@ -41,6 +41,8 @@ class Connection {
 
             }, 5000);
 
+        } else {
+            container.hide();
         }
     }
 

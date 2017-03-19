@@ -122,6 +122,8 @@ Connection.prototype.checkConnection = function checkConnection () {
     var client = navigator;
     var container = this.component;
 
+    container.hide();
+
     if (client.online === false) {
 
         container.show();
