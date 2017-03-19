@@ -12,7 +12,7 @@
                 world
             </div>
 
-            <div class="col l3 push-l1">
+            <div class="col l3 push-l2">
                 {{ auth()->user()->firstname }}
             </div>
         </div>
