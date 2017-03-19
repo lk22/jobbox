@@ -10,7 +10,6 @@ var store = require('./store/storeConfig.jsx').configure({});
 
 const history = syncHistoryWithStore(browserHistory, store);
 
-import App from './components/App.jsx';
 
 // render application with react router
 ReactDOM.render(
