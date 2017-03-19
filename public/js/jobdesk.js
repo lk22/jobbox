@@ -123,7 +123,7 @@ Connection.prototype.checkConnection = function checkConnection () {
     var container = this.component;
     console.log(container);
 
-    if (client.online === false) {
+    if (!client.online) {
 
         container.show();
 
