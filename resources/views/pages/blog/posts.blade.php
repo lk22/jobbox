@@ -24,9 +24,13 @@
 			@endif
 		</div>
 		<div class="row">
+
 			@if(!auth()->user()) <h4><a href="#signinModal" data-toggle="modal" data-target="#signinModal">Login</a> for at offentliggøre opslag <small> <u>du skal være ansat hos JobDesk ApS</u> </small></h4>
+
 			@elseif(!auth()->user()->is_admin) <h4>Kun Nyheds beskrivere og administratorer har adgang til at skrive artikler <a href="#">søg om </a></h4>
+
 			@else <h4><a href="#addPostModal" class="btn btn-primary">Publish Post</a></h4> @endif
+
 		</div>
 	</div>
 
