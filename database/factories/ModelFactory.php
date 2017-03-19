@@ -20,6 +20,7 @@ $factory->define(JobDesk\User::class, function ( Faker\Generator $faker ) {
         'middlename' => 'Middlename',
         'lastname' => $faker->lastname,
         'name' => $faker->firstname . ' Middlename ' . $faker->lastname,
+        'slug' => $faker->slug,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
