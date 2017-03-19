@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col l4 push-l3">
+            <div class="col l3 push-l3">
                 <p class="text-center">World</p>
             </div>
         </div>
