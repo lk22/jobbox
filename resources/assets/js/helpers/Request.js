@@ -66,11 +66,11 @@ class Request {
     */
     sendGetRequestTo(url) {
 
-        Axios.get(url).then((response) => {
+        Axios.get(url).then(( response ) => {
 
             this.getResponse(response);
 
-        }).catch((response) => {
+        }).catch(( response ) => {
 
             this.getResponse();
 
