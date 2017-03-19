@@ -17,9 +17,7 @@ elixir((mix) => {
 
 	mix.webpackConfig({
 		resolve: {
-	        modules: [
-	            path.resolve(__dirname, 'vendor/laravel/spark/resources/assets/js')
-	        ]
+	        loader: 'babel-loader'
 	    }
 	})
 
