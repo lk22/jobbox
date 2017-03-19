@@ -24,7 +24,6 @@ class Request {
     * @param method = the method to use ['GET', 'POST', 'DELETE', 'PUT']
     * @param url = the url to send request to
     * @param data = the data from form to send to backend
-    * @param response = the response
     */
     sendAxiosRequest(method, url, data = null) {
 
@@ -77,6 +76,10 @@ class Request {
 
     }
 
+    /**
+    * Axios POST request
+    * @param url = the url to send request to
+    */
     sendPostRequest(url, data = {}, response) {
 
         Axios.post(url, data).then(( response ) => {
