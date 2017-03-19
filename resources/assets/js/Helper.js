@@ -22,4 +22,12 @@ class Helper {
             break;
         }
     }
+
+    sendGetRequestTo(url, response) {
+        Axios.get(url).then((response) => {
+            
+        }).catch((response) => {
+
+        });
+    }
 }
