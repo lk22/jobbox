@@ -104,3 +104,5 @@ export class Request {
 
     }
 }
+
+export default Request;
