@@ -52,7 +52,7 @@
         <!-- partials -->
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
-        <div class="progress" style="display:none;">
+        <div class="progress">
           <div class="indeterminate"></div>
       </div>
 
