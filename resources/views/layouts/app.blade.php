@@ -53,7 +53,7 @@
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
 
-        <div id="app" style="margin-top:2rem; background: #fff;">
+        <div id="app" style="margin-top:2rem; background: #888;">
             @yield('content')
         </div>
     </div>
