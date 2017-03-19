@@ -22,24 +22,13 @@ class Connection {
 
         if (client.online === false) {
 
-            container.show();
+            container.hide();
 
             for (var time = 5; time <= 5; time--) {
 
                 if (time < 0) {
 
-                    this.request.send('', window.location.url, function(response) {
-
-                        console.log(response);
-
-                        this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
-
-                    }, response => {
-
-                        console.log(response);
-
-                    });
-
+                    this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
                 }
 
             }
