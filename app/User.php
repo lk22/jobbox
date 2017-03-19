@@ -15,7 +15,7 @@ use JobDesk\Post;
 
 class User extends Authenticatable
 {
-    use Notifiable, Crudable, ErrorHandable, Sluggable;
+    use Notifiable, Crudable, ErrorHandable, Sluggable, SluggableScopeHelpers;
 
     /**
      * The attributes that are mass assignable.
