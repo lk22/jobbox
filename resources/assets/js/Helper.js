@@ -2,8 +2,9 @@
 import Request from './helpers/Request.js';
 
 export class Helper {
+
+    var request;
     constructor(){
-        // this.request = new Request;
         console.log("hello World");
     }
 
