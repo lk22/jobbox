@@ -31,7 +31,8 @@ class DatabaseSeeder extends Seeder
     	$seeders = array(
     		UsersTableSeeder::class,
             ContactMessagesTableSeeder::class,
-            PostsTableSeeder::class
+            PostsTableSeeder::class,
+            JobApplicationsTableSeeder::class
     	);
 
     	 // disable foreign key checks
