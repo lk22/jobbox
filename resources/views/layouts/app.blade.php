@@ -64,6 +64,8 @@
     <script type="text/javascript">
         if(navigator.online === false) {
             $("#ethernetComponent").html('<p>You are currently on any internet connection find a connection and try again</p>');
+        } else {
+            $("#ethernetComponent").hide();
         }
     </script>
 </body>
