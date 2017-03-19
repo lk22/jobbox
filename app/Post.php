@@ -15,7 +15,7 @@ class Post extends Model
 	/**
 	 * traits
 	 */
-	use SoftDeletes;
+	use SoftDeletes, Sluggable, SluggableScopeHelpers;
 
     /**
      * table name
