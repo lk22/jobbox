@@ -5,7 +5,7 @@ import Component from './helpers/Component.js';
 export class Helper {
 
     constructor(){
-        console.log("hello World");
+        this.component = new Component;
     }
 
 }
