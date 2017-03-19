@@ -52,9 +52,9 @@
         <!-- partials -->
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
-        <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
+        <div class="progress" style="display:none;">
+          <div class="indeterminate"></div>
+      </div>
 
         <div id="app" style="padding-top:2rem; background: #DFEFF9;">
             @yield('content')
@@ -64,5 +64,8 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{ asset('js/jobdesk.js') }}"></script>
+    <script type="text/javascript">
+        
+    </script>
 </body>
 </html>
