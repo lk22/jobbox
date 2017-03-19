@@ -32,6 +32,6 @@ class HomeController extends Controller
     {
         $jobApplications = $this->jobApplication->user()->whereId(auth()->user()->id)->get();
         return $jobApplications;
-        return view('home', compact('jobApplications'));
+        //return view('home', compact('jobApplications'));
     }
 }
