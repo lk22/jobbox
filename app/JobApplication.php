@@ -26,4 +26,12 @@ class JobApplication extends Model
     protected $fillable = [
         'body', 'user_id'
     ];
+
+    /**
+    * job applications belongs to user
+    */
+    public function user()
+    {
+      return $this->belongsTo(User::class);
+    }
 }
