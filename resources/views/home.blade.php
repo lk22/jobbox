@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col s2 m2 l2 avatar">
                         <div class="row">
-                            <img src="{{ auth()->user()->avatar }}" height="100" width="100" alt="">
+                            <img src="{{ auth()->user()->avatar }}" height="150" width="150" alt="">
                         </div>
                     </div>
                     <div class="col s2 m4 push-m1 l4 push-l1">
