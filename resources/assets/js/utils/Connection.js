@@ -4,6 +4,7 @@ export class Connection {
 
     constructor() {
         this.checkConnectionOn();
+        this.request = new Request;
     }
 
     checkConnectionOn() {
