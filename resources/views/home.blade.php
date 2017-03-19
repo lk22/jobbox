@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container" id="home">
+    <div class="container-flud" id="home">
         <div class="row">
 
             <div class="col s12 m12 l12 profile header">
