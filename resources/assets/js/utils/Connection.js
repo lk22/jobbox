@@ -6,10 +6,12 @@ export class Connection {
     constructor() {
         this.checkConnectionOn();
         this.request = new Request;
+        this.component = new Component('#conection-container');
     }
 
     checkConnectionOn() {
         const client = navigator;
+        const container = this.component.on('')
 
         if(client.online === false) {
 
