@@ -57,7 +57,7 @@ $factory->define(JobDesk\JobApplication::class, function( Faker\Generator $faker
 
     return [
         'body' => $faker->paragraphs(rand(1, 25), true),
-        'user_id' => rand(1,4),
+        'user_id' => rand(2,4),
         'created_at' => Carbon\Carbon::now(),
         'updated_at' => Carbon\Carbon::now()
     ];
