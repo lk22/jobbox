@@ -135,7 +135,7 @@ Connection.prototype.checkConnection = function checkConnection () {
 
         }, 5000);
 
-    } else if(client.online === true) {
+    } else if(client.online) {
         container.hide();
     }
 };
