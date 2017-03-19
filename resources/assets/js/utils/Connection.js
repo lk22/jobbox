@@ -8,7 +8,7 @@ class Connection {
     */
     constructor() {
         this.request = new Request();
-        this.component = new Component('#conection-container');
+        this.component = new Component('#ethernetComponent');
 
         this.checkConnection();
     }
