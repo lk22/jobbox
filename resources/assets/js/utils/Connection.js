@@ -7,7 +7,7 @@ export class Connection {
     * Constructor
     */
     constructor() {
-        this.request = new Request;
+        this.request = new Request();
         this.component = new Component('#conection-container');
 
         this.checkConnectionOn(navigator);
