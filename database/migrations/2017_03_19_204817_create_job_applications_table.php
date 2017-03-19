@@ -15,6 +15,7 @@ class CreateJobApplicationsTable extends Migration
     {
         Schema::create('job_applications', function(Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
             $table->text('body');
             $table->integer('user_id')->unsigned();
             $table->timestamps();
