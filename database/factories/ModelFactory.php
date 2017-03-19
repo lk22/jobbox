@@ -19,7 +19,7 @@ $factory->define(JobDesk\User::class, function (Faker\Generator $faker) {
         'firstname' => $faker->firstname,
         'middlename' => 'Middlename',
         'lastname' => $faker->lastname,
-        'name' => $faker->firstname . ' Middlename ' . $faker->lastname, 
+        'name' => $faker->firstname . ' Middlename ' . $faker->lastname,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
@@ -49,4 +49,13 @@ $factory->define(JobDesk\Post::class, function( Faker\Generator $faker ) {
         'post_cover' => 'http://uvmbored.com/wp-content/uploads/2015/05/blog.jpg',
         'user_id' => 1
     ];
+});
+
+$factory->define(JobDesk\JobApplication::class, function( Faker\Generator $faker ) {
+
+    return [
+        'body' => $faker->paragraps(rand(1, 25), true),
+        'user_id' => rand(1,4)
+    ];
+
 });
