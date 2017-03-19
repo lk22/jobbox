@@ -10,7 +10,7 @@ export class Connection {
         this.request = new Request();
         this.component = new Component('#conection-container');
 
-        this.checkConnectionOn(navigator);
+        this.checkConnection();
     }
 
     /**
@@ -52,4 +52,3 @@ export class Connection {
     }
 
 }
-export default Connection;
