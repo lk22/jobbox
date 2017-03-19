@@ -15,8 +15,6 @@ const history = syncHistoryWithStore(browserHistory, store);
 ReactDOM.render(
   	<Provider store={store}>
   		<Router history={history}>
-	      <Route path="/" component={JobDesk}>
-	      </Route>
     	</Router>
   	</Provider>,
   	document.getElementById('app')
