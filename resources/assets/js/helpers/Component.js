@@ -1,6 +1,6 @@
 class Component {
-    build(component) {
-        return this.on.append(component);
+    build(element, component) {
+        return this.on().append(component);
     }
 
     on(element) {
