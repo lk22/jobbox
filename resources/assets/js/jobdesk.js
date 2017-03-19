@@ -24,5 +24,5 @@ ReactDOM.render(
 	      </Route>
     	</Router>
   	</Provider>,
-  	document.getElementById('blood')
+  	document.getElementById('app')
 );
