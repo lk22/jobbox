@@ -16,7 +16,7 @@
                         <h5>
                             <strong>W</strong>elcome {{ auth()->user()->name }}
                         </h5>
-                        <p class="auth-email">Email: <a href="mailto{{ auth->user()->email }}"> {{ auth()->user()->email }} </a></p>
+                        <p class="auth-email">Email: <a href="mailto{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
                         <p class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
                             @if(auth()->user()->has_active_email)
