@@ -46,8 +46,9 @@
     </script>
 </head>
 <body>
-    <div id="app">
+    <div id="jobdesk">
         @include('layouts._partials.header')
+
 
         @yield('content')
     </div>
