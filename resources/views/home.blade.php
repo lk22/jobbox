@@ -7,7 +7,13 @@
             <div class="col l3 push-l2">
                 <div class="row">
                     <div class="job-application-list">
-                        
+                        <!-- applications list goes here -->
+                        <!--
+                            make applications model
+                            make controller
+                            make table for job applications
+                            
+                        -->
                     </div>
                 </div>
             </div>
