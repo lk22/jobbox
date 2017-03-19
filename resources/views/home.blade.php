@@ -56,7 +56,7 @@
             </div>
 
             <div class="col l3 push-l3">
-                <p class="center-align">World</p>
+                <p class="right-align">World</p>
             </div>
         </div>
     </div>
