@@ -15,9 +15,10 @@ class PostController extends Controller
 	 * constructor
 	 * @param Post $post [description]
 	 */
-    public function __construct(Post $post)
+    public function __construct(Post $post, User $user)
     {
     	$this->post = $post;
+		$this->user = $user;
     }
 
 	/**
