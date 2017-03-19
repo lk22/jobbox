@@ -18,7 +18,8 @@ export class Connection {
 
                     this.request.sendAxiosRequest(
                         '',
-                    )
+                        window.location.url
+                    );
 
                 }
 
