@@ -32,6 +32,20 @@ class Post extends Model
      */
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
+	/**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
+
     /**
      * post belongs to user
      * @return Illuminate\Database\Eloquent\Relations\BelongsTo::class
