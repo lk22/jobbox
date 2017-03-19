@@ -16,7 +16,11 @@ require('laravel-elixir-vue-2');
 elixir((mix) => {
 
 	mix.webpack({
-		loaders: ['']
+		loader: 'babel-loader',
+	    exclude: /node_modules/,
+	    query: {
+	        presets: ['es2015']
+	    }
 	})
 	mix.sass('homepage.scss');
 	mix.sass('emails.scss');
