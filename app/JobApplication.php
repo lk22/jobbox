@@ -8,6 +8,12 @@ use JobDesk\User;
 
 class JobApplication extends Model
 {
+
+    /**
+    * traits
+    */
+    use SoftDeletes;
+
     /**
     * table
     */
