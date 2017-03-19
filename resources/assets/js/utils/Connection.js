@@ -30,7 +30,7 @@ export class Connection {
 
                         console.log(response);
 
-                        // container.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                        container.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
                     }, function(response) {
 
