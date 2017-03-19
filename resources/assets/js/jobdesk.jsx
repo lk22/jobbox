@@ -1,5 +1,5 @@
 // dependencies
-// import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {Route, Router, IndexRoute, HashHistory, browserHistory} from 'react-router';
