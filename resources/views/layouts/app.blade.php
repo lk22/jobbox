@@ -42,7 +42,7 @@
             $js_variables = array_merge($default_js_variables, (isset($js_variables)) ? $js_variables : []);
             echo 'var jobdesk = ' . json_encode($js_variables) . ';';
         ?>
-        console.log(JobDesk);
+        console.log(jobdesk);
     </script>
 </head>
 <body>

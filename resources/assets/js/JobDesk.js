@@ -12,7 +12,7 @@ class JobDesk {
     }
 
     fire() {
-        console.log(jobdesk);
+        
     }
 
 }
