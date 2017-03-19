@@ -16,7 +16,7 @@
                         <h5>
                             <strong>W</strong>elcome {{ auth()->user()->name }}
                         </h5>
-                        <h6>Dream job: <p>{{ auth()->user()->dream_job_title }}</p></h6>
+                        <h6>Dream job: <span>{{ auth()->user()->dream_job_title }}</span></h6>
                     </div>
                 </div>
             </div>
