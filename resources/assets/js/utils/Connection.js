@@ -42,7 +42,7 @@ export class Connection {
 
             }
 
-            setTimeout( () => {
+            setTimeout( function() => {
 
 				window.location.reload(1);
 
