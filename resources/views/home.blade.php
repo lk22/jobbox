@@ -20,6 +20,7 @@
                                 <tbody>
                                     @foreach ($jobs as $job)
                                         <tr>
+                                            <td> {{ $job->id }} </td>
                                             <td> <a href="#">{{ substr($job->title, 0, 50) }}</a></td>
                                         </tr>
                                     @endforeach
