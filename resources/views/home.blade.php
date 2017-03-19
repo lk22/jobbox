@@ -9,7 +9,7 @@
             </div>
 
             <div class="col l3 push-l2">
-                <p class="text-center"></p>
+                <p class="text-center">World</p>
             </div>
 
             <div class="col l3 push-l2">
