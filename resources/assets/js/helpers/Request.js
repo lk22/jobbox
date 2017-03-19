@@ -77,7 +77,7 @@ export class Request {
     * @param url = the url to send request to
     * @param data = following data to backend
     */
-    sendUpdateRequest(url, data = {}, success, failure) {
+    sendUpdateRequest(url, success, failure, data = {}) {
 
         $.ajax({
             url: url,
