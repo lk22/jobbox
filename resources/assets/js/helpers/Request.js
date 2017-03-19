@@ -79,6 +79,7 @@ class Request {
     /**
     * Axios POST request
     * @param url = the url to send request to
+    * @param data = data to send with your request
     */
     sendPostRequest(url, data = {}) {
 
