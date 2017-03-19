@@ -13,6 +13,9 @@ export class Connection {
         this.checkConnectionOn();
     }
 
+    /**
+    * Check the clients internet connection
+    */
     checkConnectionOn() {
         const client = navigator;
         var container = this.component;
