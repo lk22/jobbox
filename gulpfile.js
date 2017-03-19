@@ -16,11 +16,7 @@ require('laravel-elixir-vue-2');
 elixir((mix) => {
 
 	mix.webpackConfig({
-		loader: 'babel-loader',
-	    exclude: /node_modules/,
-	    query: {
-	        presets: ['es2015']
-	    }
+		loader: 'babel-loader'
 	});
 
 	mix.sass('homepage.scss');
