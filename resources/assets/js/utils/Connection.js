@@ -22,7 +22,7 @@ class Connection {
 
         if (client.online === false) {
 
-            container.hide();
+            container.show();
 
             for (var time = 5; time <= 5; time--) {
 

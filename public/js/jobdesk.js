@@ -126,24 +126,13 @@ Connection.prototype.checkConnection = function checkConnection () {
 
     if (client.online === false) {
 
-        container.show();
+        container.hide();
 
         for (var time = 5; time <= 5; time--) {
 
             if (time < 0) {
 
-                this$1.request.send('', window.location.url, function(response) {
-
-                    console.log(response);
-
-                    this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
-
-                }, function (response) {
-
-                    console.log(response);
-
-                });
-
+                this$1.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
             }
 
         }
