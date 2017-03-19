@@ -12,7 +12,6 @@
                             make applications model
                             make controller
                             make table for job applications
-                            
                         -->
                     </div>
                 </div>
