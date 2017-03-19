@@ -48,7 +48,7 @@ class Request {
     sendGetRequestTo(url, success, failure) {
 
         $.get({
-            url: url
+            url: url,
             type: 'GET',
             success: success,
             error: failure
