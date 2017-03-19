@@ -13,13 +13,13 @@ class Helper {
 
             case 'PUT':
                 this.sendUpdateRequest(url, data, response);
-
                 break;
 
             case 'DELETE':
-
+                this.sendDeleteRequest(url, response);
             default:
-
+                this.sendGetRequestTo(url, response);
+            break;
         }
     }
 }
