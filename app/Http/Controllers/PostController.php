@@ -28,10 +28,6 @@ class PostController extends Controller
 	{
 		$posts = $this->post->with('user')->get();
 
-		// $js_variables = [
-		// 	'posts' => $posts
-		// ];
-
 		return view('pages.blog.posts', compact('posts'));
 	}
 
