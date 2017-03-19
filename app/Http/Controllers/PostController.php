@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use JobDesk\Http\Requests\CreatePostRequest;
 
 use JobDesk\Post;
+use JobDesk\User;
 
 use Storage;
 
