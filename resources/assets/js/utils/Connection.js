@@ -1,5 +1,4 @@
 import Request from './../helpers/Request.js';
-import Component from './../helpers/Component.js';
 
 class Connection {
 
@@ -17,7 +16,7 @@ class Connection {
     */
     checkConnection() {
         var client = navigator;
-        var container = this.component;
+        var container = $('#ethernetComponent');
         console.log(container);
 
         if (client.online === false) {
