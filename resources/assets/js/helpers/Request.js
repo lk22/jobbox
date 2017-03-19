@@ -63,14 +63,12 @@ class Request {
     */
     sendPostRequest(url, data = {}, success, failure) {
 
-        Axios.post(url, data).then(( response ) => {
-
-            this.getResponse(response);
-
-        }).catch(( response ) => {
-
-            this.getResponse(response);
-
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: data,
+            success: success,
+            failure: failure
         });
 
     }
