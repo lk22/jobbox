@@ -122,7 +122,7 @@ Connection.prototype.checkConnection = function checkConnection () {
         var this$1 = this;
 
     var client = navigator;
-    var container = this.component;
+    var container = this.component.hide();
 
     if (client.online === false) {
 
@@ -134,7 +134,7 @@ Connection.prototype.checkConnection = function checkConnection () {
 
                     console.log(response);
 
-                    this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                    this.component.show().html('<p>You are currently on any internet connection find a connection and try again</p>');
 
                 }, function (response) {
 

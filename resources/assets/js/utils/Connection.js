@@ -18,7 +18,7 @@ class Connection {
     */
     checkConnection() {
         var client = navigator;
-        var container = this.component.hide();
+        var container = this.component;
 
         if (client.online === false) {
 
@@ -30,7 +30,7 @@ class Connection {
 
                         console.log(response);
 
-                        this.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                        this.component.show().html('<p>You are currently on any internet connection find a connection and try again</p>');
 
                     }, response => {
 
