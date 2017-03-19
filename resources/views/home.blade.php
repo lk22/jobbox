@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col l3 push-l1">
+            <div class="col l3 push-l2">
                 hello
             </div>
 
