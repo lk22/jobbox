@@ -98,6 +98,7 @@ class Request {
     /**
     * Axios PUT request
     * @param url = the url to send request to
+    * @param data = following data to backend
     */
     sendUpdateRequest(url, data = {}) {
 
