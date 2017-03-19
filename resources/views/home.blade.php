@@ -20,7 +20,10 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($jobs as $job)
-                                        {{ substr($job->title, 0, 50) }}
+                                        <tr>
+                                            {{ substr($job->title, 0, 50) }}
+                                        </tr>
+
                                     @endforeach
                                 </tbody>
                             </table>
