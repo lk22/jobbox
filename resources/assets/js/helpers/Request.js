@@ -10,14 +10,12 @@ class Request {
         this.method = method;
         this.url = url;
         this.data = data;
-        this.response = response;
 
         // send default axios request
         this.sendAxiosRequest(
             this.method,
             this.url,
             this.data,
-            this.response
         );
 
     }
@@ -28,7 +26,7 @@ class Request {
     * @param data = the data from form to send to backend
     * @param response = the response
     */
-    sendAxiosRequest(method, url, data = null, response) {
+    sendAxiosRequest(method, url, data = null) {
 
         switch (method) {
             case 'POST':
