@@ -8,6 +8,9 @@ use JobDesk\JobApplication;
 
 class JobApplicationController extends Controller
 {
+    /**
+    * Constructor
+    */
     public function __construct(JobApplication $job)
     {
         $this->job = $job;
