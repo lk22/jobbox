@@ -13,9 +13,9 @@
                         </div>
                     </div>
                     <div class="col s2 m4 push-m1 l4 push-l1">
-                        <h6>
+                        <h5>
                             <strong>W</strong>elcome {{ auth()->user()->name }}
-                        </h6>
+                        </h5>
                         <p class="auth-email">Email: {{ auth()->user()->email }}</p>
                         <p class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
