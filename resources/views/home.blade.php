@@ -6,7 +6,13 @@
         <div class="row">
 
             <div class="col s12 m12 l12 profile header">
-
+                <div class="row">
+                    <div class="col s2 m2 l2 profile">
+                        <div class="avatar">
+                            <img src="{{ auth()->user()->avatar }}" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col l4 push-l2">
