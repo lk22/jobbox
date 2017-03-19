@@ -31,9 +31,7 @@ class AppController extends Controller
     {
         $user = $this->user->whereId(
             auth()->user()->id
-        )->firstOrFail();
-
-        $user->with('jobApplications')->get();
+        )->with('jobApplications')->get();
 
         return $user;
 
