@@ -12,7 +12,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         /**
-         * create admin 
+         * create admin
          */
         $user = new JobDesk\User;
 
@@ -20,6 +20,7 @@ class UsersTableSeeder extends Seeder
         	'firstname' => 'Leo',
         	'lastname' => 'Knudsen',
             'name' => 'Leo Knudsen',
+            'slug' => 'leo-knudsen',
         	'email' => 'lkdevelop@jobdesk.com',
         	'password' => bcrypt('1'),
         	'remember_token' => str_random(10),
