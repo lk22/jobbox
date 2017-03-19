@@ -6,6 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "adamwathan/bootforms": "^0.8.4",
+        "cviebrock/eloquent-sluggable": "^4.2",
         "laravel/framework": "5.4.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
