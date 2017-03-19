@@ -33,8 +33,6 @@ class AppController extends Controller
     {
         $jobs = $this->job->whereUserId( auth()->user()->id )->with('user')->get();
 
-        return $jobs;
-
         return view('home', compact('user'));
     }
 }
