@@ -50,6 +50,8 @@ Auth::routes();
 
 Route::name('home')->get('/home', 'AppController@index');
 
+Route::name('job')->get('/jobapplication')->uses('JobApplicationController@job');
+
 /**
  * decomposer route
  */
