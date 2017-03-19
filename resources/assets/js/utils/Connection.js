@@ -22,7 +22,7 @@ export class Connection {
 
         if (client.online === false) {
 
-            for (let time = 5; time <= 5; time--) {
+            for (var time = 5; time <= 5; time--) {
 
                 if (time < 0) {
 
