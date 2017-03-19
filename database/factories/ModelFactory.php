@@ -58,6 +58,7 @@ $factory->define(JobDesk\JobApplication::class, function( Faker\Generator $faker
     return [
         'body' => $faker->paragraphs(rand(1, 25), true),
         'title' => 'Ansøgning til ' . $faker->words(rand(1, 10), true),
+        'slug' => 'ansøging-til-'. $faker->slug,
         'user_id' => rand(1,4),
         'created_at' => Carbon\Carbon::now(),
         'updated_at' => Carbon\Carbon::now()
