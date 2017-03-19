@@ -119,8 +119,6 @@ var Connection = function Connection() {
 * Check the clients internet connection
 */
 Connection.prototype.checkConnection = function checkConnection () {
-        var this$1 = this;
-
     var client = navigator;
     var container = this.component;
 
@@ -132,7 +130,7 @@ Connection.prototype.checkConnection = function checkConnection () {
 
             if (time < 0) {
 
-                this$1.component.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                container.html('<p>You are currently on any internet connection find a connection and try again</p>');
             }
 
         }
@@ -152,9 +150,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     this.connection = new Connection();

@@ -28,7 +28,7 @@ class Connection {
 
                 if (time < 0) {
 
-                    container.html('<p>You are currently on any internet connection find a connection and try again</p>');
+                    container.show().html('<p>You are currently on any internet connection find a connection and try again</p>');
                 }
 
             }
