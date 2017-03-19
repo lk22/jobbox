@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use JobDesk\User;
 use JobDesk\Post;
+use JobDesk\JobApplication;
 
 class AppController extends Controller
 {
@@ -14,10 +15,11 @@ class AppController extends Controller
      *
      * @return void
      */
-    public function __construct(User $user, Post $post)
+    public function __construct(User $user, Post $post, JobApplication $job)
     {
         $this->user = $user;
         $this->post = $post;
+        $this->job = $job;
 
         $this->middleware('auth');
     }
