@@ -4,7 +4,7 @@
 
     <div class="container-fluid" id="home">
         <div class="row">
-            <div class="col l2 push-l2">
+            <div class="col l3 push-l2">
                 <div class="row">
                     <div class="job-application-list">
                         <!-- applications list goes here -->
