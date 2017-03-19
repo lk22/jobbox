@@ -21,12 +21,12 @@
                                 <tbody>
                                     @foreach ($jobs as $job)
                                         <tr>
-                                            {{ substr($job->title, 0, 50) }}
+                                            <td> {{ substr($job->title, 0, 50) }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
-                            
+
                         @endif
                     </div>
                 </div>
