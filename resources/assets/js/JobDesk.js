@@ -1,4 +1,4 @@
-
+import Helper from 'Helper.js';
 
 /**
 * main App class
@@ -12,7 +12,7 @@ class JobDesk {
     )
 
     fire() {
-        
+
     }
 
 }
