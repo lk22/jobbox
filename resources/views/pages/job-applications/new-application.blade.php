@@ -12,7 +12,7 @@
             </div>
 
             <div class="row">
-
+                <textarea name="body" rows="8" cols="80" class="tinymce"></textarea>
             </div>
         </form>
 
