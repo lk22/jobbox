@@ -1,5 +1,3 @@
-
-
 export class Component {
 
     constructor(element){
