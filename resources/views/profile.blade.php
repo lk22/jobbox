@@ -90,7 +90,7 @@
       </div>
 
       <div class="modal-footer">
-          <a href="{{ route('new.application', Auth::user()->slug) }}" class="modal-action modal-close waves-effect waves-green btn-green">Create<i class="material-icons">open_in_new</i></a>
+          <a href="{{ route('new.application', Auth::user()->slug) }}" class="modal-action modal-close waves-effect waves-green btn-green">CREATE<i class="material-icons">open_in_new</i></a>
           <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
   </div>
