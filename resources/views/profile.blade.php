@@ -21,10 +21,12 @@
 
                             @if (count($jobs) > 1)
                                 <p>
-                                    You have {{count($jobs)}} job application <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
+                                    You have {{count($jobs)}} job applications <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
                                 </p>
                             @else
-
+                                <p>
+                                    You have 1 job application <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
+                                </p>
                             @endif
 
                             @if(auth()->user()->has_active_email)
