@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="input-field col s6">
                   <input placeholder="title for job application" id="title" type="text" class="validate" name="title" required>
-                  <label for="first_name">First Name</label>
+                  <label for="first_name">Application title</label>
                 </div>
             </div>
 
