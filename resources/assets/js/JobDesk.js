@@ -15,7 +15,7 @@ class JobDesk {
 
     fire() {
 
-
+        this.defineEditorOn()
 
         var jobsModalBtn = new Component('.modal-trigger');
 
@@ -27,7 +27,7 @@ class JobDesk {
 
     defineEditorOn(element) {
         tinymce.init({
-            selector: 'textarea'
+            selector: element
         });
     }
 

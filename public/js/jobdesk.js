@@ -162,7 +162,7 @@ JobDesk.prototype.fire = function fire () {
 
 JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
     tinymce.init({
-        selector: 'job-editor'
+        selector: 'textarea'
     });
 };
 new JobDesk();
