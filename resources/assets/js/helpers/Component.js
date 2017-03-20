@@ -3,7 +3,7 @@ import Editor from './../components/Editor.js';
 export class Component {
 
     constructor(){
-        this.editor =
+        this.editor;
     }
 
     on(element) {
