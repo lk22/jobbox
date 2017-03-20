@@ -171,7 +171,6 @@ var Helper = function Helper(){
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
-    this.component = new Compoenent();
     this.fire();
 };
 
@@ -181,17 +180,26 @@ JobDesk.prototype.fire = function fire () {
      * define wysiwyg editor to textareas
      * @type {Component}
      */
-    tinymce.init({
-        selector: 'textarea.tinymce',
-        min_height: 400
-    });
+    this.defineEditorOn('textarea.tinymce');
 
-    var jobsModalBtn = this.component.get('.modal-trigger');
+    var jobsModalBtn = new Component('.modal-trigger');
 
     jobsModalBtn.click(function() {
         $('#jobsModal').modal();
     });
 
+};
+
+/**
+ * define new tinymce editor options
+ * @param  {[type]} element [description]
+ * @return [type]       [description]
+ */
+JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
+    tinymce.init({
+        selector: element,
+        min_height: 500
+    });
 };
 new JobDesk();
 
