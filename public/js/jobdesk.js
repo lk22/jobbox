@@ -181,7 +181,7 @@ JobDesk.prototype.fire = function fire () {
      * define wysiwyg editor to textareas
      * @type {Component}
      */
-    var tinymce = new Editor({
+    new Editor({
         selector: 'textarea.tinymce',
         min_height: 400
     });
