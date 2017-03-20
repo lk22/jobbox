@@ -10,7 +10,7 @@ export class Request {
 
         switch (method) {
             case 'POST':
-                this.sendPostRequest(url, data, success, failure)
+                this.sendPostRequest(url, data, success, failure);
                 break;
 
             case 'PUT':

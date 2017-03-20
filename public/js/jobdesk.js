@@ -30,9 +30,9 @@ Request.prototype.send = function send (method, url, data, success, failure) {
 */
 Request.prototype.getResponse = function getResponse (response) {
 
-    return response;
-
     console.log(response);
+
+    return response;
 
 };
 
@@ -144,9 +144,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
