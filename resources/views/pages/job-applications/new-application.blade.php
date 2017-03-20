@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('pages._partials.job-app-sidebar')
     <div class="container" id="job-application-wrapper">
 
         <form class="col s12 m6 push-m3 l6 push-l3 job-application-form" action="index.html" method="post">
