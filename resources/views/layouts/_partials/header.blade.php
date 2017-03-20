@@ -7,3 +7,8 @@
       </ul>
     </div>
   </nav>
+
+  <div class="chip">
+    <img src="{{ Auth::user()->avatar }}" alt="Contact Person">
+    Jane Doe
+  </div>
