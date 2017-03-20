@@ -23,27 +23,27 @@
             'csrfToken' => csrf_token(),
         ]); ?>
         <?php
-            $default_js_variables = array(
-                'csrf' => csrf_token(),
-                'url' => Config::get("app.url"),
-                'current_url' => request()->url(),
-                'auth' => array(
-                    'id' => auth()->user()->id,
-                    'firstname' => auth()->user()->firstname,
-                    'middlename' => auth()->user()->middlename,
-                    'lastname' => auth()->user()->lastname,
-                    'name' => auth()->user()->name,
-                    'email' => auth()->user()->email,
-                    'avatar' => auth()->user()->avatar,
-                    'is_admin' => auth()->user()->is_admin,
-                    'has_active_email' => auth()->user()->has_active_email,
-                    'dream_job_title' => auth()->user()->dream_job_title,
-                ),
-                'host' => request()->getHost(),
-                'environment' => app()->environment()
-            );
-            $js_variables = array_merge($default_js_variables, (isset($js_variables)) ? $js_variables : []);
-            echo 'var jobdesk = ' . json_encode($js_variables) . ';';
+            // $default_js_variables = array(
+            //     'csrf' => csrf_token(),
+            //     'url' => Config::get("app.url"),
+            //     'current_url' => request()->url(),
+            //     'auth' => array(
+            //         'id' => auth()->user()->id,
+            //         'firstname' => auth()->user()->firstname,
+            //         'middlename' => auth()->user()->middlename,
+            //         'lastname' => auth()->user()->lastname,
+            //         'name' => auth()->user()->name,
+            //         'email' => auth()->user()->email,
+            //         'avatar' => auth()->user()->avatar,
+            //         'is_admin' => auth()->user()->is_admin,
+            //         'has_active_email' => auth()->user()->has_active_email,
+            //         'dream_job_title' => auth()->user()->dream_job_title,
+            //     ),
+            //     'host' => request()->getHost(),
+            //     'environment' => app()->environment()
+            // );
+            // $js_variables = array_merge($default_js_variables, (isset($js_variables)) ? $js_variables : []);
+            // echo 'var jobdesk = ' . json_encode($js_variables) . ';';
         ?>
         console.log(jobdesk);
     </script>
