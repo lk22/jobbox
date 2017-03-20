@@ -20,7 +20,10 @@ class JobDesk {
          * define wysiwyg editor to textareas
          * @type {Component}
          */
-        this.defineEditorOn('textarea.tinymce');
+        var tinymce = this.component.renderEditorWith({
+            selector: 'textarea.tinymce',
+            min_height: 400
+        })
 
         var jobsModalBtn = this.component.get('.modal-trigger');
 
@@ -29,8 +32,6 @@ class JobDesk {
         });
 
     }
-
-
 
 }
 new JobDesk();
