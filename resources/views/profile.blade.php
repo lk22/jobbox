@@ -14,10 +14,10 @@
                     </div>
                     <div class="col s2 m4 push-m1 l4 push-l1">
                         <h5>
-                            <strong>W</strong>elcome {{ $auth->name }}
+                            <strong>W</strong>elcome {{ auth()->user()->name }}
                         </h5>
-                        <p class="auth-email">Email: <a href="mailto:{{ $auth->email }}"> {{ $auth->email }} </a></p>
-                        <p class="auth-dream-job">Dream job: <span>{{ $auth->dream_job_title }}</span></p>
+                        <p class="auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
+                        <p class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
                             @if(auth()->user()->has_active_email)
                                 <p style="color:#2ab27b;">Bruger er aktiv</p>
@@ -40,7 +40,7 @@
                                 @foreach ($jobs as $job)
                                     <tr>
                                         <td>
-                                            <a href="{{ route('job', [$auth->slug, $job->slug]) }}">
+                                            <a href="{{ route('job', [Auth::user()->slug, $job->slug]) }}">
                                                 {{ substr($job->title, 0, 50) }}
                                             </a>
                                         </td>
@@ -90,7 +90,7 @@
       </div>
 
       <div class="modal-footer">
-          <a href="{{ route('new.application', $auth->slug) }}" class="modal-action modal-close waves-effect waves-green btn-green">Close</a>
+          <a href="{{ route('new.application', ) }}" class="modal-action modal-close waves-effect waves-green btn-green">Close</a>
           <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
   </div>
