@@ -144,6 +144,9 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
+/**
+* main App class
+*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
@@ -156,7 +159,7 @@ JobDesk.prototype.fire = function fire () {
      * define wysiwyg editor to textareas
      * @type {Component}
      */
-    this.defineEditorOn('textarea.tinymce');
+    this.defineEditorOn('textarea');
 
     var jobsModalBtn = new Component('.modal-trigger');
 
