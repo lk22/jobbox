@@ -139,6 +139,9 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
+/**
+* main App class
+*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
@@ -152,7 +155,6 @@ JobDesk.prototype.fire = function fire () {
      * @type {Component}
      */
     this.defineEditorOn('textarea');
-    console.log(this.defineEditorOn('textarea'));
 
     var jobsModalBtn = new Component('.modal-trigger');
 
