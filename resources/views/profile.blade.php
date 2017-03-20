@@ -24,7 +24,7 @@
                             @else
                                 <p style="color:#F34C4C;">Bruger er aktiv :( <span>tjek din mail</span></p>
                             @endif
-
+                        
                     </div>
                 </div>
             </div>
