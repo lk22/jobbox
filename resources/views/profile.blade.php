@@ -41,4 +41,6 @@
         </a>
   </div>
 
+  @include('layouts._partials.modals.jobsmodal')
+
 @endsection
