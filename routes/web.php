@@ -56,7 +56,7 @@ Route::name('home')->get('/home', 'AppController@index');
 Route::prefix('profile/{user_slug}/jobapplication')->group(function() {
     Route::name('job')->get('/{slug}')->uses('JobApplicationController@job');
 
-    Route::name('create.application')->get('/create/new-job-application')->uses('JobApplicationController@create');
+    Route::name('new.application')->get('/create/new-job-application')->uses('JobApplicationController@create');
 });
 
 
