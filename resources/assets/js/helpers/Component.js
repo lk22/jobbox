@@ -2,16 +2,12 @@ import Editor from './../components/Editor.js';
 
 export class Component {
 
-    constructor(){
-        this.editor = new Editor();
-    }
-
     /**
      * get element
      * @param  {[type]} element [description]
      * @return [type]           [description]
      */
-    on(element) {
+    get(element) {
         return $(element);
     }
 

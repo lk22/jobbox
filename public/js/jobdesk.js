@@ -121,7 +121,12 @@ var Component = function Component(){
     this.editor = new Editor();
 };
 
-Component.prototype.on = function on (element) {
+/**
+ * get element
+ * @param  {[type]} element [description]
+ * @return [type]       [description]
+ */
+Component.prototype.get = function get (element) {
     return $(element);
 };
 
