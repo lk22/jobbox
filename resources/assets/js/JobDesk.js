@@ -10,7 +10,6 @@ class JobDesk {
     constructor() {
         this.helper = new Helper();
         // this.connection = new Connection();
-        this.component = new Component()
         this.fire();
     }
 

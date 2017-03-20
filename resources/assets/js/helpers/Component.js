@@ -6,7 +6,7 @@ export class Component {
         return $(element);
     }
 
-    on(element) {
+    get(element) {
         return $(element);
     }
 

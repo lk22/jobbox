@@ -161,6 +161,9 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
+/**
+* main App class
+*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
@@ -181,18 +184,6 @@ JobDesk.prototype.fire = function fire () {
         $('#jobsModal').modal();
     });
 
-};
-
-/**
- * define new tinymce editor options
- * @param  {[type]} element [description]
- * @return [type]       [description]
- */
-JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
-    tinymce.init({
-        selector: element,
-        min_height: 500
-    });
 };
 new JobDesk();
 
