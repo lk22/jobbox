@@ -139,6 +139,9 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
+/**
+* main App class
+*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
@@ -147,6 +150,10 @@ var JobDesk = function JobDesk() {
 
 JobDesk.prototype.fire = function fire () {
 
+    /**
+     * define wysiwyg editor to textareas
+     * @type {Component}
+     */
     this.defineEditorOn('textarea');
 
     var jobsModalBtn = new Component('.modal-trigger');
@@ -157,6 +164,11 @@ JobDesk.prototype.fire = function fire () {
 
 };
 
+/**
+ * define new tinymce editor options
+ * @param  {[type]} element [description]
+ * @return [type]       [description]
+ */
 JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
     tinymce.init({
         selector: element

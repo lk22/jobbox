@@ -30,7 +30,7 @@ class JobDesk {
     }
 
     /**
-     * define new tinymce editor
+     * define new tinymce editor options
      * @param  {[type]} element [description]
      * @return [type]           [description]
      */
