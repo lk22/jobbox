@@ -16,7 +16,7 @@
                         <h5>
                             <strong>W</strong>elcome {{ $auth->name }}
                         </h5>
-                        <p class="auth-email">Email: <a href="mailto:{{ $auth->email }}"> {{ auth()->user()->email }} </a></p>
+                        <p class="auth-email">Email: <a href="mailto:{{ $auth->email }}"> {{ $auth->email }} </a></p>
                         <p class="auth-dream-job">Dream job: <span>{{ $auth->dream_job_title }}</span></p>
 
                             @if(auth()->user()->has_active_email)
@@ -40,7 +40,7 @@
                                 @foreach ($jobs as $job)
                                     <tr>
                                         <td>
-                                            <a href="{{ route('job', [Auth::user()->slug, $job->slug]) }}">
+                                            <a href="{{ route('job', [$auth->slug, $job->slug]) }}">
                                                 {{ substr($job->title, 0, 50) }}
                                             </a>
                                         </td>
