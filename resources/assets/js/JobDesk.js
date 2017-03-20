@@ -36,7 +36,8 @@ class JobDesk {
      */
     defineEditorOn(element) {
         tinymce.init({
-            selector: element
+            selector: element,
+            theme: 'modern'
         });
     }
 
