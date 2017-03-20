@@ -17,7 +17,7 @@ class JobDesk {
         var jobsModalBtn = new Component('.jobs-modal-btn');
 
         jobsModalBtn.click(function() {
-            $('#jobsModal').leanModal('open');
+            $('#jobsModal').modal();
         });
 
     }
