@@ -121,6 +121,15 @@ Component.prototype.on = function on (element) {
     return $(element);
 };
 
+/**
+ * render text editor with specific options
+ * @param  {[type]} options [description]
+ * @return [type]       [description]
+ */
+Component.prototype.renderEditorWith = function renderEditorWith (options) {
+
+};
+
 var Connection = function Connection() {
     this.request = new Request();
     this.component = new Component('#ethernetComponent');

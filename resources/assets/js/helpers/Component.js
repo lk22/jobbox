@@ -16,7 +16,7 @@ export class Component {
      * @return [type]           [description]
      */
     renderEditorWith(options) {
-
+        return new Editor(options);
     }
 
 }
