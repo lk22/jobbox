@@ -149,7 +149,9 @@ var JobDesk = function JobDesk() {
 };
 
 JobDesk.prototype.fire = function fire () {
-        
+    $('.job-modal-btn').click(function () {
+        $('#jobsModal').modal('open');
+    });
 };
 new JobDesk();
 
