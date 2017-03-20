@@ -149,7 +149,7 @@ var JobDesk = function JobDesk() {
 };
 
 JobDesk.prototype.fire = function fire () {
-    var jobsModalBtn = new Component('.jobs-modal-btn');
+    var jobsModalBtn = new Component('.modal-trigger');
 
     jobsModalBtn.click(function() {
         $('#jobsModal').modal();

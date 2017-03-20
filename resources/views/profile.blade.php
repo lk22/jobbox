@@ -64,8 +64,6 @@
         </a>
   </div>
 
-  <a class="waves-effect waves-light btn" href="#jobsModal">Modal</a>
-
   <!-- jobs list modal  -->
   <div id="jobsModal" class="modal bottom-sheet">
       <div class="modal-content">
@@ -95,18 +93,5 @@
       </div>
   </div>
 
-  <!-- Modal Trigger -->
-  <a data-target="modal" class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
 
 @endsection
