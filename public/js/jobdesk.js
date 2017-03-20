@@ -129,7 +129,7 @@ Connection.prototype.checkConnection = function checkConnection () {
 
     if (!client.online) {
 
-        container.show();
+        // container.show();
 
         container.html('<p>You are currently on any internet connection find a connection and try again</p>');
 
