@@ -1,6 +1,5 @@
 import Helper from './Helper.js';
 import Component from './helpers/Component.js';
-import Editor from './components/Editor.js';
 import Connection from './utils/Connection.js';
 
 /**
@@ -11,7 +10,6 @@ class JobDesk {
     constructor() {
         this.helper = new Helper();
         // this.connection = new Connection();
-        this.component = new Compoenent();
         this.fire();
     }
 
@@ -21,17 +19,26 @@ class JobDesk {
          * define wysiwyg editor to textareas
          * @type {Component}
          */
-        tinymce.init({
-            selector: 'textarea.tinymce',
-            min_height: 400
-        });
+        this.defineEditorOn('textarea.tinymce');
 
-        var jobsModalBtn = this.component.get('.modal-trigger');
+        var jobsModalBtn = new Component('.modal-trigger');
 
         jobsModalBtn.click(function() {
             $('#jobsModal').modal();
         });
 
+    }
+
+    /**
+     * define new tinymce editor options
+     * @param  {[type]} element [description]
+     * @return [type]           [description]
+     */
+    defineEditorOn(element) {
+        tinymce.init({
+            selector: element,
+            min_height: 500
+        });
     }
 
 }
