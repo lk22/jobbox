@@ -1,5 +1,6 @@
 import Helper from './Helper.js';
 import Component from './helpers/Component.js';
+import Editor from './components/Editor.js';
 import Connection from './utils/Connection.js';
 
 /**
@@ -23,7 +24,7 @@ class JobDesk {
         var tinymce = this.component.renderEditorWith({
             selector: 'textarea.tinymce',
             min_height: 400
-        })
+        });
 
         var jobsModalBtn = this.component.get('.modal-trigger');
 
