@@ -18,7 +18,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-    
+
 </head>
 <body>
     <div id="jobdesk">
@@ -26,7 +26,7 @@
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
 
-        <div id="app" class="cyan lighten-5" style="padding-top:2rem; background: #DFEFF9; overflow-x:hidden;">
+        <div id="app" class="cyan lighten-5" style="padding-top:2rem; padding-bottom:2rem; background: #DFEFF9; overflow-x:hidden;">
             @yield('content')
         </div>
     </div>
