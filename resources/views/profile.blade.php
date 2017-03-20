@@ -16,8 +16,8 @@
                         <h5>
                             <strong>W</strong>elcome {{ $auth->name }}
                         </h5>
-                        <p class="auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
-                        <p class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
+                        <p class="auth-email">Email: <a href="mailto:{{ $auth->email }}"> {{ auth()->user()->email }} </a></p>
+                        <p class="auth-dream-job">Dream job: <span>{{ $auth->dream_job_title }}</span></p>
 
                             @if(auth()->user()->has_active_email)
                                 <p style="color:#2ab27b;">Bruger er aktiv</p>
