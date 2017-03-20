@@ -5,6 +5,7 @@ namespace JobDesk\Http\Controllers;
 use Illuminate\Http\Request;
 
 use JobDesk\JobApplication;
+use JobDesk\User;
 
 class JobApplicationController extends Controller
 {
