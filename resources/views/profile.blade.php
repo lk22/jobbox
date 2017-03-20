@@ -65,7 +65,7 @@
   </div>
 
   <!-- jobs list modal  -->
-  <div id="jobsModal" class="modal bottom-sheet">
+  <div id="jobsModal" class="modal bottom-sheet" style="max-height: 100%">
       <div class="modal-content">
           <div class="job-application-list">
               @if (count($jobs))
