@@ -10,6 +10,7 @@ class JobDesk {
     constructor() {
         this.helper = new Helper();
         // this.connection = new Connection();
+        this.component = new Component()
         this.fire();
     }
 
@@ -29,17 +30,7 @@ class JobDesk {
 
     }
 
-    /**
-     * define new tinymce editor options
-     * @param  {[type]} element [description]
-     * @return [type]           [description]
-     */
-    defineEditorOn(element) {
-        tinymce.init({
-            selector: element,
-            min_height: 500
-        });
-    }
+
 
 }
 new JobDesk();

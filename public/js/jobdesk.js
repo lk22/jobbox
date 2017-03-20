@@ -127,7 +127,7 @@ Component.prototype.on = function on (element) {
  * @return [type]       [description]
  */
 Component.prototype.renderEditorWith = function renderEditorWith (options) {
-
+    return new Editor(options);
 };
 
 var Connection = function Connection() {
