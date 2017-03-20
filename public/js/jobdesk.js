@@ -100,38 +100,10 @@ Request.prototype.sendDeleteRequest = function sendDeleteRequest (url, success, 
 
 };
 
-var Editor = function Editor(element) {
-    if ( element === void 0 ) element = {};
-
-    this.defineEditorOn(element);
-};
-
-/**
- * define new tinymce editor options
- * @param  {[type]} element [description]
- * @return [type]       [description]
- */
-Editor.prototype.defineEditorOn = function defineEditorOn (options) {
-        if ( options === void 0 ) options = {};
-
-    tinymce.init(options);
-};
-
 var Component = function Component () {};
 
 Component.prototype.get = function get (element) {
     return $(element);
-};
-
-/**
- * render text editor with specific options
- * @param  {[type]} options [description]
- * @return [type]       [description]
- */
-Component.prototype.renderEditorWith = function renderEditorWith (options) {
-        if ( options === void 0 ) options = {};
-
-    return new Editor(options);
 };
 
 var Connection = function Connection() {
@@ -165,9 +137,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
