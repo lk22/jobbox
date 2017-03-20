@@ -2,11 +2,11 @@ import Editor from './../components/Editor.js';
 
 export class Component {
 
-    constructor(element){
-        return $(element);
+    constructor(){
+        this.editor =
     }
 
-    get(element) {
+    on(element) {
         return $(element);
     }
 
@@ -15,7 +15,7 @@ export class Component {
      * @param  {[type]} options [description]
      * @return [type]           [description]
      */
-    renderEditorWith(options) {
+    renderEditorWith(options = {}) {
         return new Editor(options);
     }
 
