@@ -22,9 +22,9 @@
                             @if(auth()->user()->has_active_email)
                                 <p style="color:#2ab27b;">Bruger er aktiv</p>
                             @else
-                                <p style="color:#F34C4C;">Bruger er aktiv :( <span>tjek din mail</span></p>
+                                <p style="color:#F34C4C;">Bruger er ikke aktiv :( <span>tjek din mail</span></p>
                             @endif
-                        
+
                     </div>
                 </div>
             </div>
