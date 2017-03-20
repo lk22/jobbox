@@ -5,7 +5,7 @@
         <li>
             <div class="chip" style="background:none;">
               <img src="{{ Auth::user()->avatar }}" alt="Contact Person">
-              <a style="display:none" href="{{ route('home') }}">{{ Auth::user()->firstname }}</a>
+              <a style="display:inline" href="{{ route('home') }}">{{ Auth::user()->firstname }}</a>
             </div>
         </li>
         <li><a href="{{ route('logout') }}">Logout</a></li>
