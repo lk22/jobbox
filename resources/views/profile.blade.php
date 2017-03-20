@@ -19,6 +19,14 @@
                         <p class="auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
                         <p class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
+                            @if (count($jobs) > 1)
+                                <p>
+                                    You have {{count($jobs)}} job application <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
+                                </p>
+                            @else
+
+                            @endif
+
                             @if(auth()->user()->has_active_email)
                                 <p style="color:#2ab27b;">Bruger er aktiv</p>
                             @else
