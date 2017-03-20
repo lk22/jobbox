@@ -5,7 +5,7 @@
     <div class="container grey lighten-5" id="profile">
         <div class="row">
 
-            <div class="col s12 m10 push-m3 l10 push-l3 profile header">
+            <div class="col s12 m10 push-m3 l10 push-l2 profile header">
                 <div class="row">
                     <div class="col s2 m2 l2 avatar">
                         <div class="row">
@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="col l3 push-l3">
+            <div class="col l3 push-l2">
                 <div class="row">
                     <div class="job-application-list">
                         @if (count($jobs))
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col l3 push-l3">
+            <div class="col l3 push-l2">
                 <p class="right-align">World</p>
             </div>
         </div>
