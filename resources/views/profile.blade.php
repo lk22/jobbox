@@ -21,11 +21,11 @@
 
                             @if (count($jobs) > 1)
                                 <p>
-                                    You have {{count($jobs)}} job applications <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
+                                    du har {{count($jobs)}} job ansøgninger <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
                                 </p>
                             @else
                                 <p>
-                                    You have 1 job application <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger  job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
+                                    du har 1 job ansøgning <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger job-modal-btn"> <i class="material-icons">speaker_notes</i></a>
                                 </p>
                             @endif
 
