@@ -9,7 +9,7 @@ export class Editor {
      * @param  {[type]} element [description]
      * @return [type]           [description]
      */
-    defineEditorOn(element) {
+    defineEditorOn(options) {
         tinymce.init({
             selector: element,
             min_height: 500
