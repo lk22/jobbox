@@ -1,6 +1,6 @@
 export class Editor {
 
-    constructor(element) {
+    constructor(element = {}) {
         this.defineEditorOn(element)
     }
 
@@ -9,7 +9,7 @@ export class Editor {
      * @param  {[type]} element [description]
      * @return [type]           [description]
      */
-    defineEditorOn(options) {
+    defineEditorOn(options = {}) {
         tinymce.init(options);
     }
 
