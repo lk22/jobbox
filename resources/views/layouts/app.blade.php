@@ -1,3 +1,7 @@
+<?php
+    $auth = auth()->user();
+ ?>
+
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
 <head>
