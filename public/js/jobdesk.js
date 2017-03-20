@@ -109,11 +109,8 @@ var Editor = function Editor(element) {
  * @param  {[type]} element [description]
  * @return [type]       [description]
  */
-Editor.prototype.defineEditorOn = function defineEditorOn (element) {
-    tinymce.init({
-        selector: element,
-        min_height: 500
-    });
+Editor.prototype.defineEditorOn = function defineEditorOn (options) {
+    tinymce.init(options);
 };
 
 var Component = function Component(element){
