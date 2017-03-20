@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <textarea name="body" rows="8" cols="80"></textarea>
+    <form class="job-application-form" action="index.html" method="post">
+
+    </form>
 @stop
