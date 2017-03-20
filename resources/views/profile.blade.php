@@ -41,6 +41,8 @@
         </a>
   </div>
 
+  <a class="waves-effect waves-light btn" href="#jobsModal">Modal</a>
+
   @include('layouts._partials.modals.jobsmodal')
 
 @endsection
