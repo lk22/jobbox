@@ -118,7 +118,7 @@ Editor.prototype.defineEditorOn = function defineEditorOn (options) {
 };
 
 var Component = function Component(){
-    this.editor;
+    this.editor = new Editor();
 };
 
 Component.prototype.on = function on (element) {
