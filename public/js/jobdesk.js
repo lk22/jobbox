@@ -149,10 +149,12 @@ var JobDesk = function JobDesk() {
 };
 
 JobDesk.prototype.fire = function fire () {
-    $('.job-modal-btn').click(function () {
-        $('#jobsModal').modal('open');
-        console.log($('#jobsModal'));
+    var jobsModalBtn = new Component('.jobs-modal-btn');
+
+    jobsModalBtn.click(function() {
+            
     });
+
 };
 new JobDesk();
 
