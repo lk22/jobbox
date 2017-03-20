@@ -19,7 +19,7 @@ class JobDesk {
          * define wysiwyg editor to textareas
          * @type {Component}
          */
-        this.defineEditorOn('textarea');
+        this.defineEditorOn('textarea.tinymce');
 
         var jobsModalBtn = new Component('.modal-trigger');
 
