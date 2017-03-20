@@ -15,7 +15,7 @@ class JobDesk {
 
     fire() {
 
-        this.defineEditorOn()
+        this.defineEditorOn('textarea');
 
         var jobsModalBtn = new Component('.modal-trigger');
 

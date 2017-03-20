@@ -150,7 +150,7 @@ var JobDesk = function JobDesk() {
 
 JobDesk.prototype.fire = function fire () {
 
-
+    this.defineEditorOn('textarea');
 
     var jobsModalBtn = new Component('.modal-trigger');
 
@@ -162,7 +162,7 @@ JobDesk.prototype.fire = function fire () {
 
 JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
     tinymce.init({
-        selector: 'textarea'
+        selector: element
     });
 };
 new JobDesk();
