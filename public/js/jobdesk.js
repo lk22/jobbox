@@ -101,7 +101,7 @@ Request.prototype.sendDeleteRequest = function sendDeleteRequest (url, success, 
 };
 
 var Component = function Component(element){
-    this.get(elemenet);
+    this.get(element);
 };
 
 /**
@@ -144,9 +144,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
