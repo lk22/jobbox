@@ -21,7 +21,7 @@ class JobDesk {
          * define wysiwyg editor to textareas
          * @type {Component}
          */
-        var tinymce = this.component.renderEditorWith({
+        var tinymce = new Editor({
             selector: 'textarea.tinymce',
             min_height: 400
         });
