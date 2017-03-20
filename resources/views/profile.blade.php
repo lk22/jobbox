@@ -96,7 +96,7 @@
   </div>
 
   <!-- Modal Trigger -->
-  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+  <a data-target="modal" class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
