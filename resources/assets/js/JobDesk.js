@@ -27,7 +27,7 @@ class JobDesk {
 
     defineEditorOn(element) {
         tinymce.init({
-            selector: 'job-editor'
+            selector: 'textarea'
         });
     }
 

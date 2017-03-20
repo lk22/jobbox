@@ -149,12 +149,21 @@ var JobDesk = function JobDesk() {
 };
 
 JobDesk.prototype.fire = function fire () {
+
+
+
     var jobsModalBtn = new Component('.modal-trigger');
 
     jobsModalBtn.click(function() {
         $('#jobsModal').modal();
     });
 
+};
+
+JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
+    tinymce.init({
+        selector: 'job-editor'
+    });
 };
 new JobDesk();
 
