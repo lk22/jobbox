@@ -100,8 +100,8 @@ Request.prototype.sendDeleteRequest = function sendDeleteRequest (url, success, 
 
 };
 
-var Component = function Component(){
-    this.editor = new Editor();
+var Component = function Component(element){
+    this.get(elemenet);
 };
 
 /**
@@ -109,7 +109,7 @@ var Component = function Component(){
  * @param  {[type]} element [description]
  * @return [type]       [description]
  */
-Component.prototype.on = function on (element) {
+Component.prototype.get = function get (element) {
     return $(element);
 };
 
