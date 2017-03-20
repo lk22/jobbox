@@ -6,7 +6,7 @@
         <form class="job-application-form" action="index.html" method="post">
             <div class="row">
                 <div class="input-field col s6">
-                  <input placeholder="Placeholder" id="title" type="text" class="validate" name="title" required>
+                  <input placeholder="title for job application" id="title" type="text" class="validate" name="title" required>
                   <label for="first_name">First Name</label>
                 </div>
             </div>
