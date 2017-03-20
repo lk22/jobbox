@@ -19,8 +19,9 @@ class JobApplicationController extends Controller
     /**
     * finding the job application by slug property
     */
-    public function job($slug)
+    public function job($user_slug, $slug)
     {
+        $this->user->whereSlug($user_slug)->firstOrFail();
         $job = $this->job->whereSlug($slug)->firstOrFail();
 
         return $job;
