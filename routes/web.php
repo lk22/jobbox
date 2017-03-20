@@ -53,7 +53,7 @@ Route::name('home')->get('/home', 'AppController@index');
 /**
 * job applications routes
 */
-Route::prefix('profile/{slug}/jobapplication')->group(function() {
+Route::prefix('profile/{user_slug}/jobapplication')->group(function() {
     Route::name('job')->get('/{slug}')->uses('JobApplicationController@job');
 });
 
