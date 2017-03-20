@@ -59,7 +59,7 @@
     </div>
 
     <div class="fixed-action-btn">
-        <a data-target="jobsModal" href="#jobsModal" class="btn-floating btn-large blue job-modal-btn">
+        <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn">
           <i class="material-icons">speaker_notes</i>
         </a>
   </div>
