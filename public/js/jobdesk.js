@@ -100,6 +100,14 @@ Request.prototype.sendDeleteRequest = function sendDeleteRequest (url, success, 
 
 };
 
+var Editor = function Editor(element) {
+    this.defineEditorOn(element);
+};
+
+Editor.prototype.defineEditorOn = function defineEditorOn (element) {
+        
+};
+
 var Component = function Component(element){
     return $(element);
 };
