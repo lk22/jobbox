@@ -1,3 +1,5 @@
+import Editor from './Editor.js';
+
 export class Component {
 
     constructor(element){
