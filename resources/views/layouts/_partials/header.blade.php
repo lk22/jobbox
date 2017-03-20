@@ -10,5 +10,5 @@
 
   <div class="chip">
     <img src="{{ Auth::user()->avatar }}" alt="Contact Person">
-    {{ Auth::user()->name }}
+    <li><a href="#">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</a></li>
   </div>
