@@ -14,10 +14,12 @@ class JobDesk {
     }
 
     fire() {
-        $('.job-modal-btn').click(function () {
-            $('#jobsModal').modal('open');
-            console.log($('#jobsModal'));
+        var jobsModalBtn = new Component('.jobs-modal-btn');
+
+        jobsModalBtn.click(function() {
+            
         });
+
     }
 
 }
