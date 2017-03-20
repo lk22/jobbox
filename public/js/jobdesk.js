@@ -117,15 +117,8 @@ Editor.prototype.defineEditorOn = function defineEditorOn (options) {
     tinymce.init(options);
 };
 
-var Component = function Component(){
-    this.editor = new Editor();
-};
+var Component = function Component () {};
 
-/**
- * get element
- * @param  {[type]} element [description]
- * @return [type]       [description]
- */
 Component.prototype.get = function get (element) {
     return $(element);
 };
