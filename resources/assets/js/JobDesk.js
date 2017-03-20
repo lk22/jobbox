@@ -20,6 +20,7 @@ class JobDesk {
          * @type {Component}
          */
         this.defineEditorOn('textarea');
+        console.log(this.defineEditorOn('textarea'));
 
         var jobsModalBtn = new Component('.modal-trigger');
 
