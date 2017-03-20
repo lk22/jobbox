@@ -1,4 +1,3 @@
-import Editor from './../components/Editor.js';
 
 export class Component {
 
