@@ -19,10 +19,10 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
-        <?php
+        // window.Laravel = <?php echo json_encode([
+        //     'csrfToken' => csrf_token(),
+        // ]); ?>
+        // <?php
             // $default_js_variables = array(
             //     'csrf' => csrf_token(),
             //     'url' => Config::get("app.url"),
@@ -44,8 +44,8 @@
             // );
             // $js_variables = array_merge($default_js_variables, (isset($js_variables)) ? $js_variables : []);
             // echo 'var jobdesk = ' . json_encode($js_variables) . ';';
-        ?>
-        console.log(jobdesk);
+        // ?>
+        // console.log(jobdesk);
     </script>
 </head>
 <body>
