@@ -20,7 +20,7 @@
 
      <ul class="menu-list">
         @if(auth()->user())
-            <li class="list-item"><a href="{{ route('home') }}">{{auth()->user()->firstname}}</a></li>
+            <li class="list-item"><a href="{{ route('profile', auth()->user()->slug) }}">{{auth()->user()->firstname}}</a></li>
             <li class="list-item"><a href="{{ route('logout') }}">Logout</a></li>
         @else
              <li class="list-item"><a href="/join">Tilmeld</a></li>

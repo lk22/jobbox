@@ -48,7 +48,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::name('home')->get('/home', 'AppController@index');
+Route::name('profile')->get('/profile', 'AppController@index');
 
 /**
 * job applications routes

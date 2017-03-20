@@ -52,7 +52,7 @@ class LoginController extends Controller
      * redirect the user to facebook authentication page
      * @return voide
      */
-    public function redirectToFacebook() 
+    public function redirectToFacebook()
     {
         return Socialite::driver('facebook')->redirect();
     }
@@ -61,7 +61,7 @@ class LoginController extends Controller
      * Handle callback from google
      * @return [type]
      */
-    public function handleGoogleCallback() 
+    public function handleGoogleCallback()
     {
         $user = Socialite::driver('google')->user();
 
