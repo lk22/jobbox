@@ -2,8 +2,8 @@
 
 export class Component {
 
-    constructor(){
-        this.editor = new Editor();
+    constructor(element){
+        this.get(elemenet);
     }
 
     /**
@@ -11,7 +11,7 @@ export class Component {
      * @param  {[type]} element [description]
      * @return [type]           [description]
      */
-    on(element) {
+    get(element) {
         return $(element);
     }
 }
