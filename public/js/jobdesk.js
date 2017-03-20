@@ -101,6 +101,8 @@ Request.prototype.sendDeleteRequest = function sendDeleteRequest (url, success, 
 };
 
 var Editor = function Editor(element) {
+    if ( element === void 0 ) element = {};
+
     this.defineEditorOn(element);
 };
 
@@ -110,6 +112,8 @@ var Editor = function Editor(element) {
  * @return [type]       [description]
  */
 Editor.prototype.defineEditorOn = function defineEditorOn (options) {
+        if ( options === void 0 ) options = {};
+
     tinymce.init(options);
 };
 
