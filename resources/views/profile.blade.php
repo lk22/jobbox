@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container-fluid" id="home">
+    <div class="container-fluid  grey lighten-5" id="home">
         <div class="row">
 
             <div class="col s12 m10 push-m3 l10 push-l3 profile header">
