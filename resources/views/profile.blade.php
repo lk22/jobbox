@@ -89,6 +89,7 @@
           </div>
       </div>
       <div class="modal-footer">
+          <a href="{{ route('create.application') }}" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
   </div>
