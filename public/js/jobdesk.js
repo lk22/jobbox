@@ -172,7 +172,7 @@ JobDesk.prototype.fire = function fire () {
 JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
     tinymce.init({
         selector: element,
-        theme: 'modern'
+        min_height: 650
     });
 };
 new JobDesk();
