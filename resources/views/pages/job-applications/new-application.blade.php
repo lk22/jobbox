@@ -3,7 +3,7 @@
 @section('content')
     <div class=".container-fluid" id="job-application-wrapper">
 
-        <form class="job-application-form" action="index.html" method="post">
+        <form class="col s12 m6 push-m3 l6 push-l3 job-application-form" action="index.html" method="post">
             <div class="row">
                 <div class="input-field col s6">
                   <input placeholder="title for job application" id="title" type="text" class="validate" name="title" required>
@@ -12,7 +12,7 @@
             </div>
 
             <div class="row">
-                
+
             </div>
         </form>
 
