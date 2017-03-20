@@ -41,7 +41,7 @@
                                     @foreach ($jobs as $job)
                                         <tr>
                                             <td>
-                                                <a href="{{ route('job', $job->slug) }}">
+                                                <a href="{{ route('job', auth()->user()->slug, $job->slug) }}">
                                                     {{ substr($job->title, 0, 50) }}
                                                 </a>
                                             </td>
