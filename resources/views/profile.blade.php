@@ -88,9 +88,9 @@
               @endif
           </div>
       </div>
-      
+
       <div class="modal-footer">
-          <a href="{{ route('new.application', Auth::user()->slug }}" class="modal-action modal-close waves-effect waves-green btn-green">Close</a>
+          <a href="{{ route('new.application', ) }}" class="modal-action modal-close waves-effect waves-green btn-green">Close</a>
           <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
   </div>
