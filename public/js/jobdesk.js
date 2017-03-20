@@ -101,15 +101,10 @@ Request.prototype.sendDeleteRequest = function sendDeleteRequest (url, success, 
 };
 
 var Component = function Component(element){
-    this.get(element);
+    return $(element);
 };
 
-/**
- * get element
- * @param  {[type]} element [description]
- * @return [type]       [description]
- */
-Component.prototype.get = function get (element) {
+Component.prototype.on = function on (element) {
     return $(element);
 };
 
