@@ -11,9 +11,10 @@ class JobApplicationController extends Controller
     /**
     * Constructor
     */
-    public function __construct(JobApplication $job)
+    public function __construct(JobApplication $job, User $user)
     {
         $this->job = $job;
+        $this->user = $user;
     }
 
     /**
