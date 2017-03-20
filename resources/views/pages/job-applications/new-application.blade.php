@@ -3,7 +3,6 @@
 @section('content')
     <div class=".container-fluid" id="job-application-wrapper">
 
-
         <div class="fixed-action-btn horizontal click-to-toggle">
             <a class="btn-floating btn-large red">
               <i class="material-icons">menu</i>
