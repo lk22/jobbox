@@ -28,4 +28,12 @@ class JobApplicationController extends Controller
 
         return $job;
     }
+
+    /**
+     * return create view
+     */
+    public function create()
+    {
+        return view('')
+    }
 }
