@@ -4,4 +4,8 @@ export class Editor {
         this.defineEditorOn(element)
     }
 
+    defineEditorOn(element) {
+        
+    }
+
 }
