@@ -139,9 +139,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
     // this.connection = new Connection();
