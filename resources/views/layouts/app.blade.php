@@ -22,7 +22,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-
+    <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
 </head>
 <body>
     <div id="jobdesk">
