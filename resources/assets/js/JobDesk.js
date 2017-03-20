@@ -22,7 +22,7 @@ class JobDesk {
          */
         this.defineEditorOn('textarea.tinymce');
 
-        var jobsModalBtn = new Component('.modal-trigger');
+        var jobsModalBtn = this.component.get('.modal-trigger');
 
         jobsModalBtn.click(function() {
             $('#jobsModal').modal();
