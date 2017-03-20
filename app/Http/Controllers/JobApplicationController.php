@@ -34,6 +34,6 @@ class JobApplicationController extends Controller
      */
     public function create()
     {
-    
+        return view('pages.job-applications.new-application');
     }
 }
