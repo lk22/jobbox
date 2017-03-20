@@ -14,12 +14,21 @@ class JobDesk {
     }
 
     fire() {
+
+
+
         var jobsModalBtn = new Component('.modal-trigger');
 
         jobsModalBtn.click(function() {
             $('#jobsModal').modal();
         });
 
+    }
+
+    defineEditorOn(element) {
+        tinymce.init({
+            selector: 'job-editor'
+        });
     }
 
 }
