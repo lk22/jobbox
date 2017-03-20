@@ -1,4 +1,4 @@
-@extends('layouts.app')
+11@extends('layouts.app')
 
 @section('content')
 
@@ -41,7 +41,7 @@
                                     @foreach ($jobs as $job)
                                         <tr>
                                             <td>
-                                                <a href="{{ route('job', auth()->user()->slug, $job->slug) }}">
+                                                <a href="{{ route('job', Auth::user()->slug, $job->slug) }}">
                                                     {{ substr($job->title, 0, 50) }}
                                                 </a>
                                             </td>
