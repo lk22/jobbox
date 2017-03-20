@@ -14,7 +14,9 @@ class JobDesk {
     }
 
     fire() {
-        
+        $('.job-modal-btn').click(function () {
+            $('#jobsModal').modal('open');
+        });
     }
 
 }
