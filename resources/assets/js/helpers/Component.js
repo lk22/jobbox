@@ -1,7 +1,7 @@
 export class Component {
 
     constructor(element){
-        this.get(elemenet);
+        this.get(element);
     }
 
     /**
