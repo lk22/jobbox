@@ -11,6 +11,7 @@
     <title>{{ config('app.name') }} || {{ Auth::user()->name }}</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 
     <!-- Styles -->
