@@ -3,7 +3,7 @@
       <a href="{{ route('home') }}" class="brand-logo">{{ config('app.name') }}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
-            <div class="chip">
+            <div class="chip" style="background:none;">
               <img src="{{ Auth::user()->avatar }}" alt="Contact Person">
               <a href="{{ route('home') }}">{{ Auth::user()->firstname }}</a>
             </div>
