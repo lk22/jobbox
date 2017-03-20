@@ -37,7 +37,7 @@ class JobDesk {
     defineEditorOn(element) {
         tinymce.init({
             selector: element,
-            theme: 'modern'
+            min-height: 650
         });
     }
 

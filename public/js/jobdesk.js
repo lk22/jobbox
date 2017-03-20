@@ -171,7 +171,8 @@ JobDesk.prototype.fire = function fire () {
  */
 JobDesk.prototype.defineEditorOn = function defineEditorOn (element) {
     tinymce.init({
-        selector: element
+        selector: element,
+        theme: 'modern'
     });
 };
 new JobDesk();
