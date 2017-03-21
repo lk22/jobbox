@@ -37,6 +37,10 @@
   min-height: 200px;
 }
 
+#profile #profile-header .avatar > img {
+  border-radius: 100px 100px 100px 100px;
+}
+
 .cp-spinner {
   width: 48px;
   height: 48px;

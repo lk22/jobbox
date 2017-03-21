@@ -3,8 +3,6 @@
 @section('content')
 
     <div class="container grey lighten-5" id="profile">
-        <div class="row">
-
             <div class="col s12 m10 push-m3 l10 push-l1 profile-header">
                 <div class="row">
                     <div class="center-align avatar">
@@ -42,7 +40,6 @@
             <div class="col l3 push-l2">
                 <p class="left-align">World</p>
             </div>
-        </div>
     </div>
 
     <div class="fixed-action-btn">
