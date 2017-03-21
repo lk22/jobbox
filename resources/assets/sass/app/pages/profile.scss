@@ -3,5 +3,9 @@
 
     #profile-header{
         min-height:200px;
+
+        .avatar > img{
+            border-radius: 100px 100px 100px 100px;
+        }
     }
 }
