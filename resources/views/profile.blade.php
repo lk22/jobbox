@@ -8,7 +8,7 @@
                     <div class="center-align avatar">
                             <img src="{{ auth()->user()->avatar }}" height="150" width="150" alt="">
                     </div>
-                    <div class="col s2 m4 push-m1 l4 push-l1">
+                    <div class="col s2 m4 push-m1 l4 push-l4">
                         <h5 class="center-align">
                             {{ auth()->user()->name }}
                         </h5>
