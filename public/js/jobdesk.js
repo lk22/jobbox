@@ -144,7 +144,7 @@ var Helper = function Helper(){
 */
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
-    // this.connection = new Connection();
+        
     this.fire();
 };
 
