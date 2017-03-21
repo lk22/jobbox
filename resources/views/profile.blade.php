@@ -12,8 +12,8 @@
                         <h5>
                             {{ auth()->user()->name }}
                         </h5>
-                        <p class="center-alignauth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
-                        <p class="center-alignauth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
+                        <p class="center-align auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
+                        <p class="center-align auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
                             @if (count($jobs) > 1)
                                 <p>
