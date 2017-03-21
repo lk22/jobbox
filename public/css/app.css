@@ -29,6 +29,14 @@
   display: none;
 }
 
+#profile {
+  padding: 5rem;
+}
+
+#profile #profile-header {
+  min-height: 200px;
+}
+
 .cp-spinner {
   width: 48px;
   height: 48px;
