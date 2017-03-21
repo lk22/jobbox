@@ -9,7 +9,7 @@
                             <img src="{{ auth()->user()->avatar }}" height="150" width="150" alt="">
                     </div>
                     <div class="col s2 m4 push-m1 l4 push-l1">
-                        <h5>
+                        <h5 class="center-align">
                             {{ auth()->user()->name }}
                         </h5>
                         <p class="center-align auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
