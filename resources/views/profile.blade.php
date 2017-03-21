@@ -7,7 +7,7 @@
 
             <div class="col s12 m10 push-m3 l10 push-l2 profile-header">
                 <div class="row">
-                    <div class="col s2 m2 l2 avatar">
+                    <div class="center-align avatar">
                         <div class="row">
                             <img src="{{ auth()->user()->avatar }}" height="150" width="150" alt="">
                         </div>
