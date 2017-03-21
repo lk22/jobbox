@@ -27,7 +27,7 @@ class JobApplication extends Model
     * fillable fields
     */
     protected $fillable = [
-        'title', 'body', 'slug' 'user_id'
+        'title', 'body', 'slug', 'user_id'
     ];
 
     /**

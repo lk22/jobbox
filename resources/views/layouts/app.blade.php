@@ -30,7 +30,7 @@
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
 
-        <div id="app" class="cyan lighten-5" style="min-height:650px; padding-top:2rem; padding-bottom:2rem; background: #DFEFF9; overflow-x:hidden;">
+        <div id="app" class="cyan lighten-5" style="min-height:650px; padding-top:2rem; padding-bottom:2rem; background: #fff; overflow-x:hidden;">
             @yield('content')
         </div>
     </div>
