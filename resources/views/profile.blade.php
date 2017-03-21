@@ -5,7 +5,7 @@
     <div class="container grey lighten-5" id="profile">
         <div class="row">
 
-            <div class="col s12 m10 push-m3 l10 push-l2 profile-header">
+            <div class="col s12 m10 push-m3 l10 push-l1 profile-header">
                 <div class="row">
                     <div class="center-align avatar">
                         <div class="row">
