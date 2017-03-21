@@ -1,11 +1,35 @@
 #profile{
-    padding: 5rem;
+	padding:2rem;
+	
+	.profile-header{
+		padding:2rem;
+		background: #5C6BC0;
+		color: #fff;
+		
+		a{
+			color: #90CAF9;
+		}
+		
+		.avatar > img {
+			border: 3px solid #1A237E;
+			border-radius: 100px;
+		}
 
-    #profile-header{
-        min-height:200px;
+		.information{
 
-        .avatar > img{
-            border-radius: 100px 100px 100px 100px;
-        }
-    }
+			.name {
+				font-size: 20px;
+			}
+
+			.email{
+				a{
+					color: #90CAF9;
+				}
+			}
+
+			.email, .dream-job, .job-count{
+				font-size:12px;
+			}
+		}
+	}
 }

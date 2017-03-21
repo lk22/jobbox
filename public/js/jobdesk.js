@@ -139,9 +139,6 @@ var Helper = function Helper(){
     this.connection = new Connection();
 };
 
-/**
-* main App class
-*/
 var JobDesk = function JobDesk() {
     this.helper = new Helper();
         
@@ -156,10 +153,20 @@ JobDesk.prototype.fire = function fire () {
      */
     this.defineEditorOn('textarea');
 
-    var jobsModalBtn = new Component('.modal-trigger');
+    var jobsModalBtn = new Component(
+        '.jobs-modal-btn, floating-jobs-modal-btn'
+    );
+
+    var updateUserBtn = new Component(
+        '.update-user-btn, .floating-user-update-modal-button'
+    );
 
     jobsModalBtn.click(function() {
         $('#jobsModal').modal();
+    });
+
+    updateUserBtn.click(function() {
+        $('#updateUserModal').modal();
     });
 
 };

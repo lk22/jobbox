@@ -1,81 +1,62 @@
 @extends('layouts.app')
 
+<?php $auth = Auth::user(); ?>
+
 @section('content')
 
-    <div class="container grey lighten-5" id="profile">
-        <div class="col s12 m10 push-m3 l10 push-l1 profile-header">
-            <div class="row">
-                <div class="center-align avatar">
-                        <img src="{{ auth()->user()->avatar }}" height="150" width="150" alt="">
+    <div id="profile" class="container-fluid">
+      <div class="row">
+        <div class="col s3 m3 l3 profile-header z-depth-3">
+            <div class="avatar center-align">
+                <img src="{{ $auth->avatar }}" height="125" width="125" alt="">
+            </div>
+            <div class="information">
+
+                <div class="name center-align">
+                  <p class="align-center">{{ $auth->name }}</p>
                 </div>
-                <div class="col s2 m4 push-m1 l4 push-l4">
-                    <h5 class="center-align">
-                        {{ auth()->user()->name }}
-                    </h5>
-                    <p class="center-align auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
-                    <p class="center-align auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
-                        @if (count($jobs) > 1)
-                            <p>
-                                du har {{count($jobs)}} job ansøgninger <a data-target="jobsModal" href="#jobsModal" class="center-align modal-trigger btn-floating btn-large blue job-modal-btn">se her</a>
-                            </p>
-                        @else
-                            <p>
-                                du har 1 job ansøgning <a data-target="jobsModal" href="#jobsModal" class="center-align modal-trigger job-modal-btn">se her</a>
-                            </p>
-                        @endif
+                <div class="email center-align">
+                  <p> Email: <a href="mailto:{{ $auth->email }}"> {{ $auth->email }}</a></p>
+                </div>
 
-                        @if(auth()->user()->has_active_email)
-                            <p class="center-align" style="color:#2ab27b;">Bruger er aktiv</p>
-                        @else
-                            <p class="center-align" style="color:#F34C4C;">Bruger er ikke aktiv :( <span>tjek din mail</span></p>
-                        @endif
+                <div class="dream-job center-align">
+
+                  @if($auth->dream_job_title) <p>Dream job: {{ $auth->dream_job_title }}</p> @endif
+                  @if(!$auth->dream_job_title) <p></p> @endif
 
                 </div>
+
+                <div class="job-applications center-align">
+                  @if(count($jobs) > 1)
+                    <p class="job-count">You have currently {{ count($jobs) }} job applications - <a data-target="jobsModal" href="#jobsModal" class="modal-trigger jobs-modal-btn">see here</a></p>
+                  @else
+                    <p class="job-count">You have currently {{ count($jobs) }} job application - <a data-target="jobsModal" href="#jobsModal" class="modal-trigger jobs-modal-btn">see here</a></p>
+                  @endif
+                </div>
+
+                <div class="update-user">
+                    <a data-target="updateUserModal" href="#updateUserModal" class="update-user-btn">Edit <i class="material-icons">setting</i></a>
+                </div>
+  
             </div>
         </div>
-
-        <div class="col l3 push-l2">
-            <p class="left-align">World</p>
-        </div>
+      </div>
     </div>
 
     <div class="fixed-action-btn">
-        <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn">
-          <i class="material-icons">speaker_notes</i>
-        </a>
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a data-target="updateUserModal" href="#updateUserModal" class=" floating-user-update-modal-button btn-floating red"><i class="material-icons">settings</i></a></li>
+        <li><a data-target="jobsModal" href="#jobsModal" class="floating-jobs-modal-btn btn-floating yellow darken-1"><i class="material-icons">assignment</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
   </div>
 
-  <!-- jobs list modal  -->
-  <div id="jobsModal" class="modal bottom-sheet" style="max-height: 100%">
-      <div class="modal-content">
-          <div class="job-application-list">
-              @if (count($jobs))
-                  <table class="responsive-table">
-                      <thead>
-                          <td>Job Ansøgninger</td>
-                      </thead>
-                      <tbody>
-                          @foreach ($jobs as $job)
-                              <tr>
-                                  <td>
-                                      <a href="{{ route('job', [Auth::user()->slug, $job->slug]) }}">
-                                          {{ substr($job->title, 0, 50) }}
-                                      </a>
-                                  </td>
-                              </tr>
-                          @endforeach
-                      </tbody>
-                  </table>
-              @endif
-          </div>
-      </div>
+    @include('pages._partials.modals.job-applications-modal')
+    @include('pages._partials.modals.update-user-modal')
 
-      <div class="modal-footer">
-          <a href="{{ route('new.application', Auth::user()->slug) }}" class="modal-action modal-close waves-effect waves-green btn-green"><i class="material-icons">open_in_new</i></a>
-          <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
-  </div>
-
-
-@endsection
+@stop

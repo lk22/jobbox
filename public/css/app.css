@@ -30,15 +30,34 @@
 }
 
 #profile {
-  padding: 5rem;
+  padding: 2rem;
 }
 
-#profile #profile-header {
-  min-height: 200px;
+#profile .profile-header {
+  padding: 2rem;
+  background: #5C6BC0;
+  color: #fff;
 }
 
-#profile #profile-header .avatar > img {
-  border-radius: 100px 100px 100px 100px;
+#profile .profile-header a {
+  color: #90CAF9;
+}
+
+#profile .profile-header .avatar > img {
+  border: 3px solid #1A237E;
+  border-radius: 100px;
+}
+
+#profile .profile-header .information .name {
+  font-size: 20px;
+}
+
+#profile .profile-header .information .email a {
+  color: #90CAF9;
+}
+
+#profile .profile-header .information .email, #profile .profile-header .information .dream-job, #profile .profile-header .information .job-count {
+  font-size: 12px;
 }
 
 .cp-spinner {

@@ -30,10 +30,11 @@
         @include('layouts._partials.header')
         @include('layouts._partials.ethernetComponent')
 
-        <div id="app" class="cyan lighten-5" style="min-height:650px; padding-top:2rem; padding-bottom:2rem; background: #fff; overflow-x:hidden;">
+        <div id="app" class="cyan white" style="min-height:650px; padding-bottom:2rem; background: #fff; overflow-x:hidden;">
             @yield('content')
         </div>
     </div>
+
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
