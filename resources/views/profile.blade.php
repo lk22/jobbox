@@ -16,16 +16,16 @@
                         <h5>
                             {{ auth()->user()->name }}
                         </h5>
-                        <p class="auth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
-                        <p class="auth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
+                        <p class="center-alignauth-email">Email: <a href="mailto:{{ auth()->user()->email }}"> {{ auth()->user()->email }} </a></p>
+                        <p class="center-alignauth-dream-job">Dream job: <span>{{ auth()->user()->dream_job_title }}</span></p>
 
                             @if (count($jobs) > 1)
                                 <p>
-                                    du har {{count($jobs)}} job ansøgninger <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger btn-floating btn-large blue job-modal-btn">se her</a>
+                                    du har {{count($jobs)}} job ansøgninger <a data-target="jobsModal" href="#jobsModal" class="center-align modal-trigger btn-floating btn-large blue job-modal-btn">se her</a>
                                 </p>
                             @else
                                 <p>
-                                    du har 1 job ansøgning <a data-target="jobsModal" href="#jobsModal" class=" modal-trigger job-modal-btn">se her</a>
+                                    du har 1 job ansøgning <a data-target="jobsModal" href="#jobsModal" class="center-align modal-trigger job-modal-btn">se her</a>
                                 </p>
                             @endif
 
