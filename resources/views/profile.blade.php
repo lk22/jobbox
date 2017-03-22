@@ -49,10 +49,8 @@
         <i class="large material-icons">mode_edit</i>
       </a>
       <ul>
-        <li><a data-target="updateUserModal" href="#updateUserModal" class=" floating-user-update-modal-button btn-floating red"><i class="material-icons">settings</i></a></li>
-        <li><a data-target="jobsModal" href="#jobsModal" class="floating-jobs-modal-btn btn-floating yellow darken-1"><i class="material-icons">assignment</i></a></li>
-        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        <li><a data-position="left" data-tooltip="Update Your information" data-target="updateUserModal" href="#updateUserModal" class="tooltipped floating-user-update-modal-button btn-floating red"><i class="material-icons">settings</i></a></li>
+        <li><a data-position="left" data-tooltip="Job Application" data-target="jobsModal" href="#jobsModal" class="tooltipped floating-jobs-modal-btn btn-floating yellow darken-1"><i class="material-icons">assignment</i></a></li>
       </ul>
   </div>
 

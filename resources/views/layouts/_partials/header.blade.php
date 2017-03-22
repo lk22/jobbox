@@ -1,4 +1,4 @@
-  <nav id="app-header">
+  <nav class="container" id="app-header">
     <div class="nav-wrapper">
       <a href="{{ route('home') }}" class="brand-logo">{{ config('app.name') }}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
