@@ -13,7 +13,7 @@
             </div>
 
             <div class="row">
-                <textarea name="body" rows="8" cols="80" class="tinymce"></textarea>
+                <textarea name="body" rows="8" cols="80" class="tinymce new-job-application-field"></textarea>
             </div>
         </form>
 

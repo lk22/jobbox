@@ -56,7 +56,7 @@
   color: #90CAF9;
 }
 
-#profile .profile-header .information .email, #profile .profile-header .information .dream-job, #profile .profile-header .information .job-count {
+#profile .profile-header .information .email, #profile .profile-header .information .dream-job, #profile .profile-header .information .current-job, #profile .profile-header .information .job-count {
   font-size: 12px;
 }
 

@@ -28,8 +28,11 @@ class UsersTableSeeder extends Seeder
          	'is_admin' => 1,
         	'has_active_email' => 1,
         	'avatar' => 'http://www.zocom.se/en/assets/frontpanel/images/img.png',
-            'dream_job_title' => 'Full Stack Developer'
-       	]);
+            'dream_job_title' => 'Full Stack Developer',
+       	    'job_position' => 'Platform Engineer',
+            'company' => 'JobDesk ApS',
+            'description' => 'Web Entuitiast, Specialized Laravel engineer, and allways wearing a big smile :)'
+        ]);
 
        	factory(JobDesk\User::class, rand(1,5))->create();
     }

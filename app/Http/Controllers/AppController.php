@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use JobDesk\User;
 use JobDesk\Post;
 use JobDesk\JobApplication;
+use JobDesk\JobPosition;
 
 class AppController extends Controller
 {
@@ -15,11 +16,12 @@ class AppController extends Controller
      *
      * @return void
      */
-    public function __construct(User $user, Post $post, JobApplication $job)
+    public function __construct(User $user, Post $post, JobApplication $job, JobPosition $position)
     {
         $this->user = $user;
         $this->post = $post;
         $this->job = $job;
+        $this->position = $position;
 
         $this->middleware('auth');
     }
@@ -33,6 +35,8 @@ class AppController extends Controller
     {
         $jobs = $this->job->whereUserId( auth()->user()->id )->with('user')->latest()->get();
 
-        return view('profile', compact('jobs'));
+        $positions = $this->position->all();
+
+        return view('profile', compact('jobs', 'positions'));
     }
 }

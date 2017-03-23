@@ -16,6 +16,10 @@
                   <p class="align-center">{{ $auth->name }}</p>
                 </div>
 
+                <div class="description center-align">
+                  <p class="center-align">{{ $auth->description }}</p>
+                </div>
+
                 <div class="email center-align">
                   <p> Email: <a href="mailto:{{ $auth->email }}"> {{ $auth->email }}</a></p>
                 </div>
@@ -25,6 +29,11 @@
                   @if($auth->dream_job_title) <p>Dream job: {{ $auth->dream_job_title }}</p> @endif
                   @if(!$auth->dream_job_title) <p></p> @endif
 
+                </div>
+
+                <div class="current-job center-align">
+                  @if($auth->job_position) <p>Working as: {{ $auth->job_position }} <br> at {{ $auth->company }}</p> @endif
+                  @if(!$auth->job_position) <p>You are unemployed</p> @endif
                 </div>
 
                 <div class="job-applications center-align">
@@ -55,6 +64,6 @@
   </div>
 
     @include('pages._partials.modals.job-applications-modal')
-    @include('pages._partials.modals.update-user-modal')
+    @include('pages._partials.modals.update-user-modal', $positions)
 
 @stop

@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
     		'users',
             'contact_messages',
             'posts',
-            'job_applications'
+            'job_applications',
+            'job_positions'
     	);
 
     	/**
@@ -32,7 +33,8 @@ class DatabaseSeeder extends Seeder
     		UsersTableSeeder::class,
             ContactMessagesTableSeeder::class,
             PostsTableSeeder::class,
-            JobApplicationsTableSeeder::class
+            JobApplicationsTableSeeder::class,
+            JobPositionsTableSeeder::class
     	);
 
     	 // disable foreign key checks
@@ -56,6 +58,9 @@ class DatabaseSeeder extends Seeder
         	echo $index . ". Truncated table " . $table . "\n";
         }
 
+        echo "\nAll tables are truncated successfully\n";
+        echo "-------------------------------------\n\n";
+
         /**
          * running seeders
          */
@@ -70,6 +75,8 @@ class DatabaseSeeder extends Seeder
         }
 
         $total = microtime(true) - $init1;
+
+        echo "\nFresh new data is now seeded successfully :), Happy Developing " . get_current_user() . "\n";
 
         // enable foreign key checks again
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');

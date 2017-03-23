@@ -9,34 +9,71 @@ class JobDesk {
 
     constructor() {
         this.helper = new Helper();
+
+        this.jobsModalBtn = new Component(
+            '.jobs-modal-btn, floating-jobs-modal-btn'
+        );
+
+        this.updateUserBtn = new Component(
+            '.update-user-btn, .floating-user-update-modal-button'
+        );
+
+        this.jobSelectFields = new Component(
+            '#current_positions, #DreamJob'
+        );
+
+        /**
+         * new job application field 
+         */
+        
+            this.defineEditorOn('textarea.new-job-application-field', 500);
+
+        /**
+         * textarea for updating user form
+         */
+            
+            this.defineEditorOn('textarea.updateUserDescription', 100);
         
         this.fire();
     }
 
     fire() {
+    
+    
+        // render select fields
+        this.jobSelectFields.material_select();
 
         /**
-         * define wysiwyg editor to textareas
-         * @type {Component}
+         * add click event on button to toggle jobs modal component
+         * @param  {[type]} ( [description]
+         * @return {[type]}   [description]
          */
-        this.defineEditorOn('textarea');
+        // jobsModalBtn.click(() => {
+        //     $('#jobsModal').modal();
+        // });
 
-        var jobsModalBtn = new Component(
-            '.jobs-modal-btn, floating-jobs-modal-btn'
-        );
-
-        var updateUserBtn = new Component(
-            '.update-user-btn, .floating-user-update-modal-button'
-        );
-
-        jobsModalBtn.click(function() {
+        this.fireEventOn(jobsModalBtn, 'click', function() {
             $('#jobsModal').modal();
         });
 
-        updateUserBtn.click(function() {
+        /**
+         * add click event for updating user form
+         * @param  {[type]} ( [description]
+         * @return {[type]}   [description]
+         */
+        // updateUserBtn.click(() => {
+        //     $('#updateUserModal').modal();
+        // });
+        
+        this.fireEventOn(updateUserBtn, 'click', function() {
             $('#updateUserModal').modal();
         });
+        
 
+    }
+
+    fireEventOn(element, event, callback) {
+        $(element).on(event, callback);
     }
 
     /**
@@ -44,10 +81,10 @@ class JobDesk {
      * @param  {[type]} element [description]
      * @return [type]           [description]
      */
-    defineEditorOn(element) {
+    defineEditorOn(element, height) {
         tinymce.init({
             selector: element,
-            min_height: 500
+            min_height: height
         });
     }
 

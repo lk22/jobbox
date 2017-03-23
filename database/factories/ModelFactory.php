@@ -28,6 +28,9 @@ $factory->define(JobDesk\User::class, function ( Faker\Generator $faker ) {
         'is_admin' => rand(0,1),
         'has_active_email' => rand(0,1),
         'dream_job_title' => $faker->jobTitle,
+        'job_position' => $faker->jobTitle,
+        'company' => $faker->company,
+        'description' => $faker->words(1, true),
         'created_at' => Carbon\Carbon::now(),
         'updated_at' => Carbon\Carbon::now()
     ];
@@ -64,6 +67,14 @@ $factory->define(JobDesk\JobApplication::class, function( Faker\Generator $faker
         'user_id' => rand(1,4),
         'created_at' => Carbon\Carbon::now(),
         'updated_at' => Carbon\Carbon::now()
+    ];
+
+});
+
+$factory->define(JobDesk\JobPosition::class, function( Faker\Generator $faker ) {
+
+    return [
+        'name' => $faker->unique()->jobTitle
     ];
 
 });
