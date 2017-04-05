@@ -41,6 +41,13 @@ class JobApplicationController extends Controller
     {
         $data = $request->all();
 
-        dd($data);
+
+        if($data)
+        {
+            $this->job->create([
+                'title' => $request->get('title'),
+                'body' => strip_tags($request->get('body'), '<p></p>'); 
+            ]);
+        }
     }
 }
