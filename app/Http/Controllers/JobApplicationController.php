@@ -55,6 +55,6 @@ class JobApplicationController extends Controller
             $create_success = Session::flash('create_success', 'Din nye job-ansøgning er tilføjet og gemt se i dine ansøgninger for nye tilføjet ansøgning');
         }
 
-        return redirect(route('home'))
+        return redirect(route('home'))->with(['create_success' => $create_success]);
     }
 }
