@@ -1,5 +1,5 @@
 <!-- logout modal  -->
-  <div id="jobsModal" class="modal" style="max-height: 100%">
+  <div id="logoutModal" class="modal">
       <div class="modal-content">
           <div class="job-application-list">
               <h1>Are you sure?</h1>
