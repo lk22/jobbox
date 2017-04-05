@@ -182,6 +182,11 @@ UserUpdateModal.prototype.fire = function fire () {
 
 };
 
+// form components
+// modal components
+/**
+* main App class
+*/
 var JobDesk = function JobDesk() {
 
     this.userModal = new UserUpdateModal();
@@ -240,7 +245,7 @@ JobDesk.prototype.fire = function fire () {
         $('#updateUserModal').modal();
     });
 
-    this.fireEventOn('.logoutModalbtn', 'click', function() {
+    this.fireEventOn('.logoutModalBtn', 'click', function() {
         $('#logoutModal').modal();
     });
 
