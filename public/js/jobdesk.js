@@ -245,6 +245,10 @@ JobDesk.prototype.fire = function fire () {
         $('#updateUserModal').modal();
     });
 
+    this.fireEventOn('.logoutModalbtn', 'click', function() {
+        $('#logoutModal').modal();
+    });
+
 };
 
 JobDesk.prototype.fireEventOn = function fireEventOn (element, event, callback) {
