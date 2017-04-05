@@ -4,6 +4,8 @@ namespace JobDesk\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Session;
+
 use JobDesk\JobApplication;
 use JobDesk\User;
 
@@ -47,8 +49,12 @@ class JobApplicationController extends Controller
             $this->job->create([
                 'title' => $request->get('title'),
                 'body' => strip_tags($request->get('body'), ['<p>', '<h3>']),
-                'user_id' => auth()->user()->id, 
+                'user_id' => auth()->user()->id,
             ]);
+
+            $create_success = Session::flash('create_success', 'Din nye job-ansøgning er tilføjet og gemt se i dine ansøgninger for nye tilføjet ansøgning');
         }
+
+        return redirect(route('home'))
     }
 }
