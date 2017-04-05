@@ -4,8 +4,9 @@
     @include('pages._partials.job-app-sidebar')
     <div class="container" id="job-application-wrapper">
 
-        <form class="col s12 m6 push-m3 l6 push-l3 job-application-form" action="{{ route('create.new.application') }}" method="post">
+        <form class="col s12 m6 push-m3 l6 push-l3 job-application-form" action="{{ route('create.new.application', Auth::user()->slug) }}" method="post">
             {{ csrf_field() }}
+
             <div class="row">
                 <div class="input-field col s12">
                   <input placeholder="title for job application" id="title" type="text" class="validate" name="title" required>
