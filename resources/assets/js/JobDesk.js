@@ -71,7 +71,7 @@ class JobDesk {
             $('#updateUserModal').modal();
         });
 
-        this.fireEventOn('.logoutModalbtn', 'click', function() {
+        this.fireEventOn('.logoutModalBtn', 'click', function() {
             $('#logoutModal').modal();
         });
 
