@@ -2,9 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
-use JobDesk\JobPosition;
+use JobDesk\Company;
 
-class JobPositionsTableSeeder extends Seeder
+class CompaniesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class JobPositionsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(JobPosition::class, 100)->create();
+        factory(Company::class, 100)->create();
     }
 }

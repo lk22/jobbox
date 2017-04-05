@@ -4,7 +4,7 @@
     @include('pages._partials.job-app-sidebar')
     <div class="container" id="job-application-wrapper">
 
-        <form class="col s12 m6 push-m3 l6 push-l3 job-application-form" action="index.html" method="post">
+        <form class="col s12 m6 push-m3 l6 push-l3 job-application-form" action="" method="post">
             <div class="row">
                 <div class="input-field col s12">
                   <input placeholder="title for job application" id="title" type="text" class="validate" name="title" required>
@@ -14,6 +14,10 @@
 
             <div class="row">
                 <textarea name="body" rows="8" cols="80" class="tinymce new-job-application-field"></textarea>
+            </div>
+
+            <div class="row">
+              <button class="btn btn-block submitBtn" name="submit" type="submit">Create</button>
             </div>
         </form>
 

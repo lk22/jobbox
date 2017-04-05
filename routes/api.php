@@ -34,8 +34,6 @@ Route::prefix('users')->group(function() {
 
 		Route::name('api.user.auth')->get('/auth')->uses('UserController@auth');
 
-		Route::name('api.update.user')->put('/')->uses('UserController@update');
-
 	});
 
 	/**
@@ -46,7 +44,7 @@ Route::prefix('users')->group(function() {
 	/**
 	 * update current user
 	 */
-	Route::name('api.update.existing.user')->put('/{id}')->uses('UserController@update');
+	Route::name('api.update.existing.user')->put('/{slug}')->uses('UserController@update');
 
 	/**
 	 * delete existing user

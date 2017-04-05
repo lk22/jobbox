@@ -2,7 +2,7 @@
 
 namespace JobDesk\Http\Controllers;
 
-use Storage;
+use File;
 use Response;
 
 use Illuminate\Http\Request;
@@ -50,11 +50,11 @@ class UserController extends Controller
      * @param  $id users id
      * @return void
      */
-    public function user($slug)
+    public function user()
     {
-    	$user = $this->findById($slug);
+    	// $user = $this->user->findBySlug($slug)->get();
 
-    	return $user;
+    	// return $user;
     }
 
     /**
@@ -74,9 +74,13 @@ class UserController extends Controller
      */
     public function latest()
     {
-    	$latestUsers = $this->user()->latest();
+    	$latestUsers = $this->user->latest();
 
-    	return $latestUsers;
+        $js_variables = [
+            'latestUsers' => $latestUsers
+        ];
+
+    	return $js_variables;
     }
 
     /**
@@ -108,11 +112,11 @@ class UserController extends Controller
     		]);
 
     		return (isset($avatar)) ? $avatar->store('avatars') : false;
-    	}
-
-    	return Response::json([
-    		'error' => "No data provided, resource could not be created"
-    	]);
+    	} else {
+            return Response::json([
+                'error' => "No data provided, resource could not be created"
+            ]);
+        }
     }
 
     /**
@@ -120,34 +124,41 @@ class UserController extends Controller
      * @param  UpdateUserRequest
      * @return [type]
      */
-    public function update(UpdateUserRequest $request)
+    public function update(Request $request, $slug)
     {
     	$data = $request->all();
 
-    	if( $data )
+        $user = $this->user->whereSlug(
+            $slug
+        )->firstOrFail();
+
+        // dd($data);
+
+    	if($data && $user)
     	{
-    		$firstname = $request->get('firstname');
-    		$middlename = $request->get('middlename');
-      		$lastname = $request->get('lastname');
-    		$email = $request->get('email');
-    		$avatar = $request->file('avatar');
+    		$user->firstname = $request->get('firstname');
 
-    		$this->user->updateUserWith([
-    			'firstname' => $firstname,
-    			'middlename' => (isset($middlename)) ? $middlename : '',
-    			'lastname' => $lastname,
-    			'email' => $email,
-    			'avatar' => $avatar
-    		]);
+            if($request->has('middlename'))
+                $user->middlename = $request->get('middlename');
 
-    		$pathFile = Storage::putFile('avatars', $avatar);
+      		$user->lastname = $request->get('lastname');
+            $user->name = $request->get('firstname') . ' ' . $request->get('lastname');
+            $user->description = trim($request->get('description', '<p>'));
+            $user->job_position = $request->get('job_position');
+            $user->dream_job_title = $request->get('dream_job_title');
+    		$user->email = $request->get('email');
 
-    		return (isset($avatar)) ? $pathFile : false;
+            if($request->has('avatar'))
+    		  $user->avatar = $request->file('avatar');
+
+            $user->save();
+
+            // if(!is_null($request->get('avatar'))
+                // File::putFile('avatars', $request->get('avatar'));
+    		
     	}
 
-    	return Response::json([
-    		'error' => "No data provided to be updated, resource could not be updated"
-    	]);
+    	return redirect()->back();
     }
 
     /**

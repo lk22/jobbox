@@ -10,19 +10,19 @@ export class Request {
 
         switch (method) {
             case 'POST':
-                this.sendPostRequest(url, data, success, failure);
+                this.sendPostRequest(url, method, data, success, failure);
                 break;
 
             case 'PUT':
-                this.sendUpdateRequest(url, data, success, failure);
+                this.sendUpdateRequest(url, method, data, success, failure);
                 break;
 
             case 'DELETE':
-                this.sendDeleteRequest(url, data, success, failure);
+                this.sendDeleteRequest(url, method, data, success, failure);
                 break;
 
             case '':
-                this.sendGetRequestTo(url, data, success, failure);
+                this.sendGetRequestTo(url, method, data, success, failure);
             break;
         }
 

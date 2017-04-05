@@ -25,8 +25,14 @@ class UpdateUserRequest extends FormRequest
     {
         return [
             'firstname' => 'required',
+            'middlename' => '',
             'lastname' => 'required',
-            'email' => 'required'
+            'email' => 'required',
+            'description' => 'max:100',
+            'job_position' => '',
+            'dream_job_title' => '',
+            'avatar' => 'mimes:jpeg,png',
+            'company' => ''
         ];
     }
 }

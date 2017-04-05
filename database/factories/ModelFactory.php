@@ -74,7 +74,19 @@ $factory->define(JobDesk\JobApplication::class, function( Faker\Generator $faker
 $factory->define(JobDesk\JobPosition::class, function( Faker\Generator $faker ) {
 
     return [
-        'name' => $faker->unique()->jobTitle
+        'name' => $faker->unique()->jobTitle,
+        'created_at' => Carbon\Carbon::now(),
+        'updated_at' => Carbon\Carbon::now()
+    ];
+
+});
+
+$factory->define(JobDesk\Company::class, function( Faker\Generator $faker ) {
+
+    return [
+        'name' => $faker->unique()->company,
+        'created_at' => Carbon\Carbon::now(),
+        'updated_at' => Carbon\Carbon::now()
     ];
 
 });

@@ -7,19 +7,19 @@ Request.prototype.send = function send (method, url, data, success, failure) {
 
     switch (method) {
         case 'POST':
-            this.sendPostRequest(url, data, success, failure);
+            this.sendPostRequest(url, method, data, success, failure);
             break;
 
         case 'PUT':
-            this.sendUpdateRequest(url, data, success, failure);
+            this.sendUpdateRequest(url, method, data, success, failure);
             break;
 
         case 'DELETE':
-            this.sendDeleteRequest(url, data, success, failure);
+            this.sendDeleteRequest(url, method, data, success, failure);
             break;
 
         case '':
-            this.sendGetRequestTo(url, data, success, failure);
+            this.sendGetRequestTo(url, method, data, success, failure);
         break;
     }
 
@@ -104,10 +104,6 @@ var Component = function Component(element){
     return $(element);
 };
 
-Component.prototype.on = function on (element) {
-    return $(element);
-};
-
 var Connection = function Connection() {
     this.request = new Request();
     this.component = new Component('#ethernetComponent');
@@ -134,16 +130,69 @@ Connection.prototype.checkConnection = function checkConnection () {
 };
 
 var Helper = function Helper(){
-    this.component = new Component();
     this.request = new Request();
     this.connection = new Connection();
 };
 
+Helper.prototype.addEventTypeTo = function addEventTypeTo (element, type, callback) {
+    	var elm = $(element);
+    	return elm.on(type, callback);
+};
+
+Helper.prototype.getApi = function getApi (api) {
+    	return '/api/' + api;
+};
+
+var CreateNewJobApplicationForm = function CreateNewJobApplicationForm() {
+	this.request = new Request();
+	this.form = new Component('.job-application-form');
+};
+
+CreateNewJobApplicationForm.prototype.fire = function fire () {
+
+	var createApplicationBtn = this.form.find('.submitBtn');
+	var jobApplicationTitle = this.form.find('#title');
+	var jobApplicationfield = this.form.find('.new-job-application-field');
+
+	createApplicationBtn.click(function(e) {
+		e.preventDefault();
+
+		var title = jobApplicationTitle.val();
+		var jobApplication = jobApplicationfield.val();
+		console.log("Values from form : " + title + ' ' + jobApplication);
+	});
+
+};
+
+var UserUpdateModal = function UserUpdateModal() {
+
+	this.helper = new Helper();
+	this.request = new Request();
+		
+	this.form = $('.user-update-form');
+	this.submitBtn = this.form.find('.user-update-form');
+	this.fire();
+};
+
+UserUpdateModal.prototype.fire = function fire () {
+
+	/**
+		 * when submitting form
+		 */
+
+};
+
+// form components
+// modal components
 /**
 * main App class
 */
 var JobDesk = function JobDesk() {
+
+    this.userModal = new UserUpdateModal();
+
     this.helper = new Helper();
+    this.api = '/api';
 
     this.jobsModalBtn = new Component(
         '.jobs-modal-btn, floating-jobs-modal-btn'
@@ -157,37 +206,32 @@ var JobDesk = function JobDesk() {
         '#current_positions, #DreamJob'
     );
 
+    this.companySelect = new Component(
+        '#companies'
+    );
+
     /**
      * new job application field 
      */
         
         this.defineEditorOn('textarea.new-job-application-field', 500);
-
-    /**
-     * textarea for updating user form
-     */
-            
-        this.defineEditorOn('textarea.updateUserDescription', 100);
         
     this.fire();
 };
 
 JobDesk.prototype.fire = function fire () {
-    
-    
+
     // render select fields
     this.jobSelectFields.material_select();
+    this.companySelect.material_select();
 
     /**
      * add click event on button to toggle jobs modal component
      * @param  {[type]} ( [description]
      * @return {[type]}   [description]
      */
-    // jobsModalBtn.click(() => {
-    // $('#jobsModal').modal();
-    // });
 
-    this.fireEventOn(jobsModalBtn, 'click', function() {
+    this.fireEventOn(this.jobsModalBtn, 'click', function() {
         $('#jobsModal').modal();
     });
 
@@ -196,14 +240,10 @@ JobDesk.prototype.fire = function fire () {
      * @param  {[type]} ( [description]
      * @return {[type]}   [description]
      */
-    // updateUserBtn.click(() => {
-    // $('#updateUserModal').modal();
-    // });
         
-    this.fireEventOn(updateUserBtn, 'click', function() {
+    this.fireEventOn(this.updateUserBtn, 'click', function() {
         $('#updateUserModal').modal();
     });
-        
 
 };
 

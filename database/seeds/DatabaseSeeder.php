@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
             'contact_messages',
             'posts',
             'job_applications',
-            'job_positions'
+            'job_positions',
+            'companies'
     	);
 
     	/**
@@ -34,7 +35,8 @@ class DatabaseSeeder extends Seeder
             ContactMessagesTableSeeder::class,
             PostsTableSeeder::class,
             JobApplicationsTableSeeder::class,
-            JobPositionsTableSeeder::class
+            JobPositionsTableSeeder::class,
+            CompaniesTableSeeder::class
     	);
 
     	 // disable foreign key checks

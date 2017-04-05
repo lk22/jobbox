@@ -23,6 +23,37 @@
 
     <!-- Scripts -->
     <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
+
+    <script>
+        <?php
+            $default_js_variables = array(
+                'csrf' => csrf_token(),
+                'url' => Config::get("app.url"),
+                'current_url' => request()->url(),
+                'auth' => array(
+                    'id' => auth()->user()->id,
+                    'firstname' => auth()->user()->firstname,
+                    'middlename' => auth()->user()->middlename,
+                    'lastname' => auth()->user()->lastname,
+                    'name' => auth()->user()->name,
+                    'slug' => auth()->user()->slug,
+                    'email' => auth()->user()->email,
+                    'avatar' => auth()->user()->avatar,
+                    'is_admin' => auth()->user()->is_admin,
+                    'has_active_email' => auth()->user()->has_active_email,
+                    'dream_job_title' => auth()->user()->dream_job_title,
+                    'job_position' => auth()->user()->job_position,
+                    'company' => auth()->user()->company,
+                    'description' => auth()->user()->description
+                ),
+                'host' => request()->getHost(),
+                'environment' => app()->environment()
+            );
+            $js_variables = array_merge($default_js_variables, (isset($js_variables)) ? $js_variables : []);
+            echo 'var jobDesk = ' . json_encode($js_variables) . ';';
+        ?>
+        console.log(jobDesk);
+    </script>
 </head>
 <body>
     <div id="jobdesk">
@@ -34,7 +65,6 @@
             @yield('content')
         </div>
     </div>
-
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

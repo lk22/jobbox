@@ -2,13 +2,23 @@ import Helper from './Helper.js';
 import Component from './helpers/Component.js';
 import Connection from './utils/Connection.js';
 
+// form components
+import CreateNewJobApplicationForm from './components/forms/CreateNewJobApplicationForm.js';
+
+// modal components
+import UserUpdateModal from './components/modals/UserUpdateModal.js';
+
 /**
 * main App class
 */
 class JobDesk {
 
     constructor() {
+
+        this.userModal = new UserUpdateModal();
+
         this.helper = new Helper();
+        this.api = '/api';
 
         this.jobsModalBtn = new Component(
             '.jobs-modal-btn, floating-jobs-modal-btn'
@@ -22,37 +32,32 @@ class JobDesk {
             '#current_positions, #DreamJob'
         );
 
+        this.companySelect = new Component(
+            '#companies'
+        );
+
         /**
          * new job application field 
          */
         
             this.defineEditorOn('textarea.new-job-application-field', 500);
-
-        /**
-         * textarea for updating user form
-         */
-            
-            this.defineEditorOn('textarea.updateUserDescription', 100);
         
         this.fire();
     }
 
     fire() {
-    
-    
+
         // render select fields
         this.jobSelectFields.material_select();
+        this.companySelect.material_select();
 
         /**
          * add click event on button to toggle jobs modal component
          * @param  {[type]} ( [description]
          * @return {[type]}   [description]
          */
-        // jobsModalBtn.click(() => {
-        //     $('#jobsModal').modal();
-        // });
 
-        this.fireEventOn(jobsModalBtn, 'click', function() {
+        this.fireEventOn(this.jobsModalBtn, 'click', function() {
             $('#jobsModal').modal();
         });
 
@@ -61,14 +66,10 @@ class JobDesk {
          * @param  {[type]} ( [description]
          * @return {[type]}   [description]
          */
-        // updateUserBtn.click(() => {
-        //     $('#updateUserModal').modal();
-        // });
         
-        this.fireEventOn(updateUserBtn, 'click', function() {
+        this.fireEventOn(this.updateUserBtn, 'click', function() {
             $('#updateUserModal').modal();
         });
-        
 
     }
 

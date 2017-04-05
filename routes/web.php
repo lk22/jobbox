@@ -50,13 +50,16 @@ Auth::routes();
 
 Route::name('home')->get('/home', 'AppController@index');
 
+Route::name('update.user')->post('/home/update/{user_slug}')->uses('UserController@update');
+
 /**
 * job applications routes
 */
 Route::prefix('profile/{user_slug}/jobapplication')->group(function() {
     Route::name('job')->get('/{slug}')->uses('JobApplicationController@job');
 
-    Route::name('new.application')->get('/create/new-job-application')->uses('JobApplicationController@create');
+    Route::name('new.application')->get('/create/new-job-application')->uses('JobApplicationController@newJobApplication');
+    Route::name('create.new.application')->post('/create/new-job-application')->uses('JobApplicationController@create');
 });
 
 

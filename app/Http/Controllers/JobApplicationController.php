@@ -32,8 +32,15 @@ class JobApplicationController extends Controller
     /**
      * return create view
      */
-    public function create()
+    public function newJobApplication()
     {
         return view('pages.job-applications.new-application');
+    }
+
+    public function create(Request $request)
+    {
+        $data = $request->all();
+
+        dd($data);
     }
 }

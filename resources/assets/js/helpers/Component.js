@@ -5,9 +5,5 @@ export class Component {
         return $(element);
     }
 
-    on(element) {
-        return $(element);
-    }
-
 }
 export default Component;

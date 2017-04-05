@@ -8,6 +8,7 @@ use JobDesk\User;
 use JobDesk\Post;
 use JobDesk\JobApplication;
 use JobDesk\JobPosition;
+use JobDesk\Company;
 
 class AppController extends Controller
 {
@@ -16,12 +17,13 @@ class AppController extends Controller
      *
      * @return void
      */
-    public function __construct(User $user, Post $post, JobApplication $job, JobPosition $position)
+    public function __construct(User $user, Post $post, JobApplication $job, JobPosition $position, Company $company)
     {
         $this->user = $user;
         $this->post = $post;
         $this->job = $job;
         $this->position = $position;
+        $this->company = $company;
 
         $this->middleware('auth');
     }
@@ -37,6 +39,8 @@ class AppController extends Controller
 
         $positions = $this->position->all();
 
-        return view('profile', compact('jobs', 'positions'));
+        $companies = $this->company->all();
+
+        return view('profile', compact('jobs', 'positions', 'companies'));
     }
 }
