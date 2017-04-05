@@ -8,7 +8,7 @@
               <a style="display:inline" href="{{ route('home') }}">{{ Auth::user()->firstname }}</a>
             </div>
         </li>
-        <li><a href="#logoutModal" class="logoutModalBtn">Logout</a></li>
+        <li><a data-target="#logoutModal" href="#logoutModal" class="logoutModalBtn">Logout</a></li>
       </ul>
     </div>
   </nav>
