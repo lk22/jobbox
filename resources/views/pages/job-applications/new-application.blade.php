@@ -19,7 +19,7 @@
             </div>
 
             <div class="row">
-              <button class="btn btn-block submitBtn" name="submit" type="submit">Create</button>
+              <button class="btn btn-block submitBtn" type="submit">Create</button>
             </div>
         </form>
 
