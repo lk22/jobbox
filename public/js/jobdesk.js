@@ -211,11 +211,11 @@ var JobDesk = function JobDesk() {
     );
 
     /**
-     * new job application field 
+     * new job application field
      */
-        
+
         this.defineEditorOn('textarea.new-job-application-field', 500);
-        
+
     this.fire();
 };
 
@@ -240,7 +240,7 @@ JobDesk.prototype.fire = function fire () {
      * @param  {[type]} ( [description]
      * @return {[type]}   [description]
      */
-        
+
     this.fireEventOn(this.updateUserBtn, 'click', function() {
         $('#updateUserModal').modal();
     });
