@@ -6,6 +6,7 @@
 
     <div id="profile" class="container-fluid">
       @include('pages.profile.profile-info')
+      @include('pages.profile.profile-job-applications')
     </div>
 
     <div class="fixed-action-btn">
