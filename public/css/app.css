@@ -50,6 +50,7 @@
 
 #profile .profile-header .avatar {
   border-bottom: 1px solid #000;
+  width: auto;
 }
 
 #profile .profile-header .information .name {
