@@ -40,7 +40,6 @@
           <div class="update-user">
               <a data-target="updateUserModal" href="#updateUserModal" class="update-user-btn">Edit <i class="material-icons">setting</i></a>
           </div>
-
       </div>
   </div>
 </div>
