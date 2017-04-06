@@ -1,5 +1,5 @@
 <div class="row profile-info">
-  <div class="col s12 m12 l3 profile-header z-depth-3">
+  <div class="col s12 m12 l5 profile-header z-depth-3">
       <div class="avatar center-align">
           <img src="{{ $auth->avatar }}" height="125" width="125" alt="">
       </div>
