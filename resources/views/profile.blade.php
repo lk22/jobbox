@@ -20,5 +20,6 @@
 
     @include('pages._partials.modals.job-applications-modal')
     @include('pages._partials.modals.update-user-modal', $positions)
+    @include('pages._partials.modals.logoutModal')
 
 @stop

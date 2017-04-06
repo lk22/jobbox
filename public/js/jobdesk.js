@@ -245,14 +245,6 @@ JobDesk.prototype.fire = function fire () {
         $('#updateUserModal').modal();
     });
 
-    /**
-     * show logout modal
-     * @return [type] [description]
-     */
-    $('.logoutModalBtn').click(function() {
-        $('#logoutModal').modal();
-    });
-
 };
 
 JobDesk.prototype.fireEventOn = function fireEventOn (element, event, callback) {
