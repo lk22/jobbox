@@ -249,7 +249,7 @@ JobDesk.prototype.fire = function fire () {
      * show logout modal
      * @return [type] [description]
      */
-    this.fireEventOn('.logoutModalBtn', 'click', function() {
+    $('.logoutModalBtn').click(function() {
         $('#logoutModal').modal();
     });
 
