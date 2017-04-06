@@ -48,6 +48,10 @@
   border-radius: 100px;
 }
 
+#profile .profile-header .avatar {
+  border-bottom: 1px solid #000;
+}
+
 #profile .profile-header .information .name {
   font-size: 20px;
 }
