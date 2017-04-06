@@ -4,7 +4,7 @@
 	.profile-header{
 		padding:2rem;
 		background: #fff;
-		color: #fff;
+		color: #000;
 
 		a{
 			color: #90CAF9;
@@ -13,6 +13,10 @@
 		.avatar > img {
 			border: 3px solid #1A237E;
 			border-radius: 100px;
+		}
+
+		.avatar{
+			border-bottom: 1px solid #000
 		}
 
 		.information{
