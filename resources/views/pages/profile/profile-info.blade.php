@@ -43,7 +43,4 @@
 
       </div>
   </div>
-  <div class="col s12 m12 l5 pull-l-2profile-information-header z-depth-3">
-
-  </div>
 </div>
