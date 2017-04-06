@@ -15,7 +15,7 @@
 
       </div>
   </div>
-  <div class="col s12 m12 l5 profile-information-header z-depth-3">
+  <div class="col s12 m12 l5 pull-l-2profile-information-header z-depth-3">
       <div class="email center-align">
         <p> Email: <a href="mailto:{{ $auth->email }}"> {{ $auth->email }}</a></p>
       </div>
