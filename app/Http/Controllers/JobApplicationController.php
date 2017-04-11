@@ -28,7 +28,7 @@ class JobApplicationController extends Controller
         $user = $this->user->whereSlug($user_slug)->firstOrFail();
         $job = $this->job->whereSlug($slug)->firstOrFail();
 
-        return $job;
+        return view('pages.job-applications.job-application', compact('user', 'job'));
     }
 
     /**
@@ -48,7 +48,7 @@ class JobApplicationController extends Controller
         {
             $this->job->create([
                 'title' => $request->get('title'),
-                'body' => strip_tags($request->get('body')),
+                'body' => $request->get('body'),
                 'user_id' => auth()->user()->id,
             ]);
 
@@ -56,5 +56,14 @@ class JobApplicationController extends Controller
         }
 
         return redirect(route('home'))->with(['create_success' => $create_success]);
+    }
+
+    public function downloadJobApplication($slug)
+    {
+        $job = $this->job->whereSlug($slug)->firstOrFail();
+
+        $header = $this->job->allowPDFDownload();
+
+        return response()->download($job);
     }
 }

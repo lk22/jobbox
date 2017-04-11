@@ -1,5 +1,5 @@
-<div class="row profile-info">
-  <div class="col s12 m12 l5 profile-header z-depth-3">
+
+  <div class="col s12 m12 l6 profile-header z-depth-3">
       <div class="avatar center-align">
           <img src="{{ $auth->avatar }}" height="125" width="125" alt="">
       </div>
@@ -7,10 +7,6 @@
 
           <div class="name center-align">
             <p class="align-center">{{ $auth->name }}</p>
-          </div>
-
-          <div class="description center-align">
-            <p class="center-align">{{ $auth->description }}</p>
           </div>
 
           <div class="email center-align">
@@ -42,4 +38,3 @@
           </div>
       </div>
   </div>
-</div>

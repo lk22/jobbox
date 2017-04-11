@@ -50,4 +50,12 @@ class JobApplication extends Model
     public function user() {
       return $this->belongsTo(User::class);
     }
+
+    /**
+     * allow pdf in application
+     */
+    public function allowPDFDownloading()
+    {
+        return ['Content-type' => 'application/pdf'];
+    }
 }

@@ -4,9 +4,14 @@
 
 @section('content')
 
+  @if(Session::has('create_success'))
+  @endif
+
     <div id="profile" class="container-fluid">
-      @include('pages.profile.profile-info')
-      @include('pages.profile.profile-job-applications')
+      <div class="row">
+          @include('pages.profile.profile-info')
+          @include('pages.profile.profile-job-applications')
+      </div>
     </div>
 
     <div class="fixed-action-btn">

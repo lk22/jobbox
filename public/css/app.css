@@ -31,7 +31,7 @@
 
 #profile {
   padding: 2rem;
-  background: #bdc3c7;
+  background: #ecf0f1;
   height: 100%;
 }
 
@@ -65,6 +65,12 @@
 
 #profile .profile-header .information .email, #profile .profile-header .information .dream-job, #profile .profile-header .information .current-job, #profile .profile-header .information .job-count {
   font-size: 12px;
+}
+
+#profile .profile-job-applications {
+  margin: 1rem;
+  background: #fff;
+  padding: 1.5rem;
 }
 
 .cp-spinner {
